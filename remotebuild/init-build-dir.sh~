@@ -1,0 +1,24 @@
+#!/bin/bash
+
+MY_DIR=$(readlink -f $(pwd))
+
+if [ $# -ne 1 ]; then
+  echo usage: $0 build-dir
+  exit 1
+fi
+
+BUILD_DIR=$1
+
+if ! mkdir $BUILD_DIR ; then
+  echo Could not create $BUILD_DIR
+  echo The build dir must not already exist
+  exit 1
+fi
+
+cd $BUILD_DIR
+
+git init
+cp $MY_DIR/post-receive-hook .git/hooks/post-receive
+chmod 755 .git/hooks/post-receive
+
+echo Succesfully installed hooks in $BUILD_DIR

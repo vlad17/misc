@@ -1,0 +1,29 @@
+Hacked-together scripts for doing remote builds on colo machines.
+==========
+
+This can be handy if you want to run your build on beefier hardware,
+or just run a clean build without monopolizing all the cores on
+your poor laptop.
+
+Usage:
+
+On the build box:
+  remote-build/init-build-dir.sh /data/1/todd/autotest-repo
+
+On your own box:
+  cd ~/git/kudu
+  git config remote-build.url ssh://yourbox.halxg.cloudera.com/data/1/todd/autotest-repo
+  remote-build.sh
+
+Tips:
+
+- The build will run with the current state of your git repo, including staged
+  and unstaged changes. However, it will not run against any files which are
+  not tracked by git, so if you want to run tests including new files, make sure
+  you 'git add' them first.
+
+- There are some flags which can be passed to remote-build.sh. Look at the source
+  for documentation. Feel free to add more and submit a pull request.
+
+- For best performance you probably want to put your autotest repo on a local disk
+  and not NFS.
