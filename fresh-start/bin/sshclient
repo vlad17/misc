@@ -1,0 +1,4 @@
+#!/bin/bash
+# Returns the IP of the ssh client from the current session.
+
+echo $SSH_CLIENT | cut -d" " -f1

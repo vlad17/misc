@@ -1,0 +1,17 @@
+# -*- mode: snippet; require-final-newline: t -*-
+# name: gcpp
+# key: gcpp
+# binding: direct-keybinding
+# --
+#include "`(replace-regexp-in-string "\\.cc" ".h" (mapconcat 'identity ((lambda (path) (last path (- (length path) (+ (position "google3" path :test #'equal) 1)))) (split-string (buffer-file-name) "/")) "/"))`"
+
+namespace `((lambda (path) (nth (+ (position "google3" path :test #'equal) 1) path)) (split-string (buffer-file-name) "/"))` {
+namespace `((lambda (path) (nth (+ (position "google3" path :test #'equal) 2) path)) (split-string (buffer-file-name) "/"))` {
+namespace `((lambda (path) (nth (+ (position "google3" path :test #'equal) 3) path)) (split-string (buffer-file-name) "/"))` {
+
+$0
+
+}  // namespace `((lambda (path) (nth (+ (position "google3" path :test #'equal) 3) path)) (split-string (buffer-file-name) "/"))`
+}  // namespace `((lambda (path) (nth (+ (position "google3" path :test #'equal) 2) path)) (split-string (buffer-file-name) "/"))`
+}  // namespace `((lambda (path) (nth (+ (position "google3" path :test #'equal) 1) path)) (split-string (buffer-file-name) "/"))`
+

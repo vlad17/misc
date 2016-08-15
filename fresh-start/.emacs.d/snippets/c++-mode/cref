@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: cref
+# key: cref
+# binding: direct-keybinding
+# --
+const ${1:T}& 

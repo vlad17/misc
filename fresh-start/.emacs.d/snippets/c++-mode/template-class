@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: template-class
+# key: tempc
+# binding: direct-keybinding
+# --
+template<class ${1:T}>

@@ -1,0 +1,45 @@
+# File with all my bash definitions. Called indirectly via source in .bashrc
+
+alias clipcpy="xclip -in -selection clipboard"
+alias clippaste="xclip -out -selection clipboard"
+alias python=python3
+alias pip=pip3
+alias gitam="git add . && git commit --amend --no-edit"
+
+alias cppcheck="$HOME/dev/cppcheck/cppcheck --enable=all"
+
+alias xo="xdg-open"
+
+export NOBEL=vyf@nobel.princeton.edu
+export CYCLES=vyf@portal.cs.princeton.edu
+export IONIC=vyf@ionic.cs.princeton.edu
+export FISHBOWL=vyf@labpc-proxy.cs.princeton.edu
+export PNI=vyf@metacortex.princeton.edu
+export VISION=vyf@visiongpu.cs.princeton.edu
+
+# Editor assumes there's an emacs daemon running already. This should
+# be done on login, check open_txt_info
+export ALTERNATE_EDITOR="" # emacs --no-splash -l ~/.emacs.d/init.el
+export EDITOR="emacsclient -t --quiet"         # $EDITOR should open in terminal
+export VISUAL="emacsclient -c --quiet"         # $VISUAL opens a GUI.
+export SUDO_EDITOR="$EDITOR"                   # via sudoedit
+
+alias ged="$EDITOR"
+
+function lmk() {
+    start=$(date +%s)
+    "$@"
+    notify-send "Notification" "Cmd \"$(echo $@)\" took $(($(date +%s) - start)) seconds to finish"
+    alert
+}
+
+# OPAM configuration
+. $HOME/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+
+export PATH="$PATH:$HOME/dev/google_appengine/" 
+
+# The next line updates PATH for the Google Cloud SDK.
+source "$HOME/dev/google-cloud-sdk/path.bash.inc"
+
+# The next line enables shell command completion for gcloud.
+source "$HOME/dev/google-cloud-sdk/completion.bash.inc"

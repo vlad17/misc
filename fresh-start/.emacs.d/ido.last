@@ -1,0 +1,176 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/vlad/dev/vlad17.github.io/static/" . "css/")
+ ("/home/vlad/Desktop/" . "PotentialIW/")
+ ("/home/vlad/dev/vlad17.github.io/" . "_posts/")
+ ("/home/vlad/dev/spark-sklearn/" . "python/")
+ ("/home/vlad/Downloads/spark-1.6.2-rc2/python/pyspark/" . "sql/")
+ ("/home/vlad/Downloads/spark-1.6.2-rc2/python/" . "pyspark/")
+ ("/home/vlad/Downloads/spark-1.6.2-rc2/" . "python/")
+ ("/home/vlad/Downloads/" . "spark-1.6.2-rc2/")
+ ("/home/vlad/dev/tensorflow/tensorflow/contrib/learn/python/learn/" . "estimators/")
+ ("/home/vlad/dev/tensorflow/tensorflow/contrib/learn/python/" . "learn/")
+ ("/home/vlad/dev/tensorflow/tensorflow/contrib/learn/" . "python/")
+ ("/home/vlad/dev/tensorflow/tensorflow/contrib/" . "learn/")
+ ("/home/vlad/dev/tensorflow/tensorflow/" . "contrib/")
+ ("/home/vlad/dev/tensorflow/" . "tensorflow/")
+ ("/home/vlad/dev/spark/python/pyspark/" . "sql/")
+ ("/home/vlad/dev/spark/python/" . "pyspark/")
+ ("/home/vlad/dev/spark/" . "python/")
+ ("/home/" . "vlad/")
+ ("/home/vlad/dev/TensorFlow-Learn/" . "code/")
+ ("/home/vlad/dev/final-proj-cos-424/" . "utils/")
+ ("/home/vlad/dev/" . "vlad17.github.io/")
+ ("/home/vlad/" . "dev/")
+ ("/" . "tmp/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/vlad/dev/vlad17.github.io/_posts/"
+ "/home/vlad/.emacs.d/"
+ "/home/vlad/Desktop/PotentialIW/"
+ "/home/vlad/dev/vlad17.github.io/"
+ "/home/vlad/dev/vlad17.github.io/category/"
+ "/home/vlad/dev/vlad17.github.io/static/css/"
+ "/home/vlad/dev/vlad17.github.io/_layouts/"
+ "/home/vlad/dev/vlad17.github.io/_data/"
+ "/home/vlad/dev/vlad17.github.io/_sass/"
+ "/home/vlad/Downloads/"
+ "/home/vlad/Desktop/"
+ "/home/vlad/dev/vphacks/"
+ "/home/vlad/bin/"
+ "/home/vlad/dev/tensorflow/tensorflow/contrib/learn/python/learn/estimators/"
+ "/home/vlad/dev/spark-sklearn/"
+ "/home/vlad/dev/spark-sklearn/python/spark_sklearn/"
+ "/home/vlad/dev/spark-sklearn/python/"
+ "/home/vlad/"
+ "/home/vlad/dev/spark/python/pyspark/sql/"
+ "/home/vlad/dev/spark/python/pyspark/"
+ "/tmp/"
+ "/home/vlad/dev/IPython-2to3/"
+ "/home/vlad/dev/TensorFlow-Learn/code/"
+ "/home/vlad/dev/TensorFlow-Learn/"
+ "/home/vlad/dev/"
+ "/home/vlad/dev/final-proj-cos-424/utils/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "2016-07-09-introduction-to-the-paper-blog.md"
+ "init.el"
+ "ideas.txt"
+ "README.md"
+ "distributed-systems.md"
+ "machine-learning.md"
+ "categories.md"
+ "2016-07-09-ligra.md"
+ "2016-07-17-ad-click-prediction.md"
+ "about.md"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/vlad/dev/vlad17.github.io/_posts/" (22421 26345 511606 868000) "../" "./" "2016-07-09-ligra.md" "2016-07-17-ad-click-prediction.md~" "2016-07-09-introduction-to-the-paper-blog.md~" "2016-07-17-ad-click-prediction.md" "2016-07-09-ligra.md~" "2016-07-09-introduction-to-the-paper-blog.md")
+
+ ("/home/vlad/Documents/" (22430 24883 860978 249000) "../" "Mathematica/" "Wolfram Mathematica/" "./" "Reading/" "TODO.txt" "Recipes/" "Old/" "Career/" "TODO.txt~" "Finance/" "Scholarships/" "PrincetonFinAid/")
+
+ ("/home/vlad/Desktop/PotentialIW/" (22430 24714 445130 693000) "../" "./" "StochasticEM-Neilsen.pdf" "ideas.txt" "MetricAdaboost.pdf" "SEMforMLE.pdf" "ideas.txt~")
+
+ ("/home/vlad/Desktop/" (22430 20109 586047 782000) "../" "./" "backup-logs/" "s3syncs.txt" ".#interface" "MedGP/" "PotentialIW/" "rootkey.csv" "best_day_ever.png" "interface~" "interface.scala~" "massart.pdf" "cos_todo/" "subcircuit_finding.pdf")
+
+ ("/home/vlad/dev/vlad17.github.io/" (22421 27324 315402 73000) "category/" "../" ".gitignore" "education.md" "_posts/" "./" "static/" "Gemfile~" "google95209c36d835c455.html" "_includes/" "categories.md" "_sass/" "404.html" "README.md" "index.html" "categories.md~" "_layouts/" "feed.xml" "Gemfile" "_site/" ".git/" "work.md~" "_config.yml" "assets/" "projects.md" "_data/" "LICENSE" "Gemfile.lock" "work.md" "about.md" "education.md~")
+
+ ("/home/vlad/dev/vlad17.github.io/category/" (22421 26189 848799 849000) "../" "paper-series.md~" "paper-series.md" "online-learning.md" "pram.md" "./" "graph-processing.md" "pram.md~" "distributed-systems.md~" "description.md~" "distributed-systems.md" ".#machine-learning.md" "parallel.md~" "parallel.md" "categories.md~" "paper-blog.md~" "scalability.md" "new-series.md" "blog.md~")
+
+ ("/tmp/" (22421 25745 922824 127000) ".X0-lock" ".X11-unix/" "emacs-open-err" "systemd-private-4f3fe059ed554cbc84dd0d4f703375b2-systemd-timesyncd.service-jstiFH/" "systemd-private-4f3fe059ed554cbc84dd0d4f703375b2-rtkit-daemon.service-r1tdwt/" "config-err-bD5Wo2" ".com.google.Chrome.HJ21Xt/" "evince-10519/" ".XIM-unix/" ".font-unix/" "emacs1000/" "systemd-private-4f3fe059ed554cbc84dd0d4f703375b2-colord.service-qvC7WL/" ".com.google.Chrome.NZh5U2" ".ICE-unix/" "unity_support_test.0" ".com.google.Chrome.KqKIJe" ".Test-unix/" "../" "./")
+
+ ("/home/vlad/.emacs.d/" (22418 60284 255557 274000) "session.103d2e32b120183fd8144945943985338800000018480047" "init.el~" "session.10725d884e131de354144206547075676700000016490047" "session.1084d8895f8177eb9145884077635229600000016870046" "session.10ae20e658bec1d8b014512310189892300000025010048" "session.105f9a96a45f225e44144500566281736500000018430047" "session.105e6d867623fef7d6145935599788158200000017510046" "session.10a14056ce4353e453145036589987902300000018410048" "session.1077837db7cccab28b146141987635801500000015530048" "session.108a053a09cd58b48e145252459699433200000018700047" "session.103ae053c45bdf12ac144648875796165900000019640046" "session.10d1c88a70f5c5fb78144422534751013800000017260046" "session.10b6b35260600ff9d6144615353764287900000016810047" "session.10d4b989c6f94f071e144630198315013400000018250046" "session.10f7a008d26760e313144710351735755800000017070048" "session.10faf4c17e74529eec144173977918199500000019220046" "session.1032e61274c2a136f145892609464175900000018700046" "session.10979e9e5a9fef3cc714505521336349600000017200048" "session.103879d7da183e12d146862635553979500000013530051" "session.103f012416165bd33d145462267987877500000018640047" "session.10b48eb74e37bde5aa146491764674411100000016090049" "session.1016f3c7afc0c89c6814473071338454100000017110048" "session.1048138f1dd12b608144392054679952700000018480046" "session.104fbb3cca0ea3755145847941977302400000016680046" "session.1073254dc894e31ce144624493140870700000016980047" "session.10c15fdeaf5c538b69145271871356221900000019760047" "session.10f3263fdcaf34a6f9146829290122616200000013740051" "session.107aed8fe9b512b3fd146475212311800800000016590049" "session.102acdae6bdb4d397a145925934653464000000018230046" "session.106e282b61c65e42c6144900044227807200000016980048" "session.10859e299552a036cc145027538123035500000017580048" "themes/" "session.103f012416165bd33d145739080712919000000018640116" "session.10e77c105fbfcde237146094511939747000000016660046" "session.108aaea8e36c6eaec5145919662273609200000017870046" "ido.last~" "session.109fe431e8605265a146354247682445900000015030049" "session.1046d52a5fdb29d408144370812456021700000017310047" "session.10dae4d059b55c6ac2145901393252038500000019460046" "session.107bb1898afb907bba144873457153492500000017990047" "session.10314b1deb1f113246146729408560594900000013280051" "session.10c58dc2f8f5d66729144673226279051800000017240047" "init.el" "session.1043d9bec94cedc10314452202476618700000018570047" "session.107e890f77b09c1a92145064685477437900000019290047" "session.1034b6d37914299bb8144597795262005000000019050047" "session.108a179e7744d0ee3144604519972856100000018720047" "session.109e0224eda101fa38144320598532154800000018230046" "session.10614d187bfb7d46d144258465531705600000016650047" "session.10fc36e2b73171c5ac146749032240985300000013610052" "ido.last" "session.10ea6b6e995a1fc91f145915756431619300000018240046" ".#session.108a053a09cd58b48e145252459699433200000018700047" "session.10874a5fb25f607bbe146030866363531600000018420046" "session.103eac0164f473cb3a14460021363947300000016810047" "session.104a7abe85f2dcd07c144249359049648500000019540047" "session.108056a2e42c2d2a7c144397953398056100000016920046" "session.109b7aebb1f4c851a4144615370637403800000017040046" "session.10fbc9289a9e362dc144596099826569000000017220047" "session.10c70544b3298c43a144098653672839500000268260047" "session.104d307fa33a0c085d144284505193618900000016500047" "session.10a2a5277d92d9d5c4146475302535890700000017030049" "session.1089553d5f628205aa145886715340932700000018600046" "session.103d3721a9d2c32596144461656754419900000018470047" "session.1058d2b9b3fe16dc4c144310113244070500000017050047" "session.10d3b22c0fbe1b7336145247648132005600000220890047" "session.105feefad7bd722e84144401188063934100000016810046" "session.108e9036e06f8a4048145744849371461500000018260048" "session.101f8d6212de607990146500083519915800000015450049" "session.10fb0b11f922e3862c144392183053395600000018700046" "session.10852499e5567d318e144898169538853300000019910047" "session.107af13c11208c41da144648545978939100000019270046" "session.10dde5a28fc3624f63146251004468005400000015890049" "session.1081e5231a9f0444a144461416228232000000018190047" "session.10ea7f586bd9e2c57144657755213188800000016790047" "ac-comphist.dat" "session.10b54200c29d188a0d146020163826738100000016550046" "session.1025721a0adbe2ef60144257557713730500000016680046" "session.10b700a41e2ee6d54e144431175014888700000017170046" "session.10ab71048d1f79e213146483619187478600000017240049" "abbrev_defs" "session.10bfbdc5bb16526e07144268565420196000000017930047" "session.107a1fed4bf9467b3f146837942984849400000013810051" "session.10c319d53a9a0e65f144318866476978500000016850047" "session.10b3056bfa9a9ffa57144379240174688600000019110047" "session.106e32ac347c508e72146708653866918700000013860051" "session.10819b0dba1ac15d63145868934189413000000018570046" "session.105c734704f965fe2a146017203270528000000016590046" "session.10c0dd0c3d5d98c4c144344803754448900000018370047" "session.10cc46e3ead5fae4a9145195506550381800000019700047" "session.1056393f16672abedf144474246050018000000019020046" "session.109b3ddd835dd13e3f144251039617869100000017950046" "session.10f670c2eeb3d09336144612318284530000000018300046" "session.102b34a97cd26738a2145917259361842200000018070046" "session.106068945db916be4e14456598199768300000018490046" "session.10764658a74596bcdf144543922475359600000017950046" "session.10b50a1f232069a993144261295264081500000016870046" "auto-save-list/" "session.10ecab674c39fce657146474122399654400000014780050" "session.10e3acd65291a17434144482599964810700000018040047" "session.1078cb897e4c946363146566532692964400000018730049" "session.10f8046b66f2a6fa44144383898773350700000018800047" "session.10bd6cc719a2f8525b14589271363270800000018350046" "session.106d4022cf56a5542a144648532992571600000019070047" "session.102f311f8a9266a84a146638468637883100000016940050" "session.107d34f58a1d9617f7144250769992377700000017770046" "session.10be98bc5bf305297144573079088121300000019730047" "session.101133bfa433411b6814484202729233000000018210047" "session.107dc67b535ee488cd144569519479293800000018390046" "session.1041e8c4989d76c766145930038976536500000018280046" "session.1091a5d4077a98d51214506326599574100000019070048" "session.10ae0a87c62b6b5598144718632232036200000017080047" "session.103f0fbdc44fd4b4f8146859302165466500000013400051" "session.10eeb21c70907a8fc1144349860747474700000018980047" "snippets/" "session.10fd211c4f93c1b9de145892624654854200000018760046" "session.10bdc6e051d367d450144353348046125500000017020047" "session.104db8001c475a6549146132844570759700000015110050" "session.1079092b147303ebcb144405676196101300000017590046" "elpa/" "session.10eff63b15bad24f25144222755267842400000016900046" "session.1096ba64ea87025ea2144517648567843000000017000047" "session.10751d4ef0176da96f14466523271873700000018760046" "session.102b57369766fc1eac145868966844832500000018560046" "session.10dbeda3dc594f3ed146868903137997900000013420051" "session.10b2f4f294cd5f4e4b144206902194100000016540046" "session.10e6743a9ce0bb45d2146138034519775100000013130048" "session.107fcece8cedffb1ca145965801970363300000018110046" "session.109837d44dc0cbecf2146034272095206700000017690046" "session.10c22af2c8319a228f144473905470398200000017990046" "session.1071cd72a6b1f075d4145911367233733600000018300046" "session.104a89706d1885921146544690864723900000017640049" "../" "./")
+
+ ("/home/vlad/Downloads/" (22421 9653 268962 4000) "../" "TensorAnalysis.pdf" "./" "DiFacto.pdf" "ad-click-prediction.pdf" "CloisterInnFA.pdf" "CloisterInnFA (2).pdf" "intro_2014.pdf" "Russellcause.pdf" "interface.scala~" "CloisterInnFA (1).pdf")
+
+ ("/home/vlad/dev/vlad17.github.io/_layouts/" (22413 49314 589310 852000) "../" "./" "categories-home.html" "posts_by_category.html" "categories-home.html~" "page.html" "default.html" "post.html" "project.html")
+
+ ("/home/vlad/dev/vlad17.github.io/static/css/" (22413 49260 929800 554000) "../" "thickbox.css" "./" "projects.scss" "syntax.css" "main.css" "bootstrap-material-design.min.css" "bootstrap.min.css")
+
+ ("/home/vlad/dev/vlad17.github.io/assets/" (22413 49368 193273 803000) "../" "test-page-image-1.jpg" "./" "2016-07-17-ad-click-prediction/" "ftrlprox-update.png" "default-open-graph.png" "ligra/")
+
+ ("/home/vlad/" (22418 60416 369930 619000) "../" ".boto" ".local/" "examples.desktop" ".gem/" ".bash_logout" ".gitconfig" ".gnome/" "fresh-start/" ".s3ignore" ".pki/" "./" ".appcfg_nag" ".cbf/" "Templates/" "scikit_learn_data/" ".anacron/" "bin/" ".ICEauthority" ".mozilla/" ".python_history" ".config/" "Videos/" ".compiz/" ".Xauthority" ".gitmodules" ".adobe/" ".bashrc" ".ssh/" "Desktop/" ".s3ignore~" "Pictures/" "utils/" "dev/" ".oracle_jre_usage/" ".m2/" ".bash_defs.backup" "missfont.log" ".dmrc" ".emacs.d/" ".bash_history" ".bash_profile~" ".bashrc~" ".bash_defs~" ".scala_history" ".cache/" ".bash_defs" ".s3cfg" ".profile" ".sudo_as_admin_successful" ".wget-hsts" ".xsession-errors" "Public/" ".java/" ".ivy2/" "Downloads/" ".macromedia/" ".jupyter/" ".appcfg_oauth2_tokens" ".gnupg/" "Documents/" ".Wolfram Research/" ".gconf/" ".bash_profile" ".dbus/" ".xsession-errors.old" "Music/" ".ipython/" ".lesshst" ".texmf-var/" "fresh-start.tgz" ".zinc/" ".tmux.conf" ".profile~" ".gsutil/")
+
+ ("/home/vlad/dev/vlad17.github.io/_data/" (22390 37789 0 0) "../" "./" "projects.json")
+
+ ("/home/vlad/dev/vlad17.github.io/_sass/" (22413 49159 795661 313000) "../" "./" "_base.scss" "_syntax-highlighting.scss" "_layout.scss")
+
+ ("/home/vlad/dev/vlad17.github.io/static/" (22390 37789 0 0) "../" "./" "js/" "projects/" "img/" "css/")
+
+ ("/home/vlad/dev/vlad17.github.io/_includes/" (22390 37789 0 0) "../" "./" "social_links.html" "navigation.html" "project_tags.html" "sidemenu.html" "share-page.html" "analytics.html")
+
+ ("/home/vlad/dev/spark/python/pyspark/" (22378 672 281866 423000) "context.py" "../" "resultiterable.pyc" "shell.py" "streaming/" "__init__.pyc" "./" "ml/" "tests.pyc" "broadcast.py" "broadcast.pyc" "mllib/" "serializers.pyc" "files.py" "accumulators.pyc" "storagelevel.pyc" "heapq3.py" "status.pyc" "profiler.py" "files.pyc" "shuffle.pyc" "cloudpickle.pyc" "java_gateway.pyc" "statcounter.pyc" "daemon.py" "rddsampler.pyc" "join.py" "rdd.pyc" "storagelevel.py" "rdd.py" "cloudpickle.py" "serializers.py" "__init__.py" "rddsampler.py" "sql/" "traceback_utils.pyc" "statcounter.py" "status.py" "tests.py" "profiler.pyc" "context.pyc" "conf.py" "heapq3.pyc" "shuffle.py" "conf.pyc" "accumulators.py" "resultiterable.py" "traceback_utils.py" "worker.py" "join.pyc" "java_gateway.py")
+
+ ("/home/vlad/dev/spark/python/pyspark/sql/" (22378 672 261866 539000) "context.py" "../" "functions.pyc" "group.pyc" "group.py" "__init__.pyc" "column.pyc" "./" "tests.pyc" "streaming.py" "functions.py" "readwriter.py" "column.py" "dataframe.py" "types.py" "window.py" "window.pyc" "__init__.py" "session.py" "utils.py" "readwriter.pyc" "tests.py" "context.pyc" "conf.py" "session.pyc" "conf.pyc" "catalog.pyc" "dataframe.pyc" "types.pyc" "catalog.py" "utils.pyc")
+
+ ("/home/vlad/dev/tensorflow/tensorflow/contrib/learn/python/learn/estimators/" (22378 8108 57498 886000) "../" "autoencoder.py" "rnn_test.py" "sdca_optimizer.py" "classifier_test.py" "dnn_linear_combined_test.py" "./" "classifier.py" "dnn.py" "dnn_test.py" "linear_test.py" "gmm.py" "dnn_linear_combined.py" "_sklearn.py" "run_config.py" "__init__.py" "linear.py" "rnn.py" "estimator.py" "logistic_regressor_test.py" "logistic_regressor.py" "estimator_test.py" "base.py" "tensor_signature_test.py" "#gmm.py#" "tensor_signature.py")
+
+ ("/home/vlad/bin/" (22384 31396 146685 934000) "../" "inet" "save-to-s3.sh" "./" "old-scripts/" "local-anacron.sh" "sshclient" "open_txt_info" "save-to-s3.sh~" "texclean" "emerge-for-git~" "extract" "human_du" "emerge-for-git")
+
+ ("/home/vlad/dev/vphacks/" (22403 906 403357 867000) "../" "webserver/" ".gitignore" "./" "README.md~" "adminpass" "README.md" "env/" ".git/" "requirements.txt" "LICENSE")
+
+ ("/home/vlad/dev/" (22402 55434 168962 158000) "../" "Cpp-Util/" "misc/" "Palantir-Hackathon-2014-07/" "COS513-Blog/" "./" "google-cloud-sdk/" "TensorFlow-Learn/" "django-testapp/" "README.txt~" "kudu/" "IPythonExtension/" "djangotoolbox/" "final-proj-cos-424/" "tensorflow/" "znn-release/" "gcloud-python-expenses-demo/" "IPython-2to3/" "appengine-django-skeleton/" "HDocsDB/" "scikit-learn/" "google_appengine/" "cppcheck/" "mineml/" "OCaml-Minesweeper/" "spark-sklearn/" "django/" "prml/" "django-dbindexer/" "COS513-Finance/" "vphacks/" "bhtsne/" "vlad17.github.io/" "Large-Circle/" "README.txt" "spark/" "ycmd/" "twanschik-django-autoload-1698ab544030/" "python-docs-samples/")
+
+ ("/home/vlad/dev/spark-sklearn/python/spark_sklearn/" (22376 4359 22445 797000) "../" "udt.py" "grid_search.py" "./" "converter_test.py" "converter.py" "__init__.py" "tests/" "util.py" "test_utils.py")
+
+ ("/home/vlad/dev/spark-sklearn/python/" (22376 2637 580856 497000) "../" "run-doc.sh" "./" "spark_sklearn/" "run-tests.sh" "doc/" "README.md" "setup.cfg" "spark-package-deps.txt" "doc_gen/" "requirements.txt" "MANIFEST.in" "setup.py")
+
+ ("/home/vlad/dev/spark-sklearn/" (22376 2637 580856 497000) "../" ".gitignore" "./" "bin/" "README.md" ".travis.yml" ".git/" "project/" "LICENSE" "build.sbt" "build/" "python/")
+
+ ("/home/vlad/Downloads/spark-1.6.2-rc2/python/pyspark/sql/" (22375 2381 0 0) "context.py" "../" "group.py" "./" "functions.py" "readwriter.py" "column.py" "dataframe.py" "types.py" "window.py" "__init__.py" "utils.py" "tests.py")
+
+ ("/home/vlad/Downloads/spark-1.6.2-rc2/python/pyspark/" (22375 2381 0 0) "context.py" "../" "shell.py" "streaming/" "./" "ml/" "broadcast.py" "mllib/" "files.py" "heapq3.py" "profiler.py" "daemon.py" "join.py" "storagelevel.py" "rdd.py" "cloudpickle.py" "serializers.py" "__init__.py" "rddsampler.py" "sql/" "statcounter.py" "status.py" "tests.py" "conf.py" "shuffle.py" "accumulators.py" "resultiterable.py" "traceback_utils.py" "worker.py" "java_gateway.py")
+
+ ("/home/vlad/Downloads/spark-1.6.2-rc2/python/" (22375 2381 0 0) "../" ".gitignore" "./" "run-tests" "pyspark/" "docs/" "run-tests.py" "test_support/" "lib/")
+
+ ("/home/vlad/Downloads/spark-1.6.2-rc2/" (22375 2381 0 0) "../" "R/" "scalastyle-config.xml" "tox.ini" "streaming/" ".gitignore" "extras/" "assembly/" "./" "core/" "make-distribution.sh" "mllib/" "bin/" "sbt/" ".rat-excludes" "sbin/" "data/" "docs/" "licenses/" "external/" "launcher/" "README.md" "examples/" "pom.xml" "ec2/" "dev/" "docker/" "conf/" "sql/" "unsafe/" "CHANGES.txt" "project/" "network/" "bagel/" "LICENSE" "docker-integration-tests/" ".gitattributes" "build/" "CONTRIBUTING.md" "repl/" "tools/" "python/" "NOTICE" "pylintrc" "tags/" "yarn/" "graphx/")
+
+ ("/home/vlad/dev/tensorflow/tensorflow/contrib/learn/python/learn/" (22375 6275 742065 564000) "../" "./" "preprocessing/" "monitors.py" "models.py" "ops/" "dataframe/" "estimators/" "runner_flags.py" "io/" "README.md" "utils/" "__init__.py" "graph_actions.py" "datasets/" "tests/" "experiment.py" "learn_runner.py")
+
+ ("/home/vlad/dev/tensorflow/tensorflow/contrib/learn/python/" (22375 6275 730064 850000) "../" "./" "learn/" "__init__.py")
+
+ ("/home/vlad/dev/tensorflow/tensorflow/contrib/learn/" (22375 6275 730064 850000) "../" "./" "__init__.py" "BUILD" "python/")
+
+ ("/home/vlad/dev/tensorflow/tensorflow/contrib/" (22375 6275 758066 517000) "../" "ffmpeg/" "makefile/" "framework/" "session_bundle/" "./" "metrics/" "opt/" "linear_optimizer/" "pi_examples/" "copy_graph/" "quantization/" "learn/" "testing/" "README.md" "distributions/" "ios_examples/" "__init__.py" "layers/" "bayesflow/" "util/" "losses/" "BUILD" "rnn/" "cmake/" "tensor_forest/" "slim/" "avro/" "grid_rnn/" "lookup/")
+
+ ("/home/vlad/dev/tensorflow/tensorflow/" (22375 6275 926076 521000) "../" "./" "core/" "workspace.bzl" "contrib/" "cc/" "stream_executor/" "examples/" "models/" "__init__.py" "tf_exported_symbols.lds" "tf_version_script.lds" "user_ops/" "BUILD" "tensorflow.bzl" "tensorboard/" "tools/" "python/" "g3doc/")
+
+ ("/home/vlad/dev/tensorflow/" (22375 6275 930076 759000) "../" "configure" "eigen.BUILD" "third_party/" ".gitignore" "./" "boost.BUILD" "grpc.BUILD" "WORKSPACE" "farmhash.BUILD" "jsoncpp.BUILD" "navbar.md" "tensorflow/" "RELEASE.md" "gmock.BUILD" ".gitmodules" "zlib.BUILD" "README.md" "bzip2.BUILD" ".git/" "boringssl.BUILD" "ACKNOWLEDGMENTS" "util/" "AUTHORS" "png.BUILD" "LICENSE" "avro.BUILD" "nanopb.BUILD" "CONTRIBUTING.md" "ISSUE_TEMPLATE.md" "tools/" "jpeg.BUILD" "six.BUILD" "bower.BUILD")
+
+ ("/home/vlad/dev/spark/python/" (22365 35255 923713 870000) "../" ".gitignore" "./" "run-tests" "pyspark/" "docs/" "run-tests.py" "test_support/" "pylintrc" "lib/")
+
+ ("/home/vlad/dev/spark/" (22365 35527 420710 518000) "../" "R/" "scalastyle-config.xml" "streaming/" ".gitignore" "assembly/" "./" "core/" "mllib/" "bin/" "mllib-local/" "sbin/" "data/" "docs/" "licenses/" "external/" "launcher/" "README.md" "examples/" ".travis.yml" "pom.xml" "dev/" "conf/" ".git/" "sql/" "target/" "project/" "common/" "LICENSE" ".gitattributes" "build/" "CONTRIBUTING.md" "repl/" "tools/" "python/" ".github/" "NOTICE" "yarn/" "graphx/")
+
+ ("/home/vlad/.anacron/" (22362 10398 131366 319000) "../" "./" "etc/" "spool/")
+
+ ("/home/vlad/.anacron/etc/" (22362 10497 383255 874000) "../" "./" "anacrontab~" "anacrontab")
+
+ ("/var/" (22296 108 0 0) "../" "./" "metrics/" "opt/" "lock/" "backups/" "mail/" "crash/" "run/" "snap/" "log/" "tmp/" "cache/" "local/" "lib/" "spool/")
+
+ ("/var/tmp/" (22362 10220 383781 307000) "../" "./" "systemd-private-17c20a28b26a4357a517275d51d01900-rtkit-daemon.service-kR4FPk/" "systemd-private-17c20a28b26a4357a517275d51d01900-systemd-timesyncd.service-R940yw/" "skype.XXS8KVTL~" "systemd-private-17c20a28b26a4357a517275d51d01900-colord.service-NfmUxY/" "anacrontab.XXuhbHgl")
+
+ ("/home/vlad/dev/IPython-2to3/" (22355 29814 265236 6000) "../" ".gitignore" "./" "README.md" "ipy2to3.py" ".git/")
+
+ ("/home/" (22349 65230 657653 771000) "../" "vlad/" "./")
+
+ ("/tmp/crontab.8IgSyY/" (22362 10134 575914 856000) "../" "crontab" "./")
+
+ ("/home/vlad/dev/TensorFlow-Learn/" (22355 29480 815969 989000) "notebooks/" "../" ".gitignore" "./" "data/" "README.md" ".git/" "code/" "data.tgz")
+
+ ("/home/vlad/dev/TensorFlow-Learn/code/" (22355 29338 745630 948000) "../" "./" "regression.py" "data_set.py" "regression.py~" "mnist_downloader.py" "tfopt.py~" "__pycache__/" "em_gmm.py" "data_set.py~")
+
+ ("/home/vlad/dev/final-proj-cos-424/utils/" (22321 28431 0 0) "../" "./" "tf_gmm_em.py~" "data_loader.py" "__pycache__/" "tf_gmm_em.py")
+
+ ("/home/vlad/dev/final-proj-cos-424/" (22319 29634 123962 84000) "pandaprocess.py" "./" "../" "cv_r2.npy" "exploratory_analysis.ipynb" "diag_tf_cv.ipynb" "cv_r2_10.npy" "data/" ".gitmodules" "README.md" ".ipynb_checkpoints/" "diag_tf.ipynb" "methylation_imputation/" ".gitignore" "extracted/" "cv_rmse.npy" "utils/" ".git/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

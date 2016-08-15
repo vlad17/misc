@@ -1,0 +1,93 @@
+#!/bin/bash
+
+# Finds disk usage of all files or folders within the parameter directory
+# -H or --hidden: sorts hidden files
+
+# Temporary directory, preference to local one
+if [ -d "~/tmp" ]; then
+	TEMP_DIR=~/tmp
+else
+	TEMP_DIR=tmp
+fi
+
+# Temporary file to write du errors to if they occur
+DU_ERRS=/$TEMP_DIR/human_du_errs$RANDOM.txt
+
+# Safely quits, removing temp file, w/ error code
+function quit
+{
+	rm -f $DU_ERRS
+	exit $1
+}
+
+trap quit SIGHUP SIGINT SIGTERM
+
+function print_help
+{
+	echo
+	echo "human_du prints the disk usage of each folder in a given directory"
+	echo "in human-readable, sorted order. Use -H or --hidden to include hidden"
+	echo "files in the display"
+	echo
+}
+
+function not_directory
+{
+	echo
+	echo "Argument is not a directory"
+	echo
+}
+
+# Run through input, getting directory name and options
+inc_hidden=false
+directory=
+while [ "$1" != "" ]; do
+	case $1 in
+		-H | --hidden) 
+			inc_hidden=true
+			shift
+			;;
+		-h | --help )
+			print_help
+			quit 0
+			;;
+		*)
+			directory=$1
+			shift
+			;;
+	esac
+done
+
+# Get result from du, channel errors to temp file
+echo
+if [ -d "$directory" ]; then
+	title="Disk usage for"
+	end="folders or files in: $directory"
+	ext="2>$DU_ERRS | sort -h "
+	list=
+	if $inc_hidden; then
+		echo "$title visible and hidden $end"
+		list=$(eval "du -ha -d 1 $directory $ext")
+	else
+		echo "$title only visible $end"
+		if [ "$directory" == "/" ]; then directory=""
+		fi
+		list=$(eval "du -hsc $directory/* $ext")
+	fi
+	while IFS= read -r line; do
+		echo -e "\t$line"
+	done <<< "$list"
+	if [ -s $DU_ERRS ]; then
+		echo "Some files are not shown - permission denied"
+		echo "Print errors [y/n]?"
+		read
+		if [ "$REPLY" = "y" ]; then cat $DU_ERRS
+		fi
+	fi
+else
+	not_directory
+	quit 1
+fi
+echo
+
+quit 0

@@ -1,0 +1,4 @@
+#!/bin/bash
+# Quick one liner for extracting the current IP from ifconfig.
+
+ifconfig -a | sed 's/[ \t].*//;/^\(lo\|\)$/d' | xargs -n 1 --replace /bin/bash -c "echo {} \$(ifconfig {} | grep \"inet addr\" | cut -d: -f2 | cut -d\" \" -f1)"

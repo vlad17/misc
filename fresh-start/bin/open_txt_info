@@ -1,0 +1,33 @@
+#!/bin/bash
+# Finds screen size, generates new gedit window w/ TODO list and nutrition data for today
+# If the first argument is "download" then this script downloads from email new food data.
+# If the second argument is not null, then it becomes the output-collecting file
+# the file is cleared if there are no errors.
+# This script was modified on March 2016 to remove the download and opening of the food data, because it is no longer recorded. That argument is ignored now
+
+if [ -n "$2" ] && [ -f "$2" ]; then
+    rm "$2"
+fi
+
+if [ -z "$2" ]; then
+    errfile=/dev/null
+else
+    errfile="$2"
+fi
+
+#if [ "$1" = "download" ]; then
+#    python $HOME/bin/food-to-text.py &>> "$errfile"
+#else
+#    echo "----------- NOT downloading new food data" >> "$errfile"
+#fi
+
+file1="/home/vlad/Documents/TODO.txt"
+
+# hacky frame movement to the right side; the correct way would be to query the screen size,
+# default emacs window size, etc., but that'd be a pain and I'd have to do it in elisp.
+# Much easier to just overshoot and let the window manager correct us back to the right
+# side of the screen.
+emacsclient --create-frame --alternate-editor="" \
+  --frame-parameters="((left . 10000))" "$file1" &>> "$errfile" &
+
+echo &>> "$errfile"

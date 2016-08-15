@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: ifdef
+# key: ifdef
+# binding: direct-keybinding
+# --
+#ifdef $1
+#endif /* $1 */

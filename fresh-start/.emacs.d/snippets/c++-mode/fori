@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: fori
+# key: fori
+# binding: direct-keybinding
+# --
+for (${1:int} i = 0; i < ${2:vec}.size(); ++i) {
+  $0
+}
