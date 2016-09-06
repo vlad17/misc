@@ -13,21 +13,28 @@
 import sys
 
 def max_value_mem(coins, first, last, memoize):
-    if memoize[first][last]:
+    assert (last - first) % 2 == 0
+    if memoize[first][last] is not None:
         return memoize[first][last]
     if first == last:
         memoize[first][last] = 0
-    elif last - first == 1:
-        memoize[first][last] = coins[first]
-    else:
-        head = coins[first] + max_value_mem(coins, first + 1, last, memoize)
-        tail = coins[last - 1] + max_value_mem(coins, first, last - 1, memoize)
-        memoize[first][last] = max(head, tail)
+        return 0
+
+    opp_head = max_value_mem(coins, first + 2, last, memoize)
+    opp_tail = max_value_mem(coins, first + 1, last - 1, memoize)
+    head = coins[first] + min(opp_head, opp_tail)
+
+    opp_head = max_value_mem(coins, first + 1, last - 1, memoize)
+    opp_tail = max_value_mem(coins, first, last - 2, memoize)
+    tail = coins[last - 1] + min(opp_head, opp_tail)
+
+    memoize[first][last] = max(head, tail)
+
     return memoize[first][last]
 
 def max_value(coins):
     n = len(coins) + 1
-    mem = [[None] * n] * n
+    mem = [[None] * n for _ in range(n)] # obscure alias bug here
     return max_value_mem(coins, 0, len(coins), mem)
 
 if __name__ == '__main__':
