@@ -17,4 +17,5 @@ sudo apt-get install -y python-dev xclip clang
 sudo apt-get remove indicator-messages
 sudo add-apt-repository ppa:tsbarnes/indicator-keylock
 sudo apt-get update
-sudo apt-get install indicator-keylock
+sudo apt-get -y install indicator-keylock
+

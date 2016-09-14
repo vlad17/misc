@@ -134,6 +134,7 @@
   emacs-lisp-mode
   lisp-mode
   c++-mode
+  go-mode
   scala-mode
   python-mode
   c-mode
@@ -144,6 +145,26 @@
     (delete-trailing-whitespace)
     (untabify (point-min) (point-max))))
 (add-hook 'before-save-hook 'vlad/rm-whitespace)
+
+;; ----- Go -----
+
+; Required bash setup
+; sudo apt -y install golang-go
+; mkdir -p ~/dev/goprojects
+; go get -u github.com/nsf/gocode
+
+(add-to-list 'load-path "~/dev/goprojects/src/github.com/nsf/gocode/emacs-company")
+(require 'company-go)
+(setq company-tooltip-limit 20)                      ; bigger popup window
+(setq company-idle-delay .3)                         ; decrease delay before autocompletion popup shows
+(setq company-echo-delay 0)                          ; remove annoying blinking
+(setq company-begin-commands '(self-insert-command)) ; start autocompletion only after typing
+(add-hook 'go-mode-hook (lambda ()
+  (set (make-local-variable 'company-backends) '(company-go))
+  (company-mode)))
+(add-hook 'before-save-hook 'gofmt-before-save)
+(setq exec-path (append exec-path '("~/dev/goprojects/bin")))
+
 
 ;; ----- Display -----
 
@@ -173,7 +194,8 @@
     ("\\.hs\\'" . haskell-mode)
     ;; Markdown Extensions
     ("\\.markdown\\'" . markdown-mode)
-    ("\\.md\\'" . markdown-mode))
+    ("\\.md\\'" . markdown-mode)
+    ("\\.go\\'" . go-mode))
     auto-mode-alist))
 
 ;; ----- Misc convenience tools -----
