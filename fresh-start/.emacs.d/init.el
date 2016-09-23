@@ -39,6 +39,10 @@
 (company-ycmd-setup)
 (add-hook 'after-init-hook 'global-company-mode)
 
+(global-set-key (kbd "C-<tab>") 'company-ycmd)
+
+(global-set-key (kbd "C-M-SPC") 'company-complete)
+
 (defun complete-or-indent ()
   (interactive)
   (if (company-manual-begin)
@@ -143,7 +147,7 @@
   "Remove trailing whitespace in saved buffer and untabifies."
   (when (member major-mode vlad/code-modes)
     (delete-trailing-whitespace)
-    (untabify (point-min) (point-max))))
+    (unless (eq major-mode 'go-mode) (untabify (point-min) (point-max)))))
 (add-hook 'before-save-hook 'vlad/rm-whitespace)
 
 ;; ----- Go -----
@@ -152,6 +156,8 @@
 ; sudo apt -y install golang-go
 ; mkdir -p ~/dev/goprojects
 ; go get -u github.com/nsf/gocode
+; go get -u github.com/golang/lint/golint
+
 
 (add-to-list 'load-path "~/dev/goprojects/src/github.com/nsf/gocode/emacs-company")
 (require 'company-go)
@@ -162,8 +168,12 @@
 (add-hook 'go-mode-hook (lambda ()
   (set (make-local-variable 'company-backends) '(company-go))
   (company-mode)))
+(add-hook 'go-mode-hook (lambda ()
+   (setq indent-tabs-mode t)))
 (add-hook 'before-save-hook 'gofmt-before-save)
 (setq exec-path (append exec-path '("~/dev/goprojects/bin")))
+(add-to-list 'load-path "~/dev/goprojects/src/github.com/golang/lint/misc/emacs")
+(require 'golint)
 
 
 ;; ----- Display -----
