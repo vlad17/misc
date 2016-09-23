@@ -30,24 +30,43 @@ cd $FRESH_DIR
 printf '# My personal definitions\nsource ~/.bash_defs\n' >> ~/.bashrc
 cp .bash_defs ~
 cp .tmux.conf ~
-cp .gitconfig ~
 
 mkdir -p ~/dev
 cd ~/dev
-git clone https://github.com/Valloric/ycmd.git
-cd ycmd
-git submodule update --init --recursive
-if which clang; then 
-  ./build.py --clang-completer --system-libclang
-else
-  ./build.py --clang-completer
+
+CLANG_VERSION=0.0
+if which clang ; then
+  CLANG_VERSION=$(clang --version | head -1 | cut -d" " -f 3)
+fi
+CLANG_VERSION_MIN=$(echo $CLANG_VERSION 3.8 | tr ' ' '\n' | sort -V | head -1)
+
+GCC_VERSION=0.0
+if which gcc ; then
+  GCC_VERSION=$(gcc --version | head -1 | cut -d" " -f 3)
+fi
+GCC_VERSION_MIN=$(echo $GCC_VERSION 4.8 | tr ' ' '\n' | sort -V | head -1)
+
+if [ "$GCC_VERSION_MIN" -eq "4.8" ]; then 
+    if ! [ -d ycmd ]; then
+	git clone https://github.com/Valloric/ycmd.git
+    fi
+    cd ycmd
+    git submodule update --init --recursivep
+    if [ "$CLANG_VERSION_MIN" -eq "3.8" ]; then 
+	./build.py --clang-completer --system-libclang
+    else
+	./build.py --clang-completer
+    fi
+
+    rm -rf ~/.emacs || true
+    rm -rf ~/.emacs.d/ || true
+    cp -r .emacs.d/ ~
+
+else 
+    echo "GCC VERSION $GCC_VERSION_MIN too small for autocomplete - no emacs installed"
 fi
 
 cd $FRESH_DIR
-
-rm -rf ~/.emacs || true
-rm -rf ~/.emacs.d/ || true
-cp -r .emacs.d/ ~
 
 cp -rf bin/ ~
 
@@ -70,6 +89,4 @@ if ! [ -f ~/.ssh/id_*.pub ]; then
 fi
 echo "Be sure to register ssh key in ~/.ssh with git acct"
 
-echo '$HOME/bin/local-anacron.sh' >> ~/.bash_profile
-
-source ~/.bashrc
+echo "remember to source ~/.bashrc now"
