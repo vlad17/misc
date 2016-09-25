@@ -60,6 +60,7 @@ if [ "$GCC_VERSION_MIN" = "4.8" ]; then
 
     rm -rf ~/.emacs || true
     rm -rf ~/.emacs.d/ || true
+    cd $FRESH_DIR
     cp -r .emacs.d/ ~
 
 else 
