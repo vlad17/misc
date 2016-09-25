@@ -46,13 +46,13 @@ if which gcc ; then
 fi
 GCC_VERSION_MIN=$(echo $GCC_VERSION 4.8 | tr ' ' '\n' | sort -V | head -1)
 
-if [ "$GCC_VERSION_MIN" -eq "4.8" ]; then 
+if [ "$GCC_VERSION_MIN" = "4.8" ]; then 
     if ! [ -d ycmd ]; then
 	git clone https://github.com/Valloric/ycmd.git
     fi
     cd ycmd
-    git submodule update --init --recursivep
-    if [ "$CLANG_VERSION_MIN" -eq "3.8" ]; then 
+    git submodule update --init --recursive
+    if [ "$CLANG_VERSION_MIN" = "3.8" ]; then 
 	./build.py --clang-completer --system-libclang
     else
 	./build.py --clang-completer
