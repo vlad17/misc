@@ -33,7 +33,8 @@
 (set-variable 'ycmd-global-config "~/dev/ycmd/cpp/ycm/.ycm_extra_conf.py")
 (add-hook 'after-init-hook #'global-ycmd-mode)
 (setq ycmd-idle-change-delay 0.03)
-(set-variable 'ycmd-server-command '("python2" "~/dev/ycmd/ycmd"))
+(set-variable 'ycmd-server-command
+  (list "python2" (concat (getenv "HOME") "/dev/ycmd/ycmd")))
 
 (require 'company-ycmd)
 (company-ycmd-setup)
