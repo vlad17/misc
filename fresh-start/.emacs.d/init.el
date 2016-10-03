@@ -61,36 +61,36 @@
 
 ;; ------ OCaml -----
 
-(defvar merlin-use-auto-complete-mode)
-(defvar merlin-error-after-save)
-(add-hook 'tuareg-mode-hook 'tuareg-imenu-set-imenu)
-(setq auto-mode-alist
-      (append '(("\\.ml[ily]?$" . tuareg-mode)
-                ("\\.topml$" . tuareg-mode))
-              auto-mode-alist))
-(autoload 'utop-setup-ocaml-buffer "utop" "Toplevel for OCaml" t)
-(add-hook 'tuareg-mode-hook 'utop-setup-ocaml-buffer)
-(add-hook 'tuareg-mode-hook 'merlin-mode)
-(setq merlin-use-auto-complete-mode t)
-(setq merlin-error-after-save nil)
+;(defvar merlin-use-auto-complete-mode)
+;(defvar merlin-error-after-save)
+;(add-hook 'tuareg-mode-hook 'tuareg-imenu-set-imenu)
+;(setq auto-mode-alist
+;      (append '(("\\.ml[ily]?$" . tuareg-mode)
+;                ("\\.topml$" . tuareg-mode))
+;              auto-mode-alist))
+;(autoload 'utop-setup-ocaml-buffer "utop" "Toplevel for OCaml" t)
+;(add-hook 'tuareg-mode-hook 'utop-setup-ocaml-buffer)
+;(add-hook 'tuareg-mode-hook 'merlin-mode)
+;(setq merlin-use-auto-complete-mode t)
+;(setq merlin-error-after-save nil)
 
 ;; ----- Merlin -----
 
-(defvar opam-share)
-(setq opam-share (substring (shell-command-to-string "opam config var share") 0 -1))
-(add-to-list 'load-path (concat opam-share "/emacs/site-lisp"))
-(require 'merlin)
+;(defvar opam-share)
+;(setq opam-share (substring (shell-command-to-string "opam config var share") 0 -1))
+;(add-to-list 'load-path (concat opam-share "/emacs/site-lisp"))
+;(require 'merlin)
 
 ;; Enable Merlin for ML buffers
-(add-hook 'tuareg-mode-hook 'merlin-mode)
+;(add-hook 'tuareg-mode-hook 'merlin-mode)
 
 ;; So you can do it on a mac, where `C-<up>` and `C-<down>` are used
 ;; by spaces.
-(define-key merlin-mode-map
-  (kbd "C-c <up>") 'merlin-type-enclosing-go-up)
-(define-key merlin-mode-map
-  (kbd "C-c <down>") 'merlin-type-enclosing-go-down)
-(set-face-background 'merlin-type-face "#88FF44")
+;(define-key merlin-mode-map
+;  (kbd "C-c <up>") 'merlin-type-enclosing-go-up)
+;(define-key merlin-mode-map
+;  (kbd "C-c <down>") 'merlin-type-enclosing-go-down)
+;(set-face-background 'merlin-type-face "#88FF44")
 
 ;; Setup environment variables using opam
 ;(dolist
@@ -160,7 +160,7 @@
 ; go get -u github.com/golang/lint/golint
 
 
-(add-to-list 'load-path "~/dev/goprojects/src/github.com/nsf/gocode/emacs-company")
+;(add-to-list 'load-path "~/dev/goprojects/src/github.com/nsf/gocode/emacs-company")
 (require 'company-go)
 (setq company-tooltip-limit 20)                      ; bigger popup window
 (setq company-idle-delay .3)                         ; decrease delay before autocompletion popup shows
@@ -172,10 +172,9 @@
 (add-hook 'go-mode-hook (lambda ()
    (setq indent-tabs-mode t)))
 (add-hook 'before-save-hook 'gofmt-before-save)
-(setq exec-path (append exec-path '("~/dev/goprojects/bin")))
-(add-to-list 'load-path "~/dev/goprojects/src/github.com/golang/lint/misc/emacs")
-(require 'golint)
-
+;(setq exec-path (append exec-path '("~/dev/goprojects/bin")))
+;(add-to-list 'load-path "~/dev/goprojects/src/github.com/golang/lint/misc/emacs")
+;(require 'golint)
 
 ;; ----- Display -----
 
