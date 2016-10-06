@@ -31,6 +31,5 @@ alias ged="$EDITOR"
 function lmk() {
     start=$(date +%s)
     "$@"
-    notify-send "Notification" "Cmd \"$(echo $@)\" took $(($(date +%s) - start)) seconds to finish"
-    alert
+    notify-send "$(echo "$@")" "took $(($(date +%s) - start))s"
 }
