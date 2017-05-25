@@ -2,8 +2,6 @@
 
 alias clipcpy="xclip -in -selection clipboard"
 alias clippaste="xclip -out -selection clipboard"
-alias python=python3
-alias pip=pip3
 alias gitam="git add . && git commit --amend --no-edit"
 
 alias cppcheck="$HOME/dev/cppcheck/cppcheck --enable=all"
@@ -21,7 +19,7 @@ alias mmx="ssh -A -t vyf@mmx.cs.princeton.edu ssh fat"
 
 # Editor assumes there's an emacs daemon running already. This should
 # be done on login, check open_txt_info
-export ALTERNATE_EDITOR="" # emacs --no-splash -l ~/.emacs.d/init.el
+export ALTERNATE_EDITOR="emacs --quick"
 export EDITOR="emacsclient -t --quiet"         # $EDITOR should open in terminal
 export VISUAL="emacsclient -c --quiet"         # $VISUAL opens a GUI.
 export SUDO_EDITOR="$EDITOR"                   # via sudoedit
