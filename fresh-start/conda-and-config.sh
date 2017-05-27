@@ -45,7 +45,7 @@ git config --global merge.tool emerge
 mkdir -p ~/.ssh
 if ! [ -f ~/.ssh/id_*.pub ]; then
   cd ~/.ssh
-  ssh-keygen -t rsa -b 4096 -C "vladimir.feinberg@gmail.com"
+  printf '\n\n\n' | ssh-keygen -t rsa -b 4096 -C "vladimir.feinberg@gmail.com"
   cd
 fi
 echo "Be sure to register ssh key in ~/.ssh with git acct"
