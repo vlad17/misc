@@ -1,6 +1,0 @@
-((("achead:include-directories" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("vlad/code-modes" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("defvar" .
-   [2 0 0 0 0 0])))
