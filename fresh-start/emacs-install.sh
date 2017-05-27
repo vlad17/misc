@@ -5,7 +5,7 @@
 # Only installs stuff if it's missing.
 # Assumes a modern compiler and the following packages are available:
 #
-#  git cmake build-essential python-dev
+# git cmake build-essential python-dev
 
 set -e
 set -x
