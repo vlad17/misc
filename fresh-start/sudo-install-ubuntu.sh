@@ -24,7 +24,7 @@ sudo apt-get -y install emacs24
 sudo apt-get install -y xclip clang
 
 sudo apt-get remove indicator-messages
-sudo add-apt-repository ppa:tsbarnes/indicator-keylock
+sudo add-apt-repository -y ppa:tsbarnes/indicator-keylock
 sudo apt-get update
 sudo apt-get -y install indicator-keylock
 
