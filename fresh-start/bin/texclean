@@ -1,0 +1,102 @@
+#!/bin/bash
+#Cleans all FILETYPES from working directory.
+
+function print_help
+{
+	echo
+	echo "Usage: texclean [-hra] [directory]"
+	echo
+	echo "Use texclean to remove auxilary build files for pdftex. texclean removes from the argument directory, which is the current working directory by default. 
+	
+	The -h or --help option displays help
+	The -r or --recursive option descends into (visible) subdirectories
+          for cleaning
+	The -a or --auxpdf option removes auxilary files of the form *---.pdf,
+		where the --- represent three numbers"
+}
+
+# read options
+recursive_opt=false
+auxpdf_opt=false
+arg="$1"
+while [ "${arg:0:1}" == "-" ]; do
+	# explicitly written out option
+	if [ "${arg:1:2}" == "-" ]; then
+		case $arg in
+			--help)
+				print_help
+				exit 0
+				;;
+			--recursive)
+				recursive_opt=true
+				;;
+			--auxpdf)
+				auxpdf_opt=true
+				;;
+		esac
+	# empty dash
+	elif [ ! "${arg:1:2}" ]; then
+		echo -e "texclean: Ignoring empty option \"-\""
+	# one letter options
+	else
+		arg="${arg:1}"
+		while [ "$arg" ]; do
+			case "${arg:0:1}" in
+				h)
+					print_help
+					exit 0
+					;;
+				r)
+					recursive_opt=true
+					;;
+				a)
+					auxpdf_opt=true
+					;;
+			esac
+		arg="${arg:1}"
+		done 
+	fi
+	# get next argument
+	shift
+	arg=$1
+done
+
+# Get directory
+dir="$arg"
+if [ ! "$dir" ]; then
+	echo "texclean: no directory given, using current one as default"
+	dir="."
+fi
+
+if [ ! -d "$dir" ]; then
+	echo -e "texclean: $dir: not a directory"
+	exit 1
+fi
+
+cd $dir
+
+depth=
+if ! $recursive_opt; then depth="-maxdepth 1"; fi
+pdfflag=
+if $auxpdf_opt; then
+    pdfflag="-o -name *[[:digit:]][[:digit:]][[:digit:]].pdf"
+fi
+del=`find $depth -name "*.log" -o -name "*.out" -o -name "*.synctex.gz" -o -name "*.aux" -o -name "*.tex~" $pdfflag`
+
+dir=`pwd`
+
+if [ ! "$del" ]; then
+    echo "$dir: no matching files."
+    echo
+else
+    echo "$dir: will delete:"
+    echo "$del"
+    echo -n "Okay (y/n)? "
+    read
+    if [ "$REPLY" = "y" ]; then
+	rm -if $del
+    fi
+    echo
+fi
+
+exit 0
