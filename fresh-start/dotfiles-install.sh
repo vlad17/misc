@@ -23,7 +23,7 @@ if ! which git; then
 fi
 
 git config --global user.name "Vladimir Feinberg"
-git config --global user.email "vyf@princeton.edu"
+git config --global user.email "vladimir.feinberg@gmail.com"
 
 echo '#!/bin/bash
 
@@ -36,7 +36,7 @@ git config --global merge.tool emerge
 mkdir -p ~/.ssh
 if ! [ -f ~/.ssh/id_*.pub ]; then
   cd ~/.ssh
-  ssh-keygen -t rsa -b 4096 -C "vyf@princeton.edu"
+  ssh-keygen -t rsa -b 4096 -C "vladimir.feinberg@gmail.com"
   cd
 fi
 echo "Be sure to register ssh key in ~/.ssh with git acct"
