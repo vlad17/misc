@@ -30,7 +30,8 @@
   ycmd
   ido
   flycheck-ycmd
-  goto-change
+  goto-chg
+  company-ycmd
   asm-mode
   matlab-mode
   python-mode
@@ -51,7 +52,9 @@
         (dolist (p cfg-var:packages)
           (package-install p)))))
 
+;; https://stackoverflow.com/questions/10092322/
 (package-initialize)
+(cfg:install-packages)
 
 ;; ----- GUI stuff -----
 
