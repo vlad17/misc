@@ -13,7 +13,8 @@ FRESH_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 cd $FRESH_DIR
 
-printf '\n# My bashrc below\n\n' >> ~/.bashrc
+echo "copying dotfiles"
+printf '\n# my bashrc below\n\n' >> ~/.bashrc
 cat .bashrc >> ~/.bashrc
 cp -f .bash_defs ~
 cp -f .tmux.conf ~
@@ -26,6 +27,10 @@ wget -O conda.sh --quiet https://repo.continuum.io/miniconda/Miniconda3-latest-L
 chmod +x conda.sh
 printf "\nqyes\n\nyes\n" | script --return -c "./conda.sh" /dev/null >/dev/null
 rm conda.sh
+
+echo "installing .commacd.bash"
+printf '\n# added by installation of ~/.commacd.bash\n' >> ~/.bashrc
+curl https://raw.githubusercontent.com/shyiko/commacd/master/commacd.bash -o ~/.commacd.bash && echo "source ~/.commacd.bash" >> ~/.bashrc
 
 if ! which git; then
     echo "No git!"
