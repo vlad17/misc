@@ -3,6 +3,9 @@
 # Installs emacs with autocompletion without use of sudo.
 # Should not be sourced.
 # Only installs stuff if it's missing.
+# Assumes a modern compiler and the following packages are available:
+#
+#  git cmake build-essential python-dev
 
 set -e
 set -x

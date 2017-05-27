@@ -21,7 +21,7 @@ fi
 
 sudo apt-get -y install emacs24
 
-sudo apt-get install -y xclip clang
+sudo apt-get install -y xclip clang cmake build-essential python-dev
 
 sudo apt-get remove indicator-messages
 sudo add-apt-repository -y ppa:tsbarnes/indicator-keylock
