@@ -1,5 +1,3 @@
-# .bashrc
-
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -60,7 +58,7 @@ PS1='${debian_chroot:+($debian_chroot)}\t \u@\h:\w\$ '
 # If this is an xterm set the title to user@host:dir (but without the time)
 case "$TERM" in
 xterm*|rxvt*)
-    PS1="\[\e]0;{debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
     ;;
 *)
     ;;
