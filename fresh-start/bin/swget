@@ -1,0 +1,4 @@
+#!/bin/bash
+# retrieves the entire sub-site and all relevant links
+
+wget --convert-links --page-requisites --recursive --level=inf --no-parent --random-wait --adjust-extension -A "*" -e robots=off "$@"
