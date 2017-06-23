@@ -1,21 +1,14 @@
 # File with all my bash definitions. Called indirectly via source in .bashrc
+# Don't forget to update dev/misc/fresh-start/.bash_defs too!
 
 alias clipcpy="xclip -in -selection clipboard"
 alias clippaste="xclip -out -selection clipboard"
 alias gitam="git add . && git commit --amend --no-edit"
+alias gits="git status"
 
 alias cppcheck="$HOME/dev/cppcheck/cppcheck --enable=all"
 
 alias xo="xdg-open"
-
-export NOBEL=vyf@nobel.princeton.edu
-export IONIC=vyf@ionic.cs.princeton.edu
-export FISHBOWL=vyf@labpc-proxy.cs.princeton.edu
-export PNI=vyf@metacortex.princeton.edu
-export VISION=vyf@visiongpu.cs.princeton.edu
-
-alias cycles="ssh vyf@portal.cs.princeton.edu"
-alias mmx="ssh -A -t vyf@mmx.cs.princeton.edu ssh fat"
 
 # Editor assumes there's an emacs daemon running already. This should
 # be done on login, check open_txt_info
