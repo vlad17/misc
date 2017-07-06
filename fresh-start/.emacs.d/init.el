@@ -1,18 +1,22 @@
-;;; package --- Summary: my init file
-;;; Commentary:
 ;; Vladimir Feinberg
 ;; init.el
 
-;; Notes
+;; Notes/useful keyboard definitions
 ;; C-x C-o (delete-blank-lines)
-;; consider ENSIME for scala dev
+;; C-<tab> (company-ycmd)
+;; <backtab> or <shift>-<tab> (yas-expand)
+;; C-c c (goto-last-change)
+;; C-c v (goto-last-change-reverse)
+;; M-r (isearch-backward-regexp)
+;; M-s (isearch-forward-regexp)
 
 ;;; Code:
 
 ;; ----- Basic top-level packages -----
 
 (require 'cc-mode)
-(require 'cl)
+(require 'thingatpt)
+(require 'cl-lib)
 
 ;; ----- MELPA installation -----
 
@@ -25,7 +29,7 @@
 (add-to-list 'package-archives
              '("melpa-stable" . "http://stable.melpa.org/packages/"))
 
-(setq cfg-var:packages '(
+(defvar cfg-var:packages '(
   yasnippet
   ycmd
   ido
@@ -33,18 +37,18 @@
   goto-chg
   company-ycmd
   asm-mode
-  matlab-mode
   python-mode
+  py-autopep8
+  matlab-mode
   haskell-mode
-  ;; below require additional installation
-  ;tuareg-mode
-  ;merlin
-  ;company-go
-  ;golint
+  tuareg
+  merlin
+  company-go
+  golint
   ))
 
 (defun cfg:install-packages ()
-  (let ((pkgs (remove-if #'package-installed-p cfg-var:packages)))
+  (let ((pkgs (cl-remove-if #'package-installed-p cfg-var:packages)))
     (when pkgs
       (message "%s" "Emacs refresh packages database...")
         (package-refresh-contents)
@@ -52,7 +56,6 @@
         (dolist (p cfg-var:packages)
           (package-install p)))))
 
-;; https://stackoverflow.com/questions/10092322/
 (package-initialize)
 (cfg:install-packages)
 
@@ -107,36 +110,36 @@
 
 ;; ------ OCaml -----
 
-;; (defvar merlin-use-auto-complete-mode)
-;; (defvar merlin-error-after-save)
-;; (add-hook 'tuareg-mode-hook 'tuareg-imenu-set-imenu)
-;; (setq auto-mode-alist
-;;       (append '(("\\.ml[ily]?$" . tuareg-mode)
-;;                 ("\\.topml$" . tuareg-mode))
-;;               auto-mode-alist))
-;; (autoload 'utop-setup-ocaml-buffer "utop" "Toplevel for OCaml" t)
-;; (add-hook 'tuareg-mode-hook 'utop-setup-ocaml-buffer)
-;; (add-hook 'tuareg-mode-hook 'merlin-mode)
-;; (setq merlin-use-auto-complete-mode t)
-;; (setq merlin-error-after-save nil)
+(defvar merlin-use-auto-complete-mode)
+(defvar merlin-error-after-save)
+(add-hook 'tuareg-mode-hook 'tuareg-imenu-set-imenu)
+(setq auto-mode-alist
+      (append '(("\\.ml[ily]?$" . tuareg-mode)
+                ("\\.topml$" . tuareg-mode))
+              auto-mode-alist))
+(autoload 'utop-setup-ocaml-buffer "utop" "Toplevel for OCaml" t)
+(add-hook 'tuareg-mode-hook 'utop-setup-ocaml-buffer)
+(add-hook 'tuareg-mode-hook 'merlin-mode)
+(setq merlin-use-auto-complete-mode t)
+(setq merlin-error-after-save nil)
 
-;; ;; ----- Merlin -----
+;; ----- Merlin -----
 
-;; (defvar opam-share)
-;; (setq opam-share (substring (shell-command-to-string "opam config var share") 0 -1))
-;; (add-to-list 'load-path (concat opam-share "/emacs/site-lisp"))
-;; (require 'merlin)
+(defvar opam-share)
+(setq opam-share (substring (shell-command-to-string "opam config var share") 0 -1))
+(add-to-list 'load-path (concat opam-share "/emacs/site-lisp"))
+(require 'merlin)
 
-;; ;; Enable Merlin for ML buffers
-;; (add-hook 'tuareg-mode-hook 'merlin-mode)
+;; Enable Merlin for ML buffers
+(add-hook 'tuareg-mode-hook 'merlin-mode)
 
-;; ;; So you can do it on a mac, where `C-<up>` and `C-<down>` are used
-;; ;; by spaces.
-;; (define-key merlin-mode-map
-;;   (kbd "C-c <up>") 'merlin-type-enclosing-go-up)
-;; (define-key merlin-mode-map
-;;   (kbd "C-c <down>") 'merlin-type-enclosing-go-down)
-;; (set-face-background 'merlin-type-face "#88FF44")
+;; So you can do it on a mac, where `C-<up>` and `C-<down>` are used
+;; by spaces.
+(define-key merlin-mode-map
+  (kbd "C-c <up>") 'merlin-type-enclosing-go-up)
+(define-key merlin-mode-map
+  (kbd "C-c <down>") 'merlin-type-enclosing-go-down)
+(set-face-background 'merlin-type-face "#88FF44")
 
 ;; ----- Assembly mode -----
 
@@ -149,7 +152,6 @@
   ; asm-mode sets it locally to nil, to "stay closer to the old TAB behaviour".
   (setq tab-always-indent (default-value 'tab-always-indent))
   (setq tab-stop-list (number-sequence 2 60 2))))
-(add-hook 'asm-mode-hook #'my-asm-mode-hook)
 
 ;; ----- Whitespace and Indentation -----
 
@@ -184,6 +186,8 @@
 
 ;; ----- Python -----
 
+(setq exec-path (append exec-path '("/home/vlad/dev/miniconda3/bin")))
+
 ; Remove electric indent for python
 (defun electric-indent-ignore-python (char)
   "Ignore electric indentation for python.  CHAR is ignored."
@@ -192,15 +196,13 @@
     nil))
 (add-hook 'electric-indent-functions 'electric-indent-ignore-python)
 
+(require 'py-autopep8)
+(add-hook 'python-mode-hook 'py-autopep8-enable-on-save)
+
 (defun set-newline-and-indent ()
   "Map the return key with `newline-and-indent'."
   (local-set-key (kbd "RET") 'newline-and-indent))
 (add-hook 'python-mode-hook 'set-newline-and-indent)
-
-(defun my/python-mode-hook ()
-  (add-to-list 'company-backends 'company-jedi))
-
-(add-hook 'python-mode-hook 'my/python-mode-hook)
 
 ;; ----- Go -----
 
@@ -210,21 +212,24 @@
 ; go get -u github.com/nsf/gocode
 ; go get -u github.com/golang/lint/golint
 
-;; (add-to-list 'load-path "~/dev/goprojects/src/github.com/nsf/gocode/emacs-company")
-;; (require 'company-go)
-;; (setq company-tooltip-limit 20)                      ; bigger popup window
-;; (setq company-idle-delay .3)                         ; decrease delay before autocompletion popup shows
-;; (setq company-echo-delay 0)                          ; remove annoying blinking
-;; (setq company-begin-commands '(self-insert-command)) ; start autocompletion only after typing
-;; (add-hook 'go-mode-hook (lambda ()
-;;   (set (make-local-variable 'company-backends) '(company-go))
-;;   (company-mode)))
-;; (add-hook 'go-mode-hook (lambda ()
-;;    (setq indent-tabs-mode t)))
-;; (add-hook 'before-save-hook 'gofmt-before-save)
-;; (setq exec-path (append exec-path '("~/dev/goprojects/bin")))
-;; (add-to-list 'load-path "~/dev/goprojects/src/github.com/golang/lint/misc/emacs")
-;; (require 'golint)
+(let ((gosrc "~/dev/goprojects/src/github.com/")
+      (gobin "~/dev/goprojects/bin/"))
+  (let ((goemacs-src (concat gosrc "nsf/gocode/emacs-company"))
+        (golint-src (concat gosrc "golang/lint/misc/emacs")))
+    (when (cl-every 'identity
+                    (mapcar 'file-exists-p (list goemacs-src golint-src gobin)))
+      (add-to-list 'load-path goemacs-src)
+      (require 'company-go)
+      (add-hook 'go-mode-hook
+                (lambda ()
+                  (set (make-local-variable 'company-backends) '(company-go))
+                            (company-mode)))
+      (add-hook 'go-mode-hook (lambda ()
+                                (setq indent-tabs-mode t)))
+      (add-hook 'before-save-hook 'gofmt-before-save)
+      (add-to-list 'exec-path gobin)
+      (add-to-list 'load-path golint-src)
+      (require 'golint))))
 
 ;; ----- Display -----
 
@@ -252,6 +257,8 @@
     ("\\.scala\\'" . scala-mode)
     ;; Haskell
     ("\\.hs\\'" . haskell-mode)
+    ;; LaTeX
+    ("\\.tex\\'" . latex-mode)
     ;; Markdown Extensions
     ("\\.markdown\\'" . markdown-mode)
     ("\\.md\\'" . markdown-mode)
@@ -288,10 +295,15 @@
 (setq-default flycheck-clang-language-standard "c++11")
 (setq-default flycheck-gcc-language-standard "c++11")
 
-(add-hook 'python-mode-hook (lambda ()
-                              (setq flycheck-checker 'python-pylint
-                                     flycheck-checker-error-threshold 900
-                                     flycheck-pylintrc "~/runlmc/.pylintrc")))
+(add-hook 'python-mode-hook
+          (lambda ()
+            (progn
+              (setq flycheck-checker 'python-pylint
+                    flycheck-checker-error-threshold 900)
+              (let ((lintrc
+                     (locate-dominating-file (buffer-file-name) ".pylintrc")))
+                (when lintrc
+                  (setq flycheck-pylintrc (concat lintrc ".pylintrc")))))))
 
 (defun my-inhibit-semantic-p ()
   (not (equal major-mode 'python-mode)))
@@ -311,20 +323,44 @@
  (add-to-list
   'auto-mode-alist
   '("\\.m$" . matlab-mode))
- (setq matlab-indent-function t)
- (setq matlab-shell-command "matlab")
+ (setq-default matlab-indent-function t)
+(setq-default matlab-shell-command "matlab")
 
-;; ----- Extend package archives -----
+;; ----- Spelling -----
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(TeX-command-BibTeX "Biber"))
+(require 'ispell)
 
-(setq TeX-parse-self t)
+(setq ispell-program-name "aspell")
+(setq ispell-tex-skip-alists
+      (list
+       (append
+    (car ispell-tex-skip-alists)
+    '(
+      ("[^\\]\\$" . "[^\\]\\$")
+      ))
+       (cadr ispell-tex-skip-alists)))
 
-;; provide init just to please flycheck...
-(provide 'init)
-;;; init ends here
+(defun md-ispell ()
+  (make-local-variable 'ispell-skip-region-alist)
+  (add-to-list 'ispell-skip-region-alist '("[\\][\\][[]" "[\\][\\][]]"))
+  (add-to-list 'ispell-skip-region-alist '("[\\][\\][(]" "[\\][\\][)]"))
+  (add-to-list 'ispell-skip-region-alist '("```" "```")))
+(add-hook 'markdown-mode-hook 'md-ispell)
+
+(require 'flyspell)
+(add-hook 'text-mode-hook 'flyspell-mode)
+(add-hook 'prog-mode-hook 'flyspell-prog-mode)
+(add-hook 'flyspell-mode-hook 'flyspell-buffer) ; re-check when buffer loaded
+
+(defun markdown-flyspell-predicate ()
+  (not (thing-at-point 'url)))
+(put 'markdown-mode 'flyspell-mode-predicate 'markdown-flyspell-predicate)
+
+;; ----- TeX -----
+
+(setq-default TeX-command-BibTeX "Biber")
+(setq-default TeX-parse-self t)
+
+;; Local Variables:
+;; flycheck-disabled-checkers: (emacs-lisp-checkdoc)
+;; End:
