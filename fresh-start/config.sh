@@ -30,6 +30,7 @@ fi
 
 git config --global user.name "Vladimir Feinberg"
 git config --global user.email "vladimir.feinberg@gmail.com"
+git config --global push.default simple
 
 echo '#!/bin/bash
 
