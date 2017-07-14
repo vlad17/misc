@@ -62,5 +62,6 @@ if [ "$GCC_VERSION_MIN" = "4.8" ]; then
 
 else 
     echo "GCC VERSION $GCC_VERSION_MIN too small for autocomplete - no emacs installed"
+    exit 1
 fi
 
