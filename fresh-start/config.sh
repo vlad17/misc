@@ -3,8 +3,6 @@
 # Preps my environment. Does not rely on sudo (downloads, compiles locally).
 # Sets up git config, emacs config, and bash config. Presumes all of these
 # (and hopefully clang) have already been installed.
-#
-# Sets up conda, too.
 
 set -e
 set -x
@@ -13,20 +11,14 @@ FRESH_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 cd $FRESH_DIR
 
-echo "copying dotfiles"
-printf '\n# my bashrc below\n\n' >> ~/.bashrc
-cat .bashrc >> ~/.bashrc
-cp -f .bash_defs ~
-cp -f .tmux.conf ~
+echo "copying dotfiles (previous .bashrc moved to .bashrc-old)"
+mv $HOME/.bashrc $HOME/.bashrc-old
+cp .bashrc $HOME/
+cp -f .bash_defs $HOME
+cp -f .tmux.conf $HOME
 
-cp -rf bin/ ~
-
-cd
-echo "installing conda3"
-wget -O conda.sh --quiet https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
-chmod +x conda.sh
-printf "\nqyes\n\nyes\n" | script --return -c "./conda.sh" /dev/null >/dev/null
-rm conda.sh
+mkdir -p $HOME/bin
+cp bin/* $HOME/bin
 
 echo "installing .commacd.bash"
 printf '\n# added by installation of ~/.commacd.bash\n' >> ~/.bashrc
