@@ -350,7 +350,6 @@
 (require 'flyspell)
 (add-hook 'text-mode-hook 'flyspell-mode)
 (add-hook 'prog-mode-hook 'flyspell-prog-mode)
-(add-hook 'flyspell-mode-hook 'flyspell-buffer) ; re-check when buffer loaded
 
 (defun markdown-flyspell-predicate ()
   (not (thing-at-point 'url)))
