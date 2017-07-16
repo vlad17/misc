@@ -90,3 +90,4 @@ stty erase ^?
 # My personal definitions
 source ~/.bash_defs
 
+export PATH=$PATH:$HOME/bin
