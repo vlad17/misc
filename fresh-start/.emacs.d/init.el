@@ -18,6 +18,10 @@
 (require 'thingatpt)
 (require 'cl-lib)
 
+;; suppress annoying abbrev-file question on startup
+(setq save-abbrevs 'silently)
+(quietly-read-abbrev-file)
+
 ;; ----- MELPA installation -----
 
 ;; Retrieve MELPA package info
@@ -83,7 +87,7 @@
 (add-hook 'after-init-hook #'global-ycmd-mode)
 (setq ycmd-idle-change-delay 0.03)
 (set-variable 'ycmd-server-command
-  (list "python2" (concat (getenv "HOME") "/dev/ycmd/ycmd")))
+  (list "python" (concat (getenv "HOME") "/dev/ycmd/ycmd")))
 
 (require 'company-ycmd)
 (company-ycmd-setup)
