@@ -37,6 +37,8 @@
   yasnippet
   ycmd
   ido
+  elpy
+  exec-path-from-shell
   flycheck-ycmd
   goto-chg
   company-ycmd
@@ -44,6 +46,7 @@
   python-mode
   py-autopep8
   matlab-mode
+  markdown-mode
   haskell-mode
   tuareg
   merlin
@@ -62,6 +65,12 @@
 
 (package-initialize)
 (cfg:install-packages)
+
+;; ----- PATH -----
+
+(require 'exec-path-from-shell)
+(setq exec-path-from-shell-check-startup-files nil)
+(exec-path-from-shell-initialize)
 
 ;; ----- GUI stuff -----
 
@@ -191,6 +200,8 @@
 ;; ----- Python -----
 
 (setq exec-path (append exec-path '("/home/vlad/dev/miniconda3/bin")))
+
+(elpy-enable)
 
 ; Remove electric indent for python
 (defun electric-indent-ignore-python (char)
@@ -367,3 +378,4 @@
 ;; Local Variables:
 ;; flycheck-disabled-checkers: (emacs-lisp-checkdoc)
 ;; End:
+(put 'set-goal-column 'disabled nil)
