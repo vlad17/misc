@@ -1,7 +1,10 @@
 #!/bin/bash
 
+cd
+mkdir -p dev
+
 if [ -z "$1" ]; then
-    DEST="$HOME/anaconda3"
+    DEST="$HOME/dev/anaconda3"
 else
     DEST="$1"
 fi
