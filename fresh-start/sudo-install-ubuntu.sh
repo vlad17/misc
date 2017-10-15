@@ -19,7 +19,7 @@ if ! sudo dpkg -i google-chrome-stable_current_amd64.deb; then
     sudo apt-get install -yf
 fi
 
-sudo apt-get -y install emacs24
+sudo apt-get -y install emacs
 
 sudo apt-get install -y xclip clang cmake build-essential python-dev
 
@@ -28,7 +28,7 @@ sudo add-apt-repository -y ppa:tsbarnes/indicator-keylock
 sudo apt-get update
 sudo apt-get -y install indicator-keylock
 
-sudo add-apt-repository ppa:slgobinath/safeeyes
+sudo add-apt-repository -y ppa:slgobinath/safeeyes
 sudo apt-get update
 sudo apt -y install safeeyes
 
@@ -37,4 +37,4 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB31
 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
 sudo apt-get update
 sudo apt -y install spotify-client
-auso apt -y install tmux
+sudo apt -y install tmux
