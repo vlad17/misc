@@ -31,12 +31,6 @@ fi
 mkdir -p ~/dev
 cd ~/dev
 
-CLANG_VERSION=0.0
-if which clang ; then
-  CLANG_VERSION=$(clang --version | head -1 | cut -d" " -f 3)
-fi
-CLANG_VERSION_MIN=$(echo $CLANG_VERSION 3.8 | tr ' ' '\n' | sort -V | head -1)
-
 GCC_VERSION=0.0
 if which gcc ; then
   GCC_VERSION=$(gcc --version | head -1 | cut -d" " -f 3)
@@ -49,12 +43,7 @@ if [ "$GCC_VERSION_MIN" = "4.8" ]; then
     fi
     cd ycmd
     git submodule update --init --recursive
-    if [ "$CLANG_VERSION_MIN" = "3.8" ]; then 
-	./build.py --clang-completer --system-libclang
-    else
-	./build.py --clang-completer
-    fi
-
+    ./build.py --clang-completer
     rm -rf ~/.emacs || true
     rm -rf ~/.emacs.d/ || true
     cd $FRESH_DIR
@@ -64,4 +53,6 @@ else
     echo "GCC VERSION $GCC_VERSION_MIN too small for autocomplete - no emacs installed"
     exit 1
 fi
+
+pip install pylint flake8
 

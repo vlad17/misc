@@ -12,7 +12,7 @@ alias xo="xdg-open"
 
 # Editor assumes there's an emacs daemon running already. This should
 # be done on login, check open_txt_info
-export ALTERNATE_EDITOR=""
+export ALTERNATE_EDITOR="" # emacs --no-splash -l ~/.emacs.d/init.el
 export EDITOR="emacsclient -t --quiet"         # $EDITOR should open in terminal
 export VISUAL="emacsclient -c --quiet"         # $VISUAL opens a GUI.
 export SUDO_EDITOR="$EDITOR"                   # via sudoedit
@@ -24,3 +24,50 @@ function lmk() {
     "$@"
     notify-send "$(echo "$@")" "took $(($(date +%s) - start))s"
 }
+
+# Various workstations
+
+export NOBEL=vyf@nobel.princeton.edu
+export IONIC=vyf@ionic.cs.princeton.edu
+export FISHBOWL=vyf@labpc-proxy.cs.princeton.edu
+export PNI=vyf@metacortex.princeton.edu
+export VISION=vyf@visiongpu.cs.princeton.edu
+export CYCLES=vyf@cycles.cs.princeton.edu
+
+alias cycles="ssh $CYCLES"
+alias mmx="ssh -L8888:localhost:8888 -A -t vyf@mmx.cs.princeton.edu ssh -L8888:localhost:8888 fat"
+
+alias risec65="ssh vladf@c65.millennium.berkeley.edu"
+alias risec66="ssh vladf@c66.millennium.berkeley.edu"
+alias risec67="ssh vladf@c67.millennium.berkeley.edu"
+alias risec68="ssh vladf@c68.millennium.berkeley.edu"
+alias risec69="ssh vladf@c69.millennium.berkeley.edu"
+alias risec70="ssh vladf@c70.millennium.berkeley.edu"
+alias risec71="ssh vladf@c71.millennium.berkeley.edu"
+alias risec72="ssh vladf@c72.millennium.berkeley.edu"
+alias risec73="ssh vladf@c73.millennium.berkeley.edu"
+alias risec74="ssh vladf@c74.millennium.berkeley.edu"
+alias risec75="ssh vladf@c75.millennium.berkeley.edu"
+alias risec76="ssh vladf@c76.millennium.berkeley.edu"
+alias risec77="ssh vladf@c77.millennium.berkeley.edu"
+alias risec78="ssh vladf@c78.millennium.berkeley.edu"
+alias risec79="ssh vladf@c79.millennium.berkeley.edu"
+alias risec80="ssh vladf@c80.millennium.berkeley.edu"
+alias risec81="ssh vladf@c81.millennium.berkeley.edu"
+alias risec82="ssh vladf@c82.millennium.berkeley.edu"
+alias risehavoc="ssh vladf@havoc.millennium.berkeley.edu"
+alias risemayhem="ssh vladf@mayhem.millennium.berkeley.edu"
+alias risewatson="ssh vladf@watson.millennium.berkeley.edu"
+
+# personal computer specific stuff ##########################
+
+## go vars
+
+export GOPATH="$HOME/dev/goprojects"
+export GOROOT=/usr/local/go
+export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
+
+## OPAM configuration
+. $HOME/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+
+alias slack="systemd-run --user --slice user-slack.slice --scope slack" 

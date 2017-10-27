@@ -96,7 +96,9 @@
 (add-hook 'after-init-hook #'global-ycmd-mode)
 (setq ycmd-idle-change-delay 0.03)
 (set-variable 'ycmd-server-command
-  (list "python" (concat (getenv "HOME") "/dev/ycmd/ycmd")))
+              (list "python" (concat (getenv "HOME") "/dev/ycmd/ycmd")
+                    "--stderr" "/tmp/ycm-stderr"
+                    "--stdout" "/tmp/ycm-stdout" "--keep_logfiles"))
 
 (require 'company-ycmd)
 (company-ycmd-setup)
@@ -198,8 +200,6 @@
 (add-hook 'before-save-hook 'vlad/rm-whitespace)
 
 ;; ----- Python -----
-
-(setq exec-path (append exec-path '("/home/vlad/dev/miniconda3/bin")))
 
 (elpy-enable)
 
