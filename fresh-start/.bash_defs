@@ -5,6 +5,10 @@ alias clipcpy="xclip -in -selection clipboard"
 alias clippaste="xclip -out -selection clipboard"
 alias gitam="git add . && git commit --amend --no-edit"
 alias gits="git status"
+alias gitp="git push"
+alias gitd="git diff"
+alias gita="git add ."
+alias gitcm="git commit -m"
 
 alias cppcheck="$HOME/dev/cppcheck/cppcheck --enable=all"
 
