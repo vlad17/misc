@@ -59,15 +59,7 @@ alias risehavoc="ssh vladf@havoc.millennium.berkeley.edu"
 alias risemayhem="ssh vladf@mayhem.millennium.berkeley.edu"
 alias risewatson="ssh vladf@watson.millennium.berkeley.edu"
 
-# personal computer specific stuff ##########################
-
-## go vars
-
-export GOPATH="$HOME/dev/goprojects"
-export GOROOT=/usr/local/go
-export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
-
 ## OPAM configuration
 . $HOME/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
 
-alias slack="systemd-run --user --slice user-slack.slice --scope slack" 
+alias slack="systemd-run --user --slice user-slack.slice --scope slack"
