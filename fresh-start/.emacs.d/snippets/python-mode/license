@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: license
+# key: license
+# --
+# Copyright (c) 2016, Vladimir Feinberg
+# Licensed under the BSD 3-clause license (see LICENSE)
+
+$0

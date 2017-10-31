@@ -1,0 +1,9 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: cases
+# key: cases
+# binding: direct-keybinding
+# --
+\begin{cases}
+$0 & x \\\\
+0 & \text{otherwise}
+\end{cases}
