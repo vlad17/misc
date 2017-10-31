@@ -38,6 +38,7 @@
   ycmd
   ido
   elpy
+  auctex
   exec-path-from-shell
   flycheck-ycmd
   goto-chg
