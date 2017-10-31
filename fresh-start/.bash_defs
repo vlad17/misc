@@ -6,6 +6,7 @@ alias clippaste="xclip -out -selection clipboard"
 alias gitam="git add . && git commit --amend --no-edit"
 alias gits="git status"
 alias gitp="git push"
+alias gitpf="git push -f"
 alias gitd="git diff"
 alias gita="git add ."
 alias gitcm="git commit -m"
@@ -67,3 +68,6 @@ alias risewatson="ssh vladf@watson.millennium.berkeley.edu"
 . $HOME/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
 
 alias slack="systemd-run --user --slice user-slack.slice --scope slack"
+
+export PATH="/usr/local/cuda/bin:$PATH"
+export LD_LIBRARY_PATH="/usr/local/cuda/lib64/:$LD_LIBRARY_PATH"
