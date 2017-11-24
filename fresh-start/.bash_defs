@@ -63,6 +63,7 @@ alias risec82="ssh vladf@c82.millennium.berkeley.edu"
 alias risehavoc="ssh vladf@havoc.millennium.berkeley.edu"
 alias risemayhem="ssh vladf@mayhem.millennium.berkeley.edu"
 alias risewatson="ssh vladf@watson.millennium.berkeley.edu"
+alias riseblaze="ssh vladf@blaze.millennium.berkeley.edu"
 
 ## OPAM configuration
 . $HOME/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
