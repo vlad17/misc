@@ -6,6 +6,10 @@
 # Assumes a modern compiler and the following packages are available:
 #
 # git cmake build-essential python-dev
+#
+# Requires the following python packages be available when emacs
+# is running:
+# pylint flake8
 
 set -e
 set -x
@@ -54,5 +58,4 @@ else
     exit 1
 fi
 
-pip install pylint flake8
 
