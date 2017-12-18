@@ -39,6 +39,7 @@ emacs -Q --no-window-system $@
 chmod 755 ~/bin/emerge-for-git 
 git config --global mergetool.emerge.path $HOME/bin/emerge-for-git
 git config --global merge.tool emerge
+git config --global core.editor "emacs -Q -nw"
 
 mkdir -p ~/.ssh
 if ! [ -f ~/.ssh/id_*.pub ]; then
