@@ -2,293 +2,411 @@
 
 ;; ----- ido-last-directory-list -----
 (
- ("/home/vlad/dev/gocode/" . "emacs-company/")
- ("/home/vlad/dev/Cpp-Util/src/" . "synchro/")
- ("/home/vlad/dev/Cpp-Util/" . "src/")
+ ("/home/vlad/dev/Large-BS-Experiments/" . "src/")
+ ("/home/vlad/dev/baselines/baselines/deepq/" . "experiments/")
+ ("/home/vlad/dev/dbsr/dbsr/gridworld/" . "maps/")
+ ("/home/vlad/dev/dbsr/dbsr/" . "main/")
+ ("/home/vlad/dev/dbsr/" . "dbsr/")
+ ("/home/vlad/Desktop/experiments/main/" . "sac/")
+ ("/home/vlad/Desktop/experiments/" . "debug-ddpg/")
+ ("/home/vlad/dev/ee227c.github.io/" . "notes/")
+ ("/home/vlad/dev/mve/mve/" . "ddpg/")
+ ("/home/vlad/dev/mve/" . "mve/")
+ ("/home/vlad/Dropbox/cal/courses-year1/ee227c/" . "hw2/")
+ ("/home/vlad/dev/rllab/rllab/envs/" . "mujoco/")
+ ("/home/vlad/dev/rllab/sandbox/rocky/tf/" . "policies/")
+ ("/home/vlad/dev/rllab/sandbox/rocky/" . "tf/")
+ ("/home/vlad/dev/rllab/sandbox/" . "rocky/")
+ ("/home/vlad/dev/rllab/rllab/" . "envs/")
+ ("/home/vlad/dev/rllab/" . "rllab/")
+ ("/home/vlad/Desktop/exp/" . "data/")
+ ("/home/vlad/Dropbox/cal/courses-year1/stat210b/" . "hw1/")
+ ("/home/vlad/Dropbox/cal/courses-year1/cs294-112/" . "cal-deeprl-hw2/")
+ ("/home/vlad/dev/sac/sac/" . "value_functions/")
+ ("/home/vlad/dev/sac/" . "sac/")
+ ("/home/vlad/dev/gym2/gym2/mujoco/" . "gl/")
+ ("/home/vlad/dev/gym2/gym2/mjcp/" . "mujoco-py/")
+ ("/home/vlad/dev/gym/" . "gym/")
+ ("/home/vlad/dev/gym-mj15/gym/gym/envs/" . "mujoco/")
+ ("/home/vlad/dev/gym-mj15/gym/gym/" . "envs/")
+ ("/home/vlad/dev/gym-mj15/gym/" . "gym/")
+ ("/home/vlad/dev/gym-mj15/" . "gym/")
+ ("/home/vlad/dev/gym2/gym2/" . "mujoco/")
+ ("/home/vlad/dev/gym2/" . "gym2/")
+ ("/home/vlad/dev/mujoco-py/mujoco_py/" . "generated/")
+ ("/home/vlad/dev/mujoco-py/" . "mujoco_py/")
+ ("/home/vlad/dev/cmpc/cmpc/" . "ddpg/")
+ ("/home/vlad/dev/cmpc/" . "cmpc/")
+ ("/home/vlad/dev/mpc-bootstrap/mpc_bootstrap/" . "ddpg/")
+ ("/home/vlad/dev/baselines/baselines/" . "deepq/")
+ ("/home/vlad/dev/baselines/" . "baselines/")
+ ("/home/vlad/dev/mpc-bootstrap/" . "mpc_bootstrap/")
+ ("/home/vlad/.emacs.d/snippets/" . "latex-mode/")
+ ("/home/vlad/Dropbox/cal/courses-year1/stat210a/" . "hw11/")
+ ("/home/vlad/Dropbox/cal/courses-year1/" . "stat210b/")
+ ("/home/vlad/Dropbox/cal/" . "courses-year1/")
+ ("/home/vlad/Dropbox/" . "cal/")
  ("/home/vlad/dev/ycmd/cpp/" . "ycm/")
- ("/home/vlad/dev/ycmd/" . "cpp/")
- ("/home/vlad/Downloads/databricks/spark-1/mllib/src/test/scala/org/apache/spark/" . "ml/")
- ("/home/vlad/Downloads/databricks/spark-1/mllib/src/test/scala/org/apache/" . "spark/")
- ("/home/vlad/Downloads/databricks/spark-1/mllib/src/test/scala/org/" . "apache/")
- ("/home/vlad/Downloads/databricks/spark-1/mllib/src/test/scala/" . "org/")
- ("/home/vlad/Downloads/databricks/spark-1/mllib/src/test/" . "resources/")
- ("/home/vlad/Downloads/databricks/spark-1/mllib/src/main/scala/org/apache/spark/" . "ml/")
- ("/home/vlad/Downloads/databricks/spark-1/mllib/src/main/scala/org/apache/" . "spark/")
- ("/home/vlad/Downloads/databricks/spark-1/mllib/src/main/scala/org/" . "apache/")
- ("/home/vlad/Downloads/databricks/spark-1/mllib/src/main/scala/" . "org/")
- ("/home/vlad/Downloads/databricks/spark-1/mllib/src/main/" . "scala/")
- ("/home/vlad/Downloads/databricks/spark-1/mllib/src/" . "test/")
- ("/home/vlad/Downloads/databricks/spark-1/mllib/" . "src/")
- ("/home/vlad/Downloads/databricks/spark-1/" . "mllib/")
- ("/home/vlad/Downloads/databricks/" . "spark-1/")
- ("/home/vlad/dev/HDocsDB/src/" . "HDocsDB/")
- ("/home/vlad/dev/HDocsDB/dist/" . "build/")
- ("/home/vlad/dev/HDocsDB/" . "src/")
- ("/home/vlad/fresh-start/" . "bin/")
- ("/home/vlad/Documents/" . "Career/")
+ ("/home/vlad/dev/ycmd/" . "ycmd/")
+ ("/tmp/misc/" . "fresh-start/")
+ ("/home/vlad/dev/deeprl_project/" . "proposal/")
+ ("/home/vlad/dev/cogp/" . "src/")
+ ("/tmp/" . "icml/")
+ ("/home/vlad/Downloads/" . "2006_daily/")
+ ("/home/vlad/Documents/cal/courses-year1/cs294-112/cal-deeprl-hw3/" . "out/")
+ ("/home/vlad/dev/runlmc/benchmarks/asv/" . "fx2007/")
+ ("/home/vlad/Documents/old/Princeton/F16-17/ORF526/" . "review/")
+ ("/home/vlad/Documents/old/Princeton/F16-17/" . "ORF526/")
+ ("/home/vlad/Documents/cal/courses-year1/stat210a/" . "hw8/")
+ ("/home/vlad/Documents/cal/courses-year1/cs294-112/cal-deeprl-hw1/" . "out-bc-walker-variance/")
+ ("/home/vlad/Documents/cal/courses-year1/cs294-112/" . "cal-deeprl-hw4/")
+ ("/home/vlad/Documents/cal/courses-year1/" . "stat210a/")
+ ("/home/vlad/Documents/cal/" . "courses-year1/")
+ ("/home/vlad/aws-instances/" . "s0/")
+ ("/home/vlad/dev/aws-magic/" . "server/")
+ ("/home/vlad/dev/runlmc/benchmarks/weather/" . "out/")
+ ("/home/vlad/dev/runlmc/benchmarks/representation-cmp/" . "out/")
+ ("/home/vlad/dev/keras/keras/" . "preprocessing/")
+ ("/home/vlad/dev/keras/" . "keras/")
+ ("/home/vlad/dev/goprojects/src/" . "kvraft/")
+ ("/home/vlad/dev/goprojects/" . "src/")
+ ("/home/vlad/Desktop/deep-learning/3-dl-book/ex/" . "dlbook_exercises/")
+ ("/home/vlad/Desktop/deep-learning/3-dl-book/" . "ex/")
+ ("/home/vlad/Desktop/deep-learning/" . "3-dl-book/")
+ ("/home/vlad/dev/vlad17.github.io/assets/" . "2017-06-20-nonconvex-first-order-methods/")
+ ("/home/vlad/dev/SafeEyes/" . "_includes/")
  ("/home/vlad/dev/vlad17.github.io/static/" . "css/")
- ("/home/vlad/Desktop/" . "PotentialIW/")
- ("/home/vlad/dev/vlad17.github.io/" . "_posts/")
- ("/home/vlad/dev/spark-sklearn/" . "python/")
- ("/home/vlad/Downloads/spark-1.6.2-rc2/python/pyspark/" . "sql/")
- ("/home/vlad/Downloads/spark-1.6.2-rc2/python/" . "pyspark/")
- ("/home/vlad/Downloads/spark-1.6.2-rc2/" . "python/")
- ("/home/vlad/Downloads/" . "databricks/")
- ("/home/vlad/dev/tensorflow/tensorflow/contrib/learn/python/learn/" . "estimators/")
- ("/home/vlad/dev/tensorflow/tensorflow/contrib/learn/python/" . "learn/")
- ("/home/vlad/dev/tensorflow/tensorflow/contrib/learn/" . "python/")
- ("/home/vlad/dev/tensorflow/tensorflow/contrib/" . "learn/")
- ("/home/vlad/dev/tensorflow/tensorflow/" . "contrib/")
- ("/home/vlad/dev/tensorflow/" . "tensorflow/")
- ("/home/vlad/dev/spark/python/pyspark/" . "ml/")
- ("/home/vlad/dev/spark/python/" . "pyspark/")
- ("/home/vlad/dev/spark/" . "python/")
+ ("/home/vlad/dev/ml-notes/" . "deep-learning/")
+ ("/home/vlad/.emacs.d/elpa/" . "ycmd-20150721.55/")
+ ("/home/vlad/.emacs.d/" . "elpa/")
+ ("/home/vlad/dev/miniconda3/share/jupyter/" . "kernels/")
+ ("/home/vlad/dev/miniconda3/share/jupyter/nbextensions/" . "codemirror_mode_extensions/")
+ ("home/vlad/dev/miniconda3/share/jupyter/nbextensions/" . "select_keymap/")
+ ("/home/vlad/dev/shallow-ml-notes/" . "computational-learning/")
+ ("/home/vlad/Documents/old/Princeton/S16-17/MAT313/" . "hw8/")
+ ("/home/vlad/Documents/old/Princeton/S16-17/" . "ORF523/")
+ ("/home/vlad/Documents/old/Princeton/" . "F16-17/")
+ ("/home/vlad/Documents/old/" . "Princeton/")
+ ("/home/vlad/dev/vlad17.github.io/_site/" . "projects/")
+ ("/home/vlad/dev/miniconda3/pkgs/notebook-5.0.0-py36_0/lib/python3.6/site-packages/notebook/static/components/codemirror/" . "keymap/")
+ ("/home/vlad/dev/miniconda3/pkgs/notebook-5.0.0-py36_0/lib/python3.6/site-packages/notebook/static/components/" . "codemirror/")
+ ("/home/vlad/dev/miniconda3/pkgs/notebook-5.0.0-py36_0/lib/python3.6/site-packages/notebook/static/" . "components/")
+ ("/home/vlad/dev/miniconda3/pkgs/notebook-5.0.0-py36_0/lib/python3.6/site-packages/notebook/" . "static/")
+ ("/home/vlad/dev/miniconda3/pkgs/notebook-5.0.0-py36_0/lib/python3.6/site-packages/" . "notebook/")
+ ("/home/vlad/dev/miniconda3/pkgs/notebook-5.0.0-py36_0/lib/python3.6/" . "site-packages/")
+ ("/home/vlad/dev/miniconda3/pkgs/notebook-5.0.0-py36_0/lib/" . "python3.6/")
+ ("/home/vlad/dev/miniconda3/pkgs/notebook-5.0.0-py36_0/" . "lib/")
+ ("/home/vlad/dev/miniconda3/pkgs/" . "notebook-5.0.0-py36_0/")
+ ("/home/vlad/dev/miniconda3/" . "include/")
+ ("/home/vlad/dev/GPy/GPy/core/" . "parameterization/")
+ ("/home/vlad/dev/misc/fresh-start/" . ".emacs.d/")
+ ("/home/vlad/dev/misc/" . "fresh-start/")
+ ("/home/vlad/Documents/S16-17/thesis/document/" . "ch-results/")
+ ("/home/vlad/dev/runlmc/benchmarks/picture-fx2007/" . "out/")
+ ("/home/vlad/dev/runlmc/doc/" . "_templates/")
+ ("/home/vlad/Documents/S16-17/thesis/icml2017/draft/" . "workdir/")
+ ("/home/vlad/Documents/S16-17/thesis/icml2017/draft-pu/" . "sharable/")
+ ("/home/vlad/Documents/S16-17/thesis/icml2017/" . "draft/")
+ ("/home/vlad/dev/PythonWorkshop/" . "3_CythonMultiprocessing/")
+ ("/home/vlad/Documents/S16-17/ORF523/hw/hw2/" . "solutions2_files/")
+ ("/home/vlad/Documents/S16-17/ORF523/hw/" . "hw2/")
+ ("/home/vlad/Documents/S16-17/ORF523/" . "hw/")
  ("/home/" . "vlad/")
- ("/home/vlad/dev/TensorFlow-Learn/" . "code/")
- ("/home/vlad/dev/final-proj-cos-424/" . "utils/")
- ("/home/vlad/dev/" . "gocode/")
- ("/home/vlad/" . "Downloads/")
+ ("/home/vlad/Documents/S16-17/MAT313/" . "hw9/")
+ ("/home/vlad/Desktop/" . "experiments/")
+ ("/home/vlad/dev/runlmc/data/fx/" . "fx18k_test/")
+ ("/home/vlad/dev/GPy/GPy/" . "core/")
+ ("/home/vlad/dev/GPy/" . "GPy/")
+ ("/home/vlad/dev/runlmc/data/" . "noaa/")
+ ("/home/vlad/Documents/Old/Princeton/F16-17/ORF526/" . "review/")
+ ("/home/vlad/Documents/Old/Princeton/F16-17/" . "ORF526/")
+ ("/home/vlad/Documents/Old/Princeton/" . "F16-17/")
+ ("/home/vlad/Documents/Old/" . "Princeton/")
+ ("/home/vlad/dev/runlmc/benchmarks/" . "benchlib/")
+ ("/home/vlad/Documents/S16-17/thesis/" . "document/")
+ ("/home/vlad/Documents/S16-17/" . "thesis/")
  ("/" . "tmp/")
+ ("/home/vlad/dev/vlad17.github.io/" . "_posts/")
+ ("/home/vlad/dev/princeton-cos418-review/" . "transactions/")
+ ("/home/vlad/Documents/F16-17/ORF526/hw/" . "hw1/")
+ ("/home/vlad/Documents/F16-17/ORF526/" . "review/")
+ ("/home/vlad/Documents/F16-17/" . "ORF526/")
+ ("/home/vlad/Documents/" . "cal/")
+ ("/home/vlad/dev/runlmc/runlmc/" . "lmc/")
+ ("/home/vlad/dev/runlmc/" . "paper/")
+ ("/home/vlad/dev/" . "Large-BS-Experiments/")
+ ("/home/vlad/" . ".emacs.d/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/vlad/Downloads/"
- "/home/vlad/.emacs.d/"
- "/home/vlad/"
- "/home/vlad/dev/gocode/emacs-company/"
- "/home/vlad/Desktop/PotentialIW/"
- "/home/vlad/dev/spark/python/"
- "/home/vlad/dev/spark/python/pyspark/ml/"
- "/home/vlad/dev/Cpp-Util/src/util/"
- "/home/vlad/dev/Cpp-Util/"
- "/home/vlad/dev/Cpp-Util/src/synchro/"
- "/home/vlad/bin/"
- "/home/vlad/Desktop/programming-tasks/"
- "/home/vlad/Desktop/"
- "/home/vlad/dev/ycmd/cpp/ycm/"
- "/home/vlad/Downloads/databricks/spark-1/mllib/src/test/resources/"
- "/home/vlad/Downloads/databricks/spark-1/mllib/src/test/scala/org/apache/spark/ml/"
- "/home/vlad/dev/HDocsDB/src/"
- "/home/vlad/dev/HDocsDB/"
- "/home/vlad/fresh-start/bin/"
- "/home/vlad/dev/vlad17.github.io/_posts/"
- "/home/vlad/dev/vlad17.github.io/"
- "/home/vlad/dev/vlad17.github.io/category/"
- "/home/vlad/dev/vlad17.github.io/static/css/"
- "/home/vlad/dev/vlad17.github.io/_layouts/"
- "/home/vlad/dev/vlad17.github.io/_data/"
- "/home/vlad/dev/vlad17.github.io/_sass/"
- "/home/vlad/dev/vphacks/"
- "/home/vlad/dev/tensorflow/tensorflow/contrib/learn/python/learn/estimators/"
- "/home/vlad/dev/spark-sklearn/"
- "/home/vlad/dev/spark-sklearn/python/spark_sklearn/"
- "/home/vlad/dev/spark-sklearn/python/"
- "/home/vlad/dev/spark/python/pyspark/sql/"
- "/home/vlad/dev/spark/python/pyspark/"
  "/tmp/"
- "/home/vlad/dev/IPython-2to3/"
- "/home/vlad/dev/TensorFlow-Learn/code/"
- "/home/vlad/dev/TensorFlow-Learn/"
+ "/home/vlad/.emacs.d/"
+ "/home/vlad/dev/Large-BS-Experiments/experiments/"
+ "/home/vlad/dev/Large-BS-Experiments/src/"
+ "/home/vlad/dev/Large-BS-Experiments/lib/"
+ "/home/vlad/dev/Large-BS-Experiments/"
+ "/home/vlad/Desktop/experiments/debug-ddpg/"
+ "/home/vlad/dev/mve/mve/"
+ "/home/vlad/Dropbox/"
+ "/home/vlad/dev/baselines/baselines/deepq/"
+ "/home/vlad/dev/baselines/baselines/deepq/experiments/"
+ "/home/vlad/dev/dbsr/dbsr/gridworld/maps/"
+ "/home/vlad/dev/dbsr/dbsr/main/"
+ "/home/vlad/dev/dbsr/dbsr/discrete_agents/"
+ "/home/vlad/dev/dbsr/scripts/"
+ "/home/vlad/Downloads/"
+ "/home/vlad/Desktop/"
+ "/home/vlad/dev/mve/scripts/"
+ "/home/vlad/dev/mve/mve/ddpg/"
+ "/home/vlad/ray-clusters/"
+ "/tmp/icml/"
+ "/home/vlad/Desktop/experiments/main/sac/"
+ "/home/vlad/dev/mve/mve/envs/"
+ "/home/vlad/Dropbox/cal/courses-year1/stat210b/hw5/"
+ "/home/vlad/Dropbox/cal/courses-year1/stat210b/hw1/"
+ "/home/vlad/dev/ee227c.github.io/notes/"
+ "/home/vlad/Dropbox/cal/courses-year1/ee227c/hw2/"
+ "/home/vlad/Dropbox/PotentialIW/"
+ "/home/vlad/dev/ee227c.github.io/"
+ "/home/vlad/dev/mve/mve/memory/"
+ "/home/vlad/dev/mve/"
+ "/home/vlad/dev/mve/mve/sac/"
  "/home/vlad/dev/"
- "/home/vlad/dev/final-proj-cos-424/utils/"
+ "/home/vlad/dev/cmpc/cmpc/"
+ "/home/vlad/dev/cmpc/scripts/"
+ "/home/vlad/dev/deep-sr/"
+ "/home/vlad/dev/cmpc/cmpc/sac/"
+ "/home/vlad/dev/cmpc/cmpc/ddpg/"
+ "/home/vlad/Dropbox/cal/courses-year1/ee227c/midterm/"
+ "/home/vlad/dev/cmpc/cmpc/envs/"
+ "/home/vlad/Dropbox/cal/courses-year1/stat210b/hw4/"
+ "/home/vlad/Desktop/experiments/"
+ "/home/vlad/Dropbox/cal/"
+ "/home/vlad/dev/rllab/rllab/envs/mujoco/"
+ "/home/vlad/Dropbox/cal/courses-year1/stat210b/hw3/"
+ "/home/vlad/dev/gym2/gym2/"
+ "/home/vlad/dev/sac/sac/value_functions/"
+ "/home/vlad/dev/sac/sac/distributions/"
+ "/home/vlad/dev/sac/sac/policies/"
+ "/home/vlad/dev/sac/sac/algos/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "hello.go"
+ "main.cpp"
  "init.el"
- ".bash_defs"
- "company-go.el"
- "ideas.txt"
- "run-tests.py"
- "run-tests"
- "classification.py"
- "CMakeLists.txt"
- "sort-test.cpp"
+ "baseline_bs_512_to_2048.yaml"
+ "hessian_evaluator.py"
+ "main.py"
+ "resnet.py"
+ "settings.py"
+ "baseline_128.yaml"
+ "optimizers.py"
+ "requirements.txt"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/vlad/Downloads/" (22489 26652 182140 491000) "how_to_give_an_iw_talk_spring_16.pptx" "../" "Syllabus ORFE526_2016(8).doc" "Syllabus ORFE526_2016(3).doc" ".#hello.go" "./" "hello.go" "Syllabus ORFE526_2016(6).doc" "fountain.cpp~" ".9020/" "pr.pdf" "Agreement.pdf" "interface.scala~" "1310.4792v1.pdf" "hello.go~" "hello")
+ ("/tmp/" (23279 21161 461471 461000) "ycm-stdout" ".ICE-unix/" ".XIM-unix/" "emacs1000/" "systemd-private-d1e38895f8554c0a886c32ee3cc6544e-colord.service-iVsc0Z/" ".Test-unix/" "gnome-software-NNQDIZ/" "dropbox-antifreeze-ua9Bpl" "Slack Crashes/" "systemd-private-d1e38895f8554c0a886c32ee3cc6544e-rtkit-daemon.service-ENTKTe/" "ycm-stderr" ".X11-unix/" ".com.google.Chrome.voNhbY/" "gnome-software-EH7JIZ/" "g2/" "emacs-open-err" "graphs/" "tmp.IK70JMN683" "unity_support_test.0" ".X0-lock" ".font-unix/" "systemd-private-d1e38895f8554c0a886c32ee3cc6544e-systemd-timesyncd.service-VWqKrP/" "tmp.KhuNltBV6y" ".org.chromium.Chromium.UfavSL/" "config-err-DnGGos" ".org.chromium.Chromium.ofqGBz/" "../" "./")
 
- ("/home/vlad/.emacs.d/" (22489 26623 938071 15000) "session.103d2e32b120183fd8144945943985338800000018480047" "init.el~" "session.10725d884e131de354144206547075676700000016490047" "session.1084d8895f8177eb9145884077635229600000016870046" "session.10ae20e658bec1d8b014512310189892300000025010048" "session.105f9a96a45f225e44144500566281736500000018430047" "session.105e6d867623fef7d6145935599788158200000017510046" "session.10a14056ce4353e453145036589987902300000018410048" "session.1077837db7cccab28b146141987635801500000015530048" "session.108a053a09cd58b48e145252459699433200000018700047" "session.103ae053c45bdf12ac144648875796165900000019640046" "session.10d1c88a70f5c5fb78144422534751013800000017260046" "session.10b6b35260600ff9d6144615353764287900000016810047" "session.10d4b989c6f94f071e144630198315013400000018250046" "session.10f7a008d26760e313144710351735755800000017070048" "session.10faf4c17e74529eec144173977918199500000019220046" "session.1032e61274c2a136f145892609464175900000018700046" "session.10979e9e5a9fef3cc714505521336349600000017200048" "session.10a87900564f711ec314704513426328500000013480051" "session.103879d7da183e12d146862635553979500000013530051" "session.102d1e5640fe843809147052798862419900000036210051" "session.103f012416165bd33d145462267987877500000018640047" "session.10b48eb74e37bde5aa146491764674411100000016090049" "session.1016f3c7afc0c89c6814473071338454100000017110048" "session.1048138f1dd12b608144392054679952700000018480046" "session.104fbb3cca0ea3755145847941977302400000016680046" "session.1073254dc894e31ce144624493140870700000016980047" "session.10c15fdeaf5c538b69145271871356221900000019760047" "session.10f3263fdcaf34a6f9146829290122616200000013740051" "session.107aed8fe9b512b3fd146475212311800800000016590049" "session.102acdae6bdb4d397a145925934653464000000018230046" "session.106e282b61c65e42c6144900044227807200000016980048" "session.10859e299552a036cc145027538123035500000017580048" "themes/" "session.103f012416165bd33d145739080712919000000018640116" "session.1076aab0f49b1880b7147335187773903100000035860052" "session.10e77c105fbfcde237146094511939747000000016660046" "session.108aaea8e36c6eaec5145919662273609200000017870046" "session.10a9104cdf3b11f48a147327764563288000000035750051" "ido.last~" "session.109fe431e8605265a146354247682445900000015030049" "session.1046d52a5fdb29d408144370812456021700000017310047" "session.10dae4d059b55c6ac2145901393252038500000019460046" "session.107bb1898afb907bba144873457153492500000017990047" "session.10314b1deb1f113246146729408560594900000013280051" "session.10c58dc2f8f5d66729144673226279051800000017240047" "init.el" "session.1043d9bec94cedc10314452202476618700000018570047" "session.107e890f77b09c1a92145064685477437900000019290047" "session.1034b6d37914299bb8144597795262005000000019050047" "session.108a179e7744d0ee3144604519972856100000018720047" "session.109e0224eda101fa38144320598532154800000018230046" "session.10b4ac67a3ac88bc05147089144920948500000035400051" "session.10614d187bfb7d46d144258465531705600000016650047" "session.10fc36e2b73171c5ac146749032240985300000013610052" "ido.last" "session.10ea6b6e995a1fc91f145915756431619300000018240046" ".#session.108a053a09cd58b48e145252459699433200000018700047" "session.10874a5fb25f607bbe146030866363531600000018420046" "session.103eac0164f473cb3a14460021363947300000016810047" "session.104a7abe85f2dcd07c144249359049648500000019540047" "session.108056a2e42c2d2a7c144397953398056100000016920046" "session.109b7aebb1f4c851a4144615370637403800000017040046" "session.10fbc9289a9e362dc144596099826569000000017220047" "session.10c70544b3298c43a144098653672839500000268260047" "session.104d307fa33a0c085d144284505193618900000016500047" "session.10a2a5277d92d9d5c4146475302535890700000017030049" "session.1089553d5f628205aa145886715340932700000018600046" "session.103d3721a9d2c32596144461656754419900000018470047" "session.1058d2b9b3fe16dc4c144310113244070500000017050047" "session.10d3b22c0fbe1b7336145247648132005600000220890047" "session.104896a04eb10daf9a147081215676036800000035720051" "session.105feefad7bd722e84144401188063934100000016810046" "session.108e9036e06f8a4048145744849371461500000018260048" "session.101f8d6212de607990146500083519915800000015450049" "session.10fb0b11f922e3862c144392183053395600000018700046" "session.10852499e5567d318e144898169538853300000019910047" "session.107af13c11208c41da144648545978939100000019270046" "session.10dde5a28fc3624f63146251004468005400000015890049" "session.1081e5231a9f0444a144461416228232000000018190047" "session.10ea7f586bd9e2c57144657755213188800000016790047" "ac-comphist.dat" "session.10b54200c29d188a0d146020163826738100000016550046" "session.1025721a0adbe2ef60144257557713730500000016680046" "session.10b700a41e2ee6d54e144431175014888700000017170046" "session.10ab71048d1f79e213146483619187478600000017240049" "abbrev_defs" "session.10bfbdc5bb16526e07144268565420196000000017930047" "session.107a1fed4bf9467b3f146837942984849400000013810051" "session.10c319d53a9a0e65f144318866476978500000016850047" "session.10b2abe7d915e1b8d2147098058031486800000035510051" "session.10b3056bfa9a9ffa57144379240174688600000019110047" "session.106e32ac347c508e72146708653866918700000013860051" "session.10819b0dba1ac15d63145868934189413000000018570046" "session.105c734704f965fe2a146017203270528000000016590046" "session.10c0dd0c3d5d98c4c144344803754448900000018370047" "session.10cc46e3ead5fae4a9145195506550381800000019700047" "session.1056393f16672abedf144474246050018000000019020046" "session.109b3ddd835dd13e3f144251039617869100000017950046" "session.10f670c2eeb3d09336144612318284530000000018300046" "session.102b34a97cd26738a2145917259361842200000018070046" "session.106068945db916be4e14456598199768300000018490046" "session.10764658a74596bcdf144543922475359600000017950046" "session.10b50a1f232069a993144261295264081500000016870046" "auto-save-list/" "session.10ecab674c39fce657146474122399654400000014780050" "session.10e3acd65291a17434144482599964810700000018040047" "session.1078cb897e4c946363146566532692964400000018730049" "session.10f8046b66f2a6fa44144383898773350700000018800047" "session.10f8dcd7d2a7f5ed64147136594545350800000035730051" "session.10bd6cc719a2f8525b14589271363270800000018350046" "session.106d4022cf56a5542a144648532992571600000019070047" "session.102f311f8a9266a84a146638468637883100000016940050" "session.107d34f58a1d9617f7144250769992377700000017770046" "session.10be98bc5bf305297144573079088121300000019730047" "session.101133bfa433411b6814484202729233000000018210047" "session.107dc67b535ee488cd144569519479293800000018390046" "session.1041e8c4989d76c766145930038976536500000018280046" "session.1091a5d4077a98d51214506326599574100000019070048" "session.10ae0a87c62b6b5598144718632232036200000017080047" "session.103f0fbdc44fd4b4f8146859302165466500000013400051" "session.10eeb21c70907a8fc1144349860747474700000018980047" "snippets/" "session.10fd211c4f93c1b9de145892624654854200000018760046" "session.10bdc6e051d367d450144353348046125500000017020047" "session.104db8001c475a6549146132844570759700000015110050" "session.1079092b147303ebcb144405676196101300000017590046" "elpa/" "session.10eff63b15bad24f25144222755267842400000016900046" "session.1096ba64ea87025ea2144517648567843000000017000047" "session.10c2a96d7c33f8408314708417089351800000035690051" "session.10751d4ef0176da96f14466523271873700000018760046" "session.102b57369766fc1eac145868966844832500000018560046" "session.10dbeda3dc594f3ed146868903137997900000013420051" "session.10b2f4f294cd5f4e4b144206902194100000016540046" "session.10e6743a9ce0bb45d2146138034519775100000013130048" "session.107fcece8cedffb1ca145965801970363300000018110046" "session.109837d44dc0cbecf2146034272095206700000017690046" "session.10c22af2c8319a228f144473905470398200000017990046" "session.1071cd72a6b1f075d4145911367233733600000018300046" "session.104a89706d1885921146544690864723900000017640049" "../" "./")
+ ("/home/vlad/.emacs.d/" (23277 2875 251412 82000) "session.10d7a27cd5fbebd20f150924968249390500000067400055" "../" "session.108a91be12b520e04b150932212982004900000166720057" "session.10c572944e986db95151355845661529900000019110057" "session.107fc887c84002eb1015093225412133600000233810056" "session.10b8085dcf4fbb746f150925152033879200000018270055" "session.10b412594d7d36344a150932236432776600000203980056" "session.10f8850cd19439a374152048608094552100000025490057" "init.el" "abbrev_defs" "ido.last~" "session.1037604b14ff1353c3150932222924441500000185450056" "snippets/" "themes/" "session.1096e2d3191bf3a96150955205310995900000017040059" "srecode-map.el" "elpa/" "ido.last" "init.el~" "session.1027440a6bead4e9b615092523025668200000099440056" "auto-save-list/" "session.10b2941876552af51c151258974561354100000019710056" "session.104ae4125453bc966c150930508251943000000053770055" "session.105967b587648e8606150925204060066600000072070055" "session.10ec67cf21ee034957151086851192484600000016870058" "./")
 
- ("/home/vlad/" (22489 26245 817141 116000) ".idea-build/" "../" ".boto" ".ghc/" ".local/" "examples.desktop" ".gem/" ".sbt/" ".bash_logout" ".gitconfig" ".gnome/" ".s3ignore" ".pki/" "./" ".appcfg_nag" ".cbf/" "Templates/" "scikit_learn_data/" ".anacron/" "bin/" ".ICEauthority" ".mozilla/" ".python_history" ".config/" "Videos/" ".compiz/" ".Xauthority" ".gitmodules" ".adobe/" ".bashrc" ".ssh/" ".IdeaIC2016.2/" "Desktop/" ".s3ignore~" "Pictures/" "utils/" "dev/" ".oracle_jre_usage/" ".m2/" ".bash_defs.backup" "target/" "missfont.log" ".dmrc" ".emacs.d/" ".bash_history" ".bash_profile~" ".bashrc~" "project/" ".bash_defs~" ".scala_history" ".cache/" ".bash_defs" ".s3cfg" ".profile" ".sudo_as_admin_successful" ".wget-hsts" ".xsession-errors" "Public/" ".java/" ".ivy2/" "idea-IC-162.1628.40/" "Downloads/" ".macromedia/" ".jupyter/" ".appcfg_oauth2_tokens" ".gnupg/" "Documents/" ".Wolfram Research/" ".gconf/" ".bash_profile" ".dbus/" ".xsession-errors.old" "Music/" ".ipython/" ".lesshst" ".texmf-var/" ".cabal/" ".zinc/" ".tmux.conf" ".profile~" ".gsutil/")
+ ("/home/vlad/dev/Large-BS-Experiments/" (23279 20230 352762 922000) "../" ".gitignore" "Spectrum Plotting.ipynb" "remote_launcher.sh" "Per-Batch Size Plotting.ipynb" "README.md" "src/" "plot_all_experiments.sh" "requirements.txt" "lib/" "run.sh" "logs/" ".git/" "Multiple Trial BS Plotting.ipynb" "data/" "experiments/" "./")
 
- ("/home/vlad/dev/gocode/emacs-company/" (22489 25920 476341 918000) "../" "./" "company-go.el" "README.md")
+ ("/home/vlad/dev/Large-BS-Experiments/src/" (23279 20230 352762 922000) "../" "optimizers.py" "settings.py" "main.py" "__pycache__/" "plot_logs.py" "hessian_evaluator.py" "distributed.py" "./")
 
- ("/home/vlad/dev/gocode/" (22489 25386 631984 406000) "../" "autocompletefile.go" "vim/" ".gitignore" "package.go" "./" "server.go" "utils.go" "emacs-company/" "_testing/" "client.go" "debian/" "os_posix.go" "rpc.go" "formatters.go" "docs/" "config.go" "_gccgo/" "cursorcontext.go" "scope.go" "README.md" "decl.go" "package_text.go" "declcache.go" ".git/" "autocompletecontext.go" "emacs/" "ripper.go" "_goremote/" "LICENSE" "nvim/" "subl3/" "gocode.go" "package_bin.go" "os_windows.go")
+ ("/home/vlad/dev/Large-BS-Experiments/experiments/" (23279 15665 54243 421000) "baseline_bs_32.yaml" "baseline_bs_512_*" "baseline_bs_256.yaml" "../" "baseline_16384_32768.yaml" "baseline_128.yaml" "baseline_2048.yaml" ".#baseline_128.yaml" "c1_config.yaml" "baseline.yaml" "baseline_bs_512_to_2048.yaml" "baseline_bs_128.yaml" "baseline_1024.yaml" "baseline_512.yaml" "c1_2048.yaml" "c1_512.yaml" "old/" "baseline_4096_8192.yaml" "baseline_bs_64.yaml" "c1_1024.yaml" "c1_128.yaml" "c1_64.yaml" "baseline_max_bs.yaml" "baseline_256.yaml" "c1_256.yaml" "./")
 
- ("/home/vlad/dev/" (22489 25385 299981 190000) "../" "Cpp-Util/" "misc/" "Palantir-Hackathon-2014-07/" "COS513-Blog/" "./" "google-cloud-sdk/" "TensorFlow-Learn/" "gocode/" "django-testapp/" "README.txt~" "kudu/" "IPythonExtension/" "djangotoolbox/" "final-proj-cos-424/" "tensorflow/" "znn-release/" "gcloud-python-expenses-demo/" "IPython-2to3/" "appengine-django-skeleton/" "HDocsDB/" "scikit-learn/" "google_appengine/" "cppcheck/" "mineml/" "OCaml-Minesweeper/" "spark-sklearn/" "django/" "prml/" "django-dbindexer/" "COS513-Finance/" "vphacks/" "bhtsne/" "vlad17.github.io/" "Large-Circle/" "README.txt" "spark/" "ycmd/" "python-docs-samples/")
+ ("/home/vlad/dev/Large-BS-Experiments/lib/" (23279 15136 141182 986000) "../" "word_language_model/" "C1/" "wide_resnet/" "resnet.py" "__pycache__/" "lanczos/" "yparams.py" "./")
 
- ("/home/vlad/Desktop/PotentialIW/" (22483 4554 28073 650000) "../" "./" "StochasticEM-Neilsen.pdf" "ideas.txt" "MetricAdaboost.pdf" "SEMforMLE.pdf" "ideas.txt~")
+ ("/home/vlad/dev/mve/mve/" (23278 37847 866814 557000) "main_ray.py" "main_sac.py" "../" "log.py" "reporting/" "sac_learner.py" "context.py" "main_dynamics.py~" "persistable_dataset.py" "tfnode.py" "main_evaluate_qval.py" "experiment.py~" "plot.py" "tf_reporter.py" "main_random_policy.py" "sac/" "#main_dynamics.py#" "utils.py" "env_info.py" "ddpg_dynamics_plot.py" "main_evaluate_qval.py~" "learner.py" "ddpg/" "memory/" "dynamics.py~" "main_ddpg.py" "reporter.py" "ddpg_learner.py" "__init__.py" "flags.py" "random_policy.py" "dynamics_metrics.py" "__pycache__/" "agent.py" "rl_loop.py" "envs/" "main_ray.py~" "qvalues.py" "ddpg_dynamics_plot.py~" "#%2Amerge%2A#21578ZOo#" "sample.py" "dynamics.py" "experiment.py" "./")
 
- ("/home/vlad/dev/spark/" (22487 24033 144879 888000) "../" "R/" "scalastyle-config.xml" "streaming/" ".gitignore" "assembly/" "./" "core/" "appveyor.yml" "mllib/" "spark-warehouse/" "bin/" "mllib-local/" "sbin/" "work/" "data/" "docs/" "licenses/" "external/" "launcher/" "README.md" "examples/" ".travis.yml" "pom.xml" "dev/" "conf/" ".git/" "sql/" "target/" "scalastyle-on-compile.generated.xml" "project/" "~/" "common/" "LICENSE" "mesos/" ".gitattributes" "build/" "CONTRIBUTING.md" "repl/" "tools/" "python/" ".github/" "NOTICE" "yarn/" ".idea/" "lib/" "graphx/" "spark-parent_2.11.iml")
+ ("/home/vlad/Dropbox/" (23278 40569 171160 395000) "programming-tasks/" "recipes/" "../" "tfinstall.sh~" "financial/" "cal/" "currently-running.txt~" "housing/" "sac.yaml" "Get Started with Dropbox.pdf" ".dropbox" "medical/" "PotentialIW/" "mpc-experiments/" "old/" "#currently-running.txt#" ".dropbox.cache/" "currently-running.txt" "Wolfram Mathematica/" ".#currently-running.txt" "mathematica/" "tfinstall.sh" "career/" "references/" "hc.yaml" "./")
 
- ("/home/vlad/dev/spark/python/" (22487 23716 192536 716000) "../" ".gitignore" "./" "run-tests" "pyspark/" "docs/" "run-tests.py" "test_support/" "pylintrc" "lib/")
+ ("/home/vlad/Desktop/experiments/debug-ddpg/" (23278 36773 280105 910000) "bisect.pdf" "../" "4df371d1b1f8ca93918d7281408d767cc10cc3bf/" "hc-norm/" "bisect2.pdf" "potential.txt~" "mve5-debug.pdf" "potential.txt" "4df371d-no-div-h/" "./")
 
- ("/home/vlad/dev/spark/python/pyspark/" (22487 23554 80180 197000) "context.py" "../" "resultiterable.pyc" "shell.py" "streaming/" "__init__.pyc" "./" "ml/" "tests.pyc" "broadcast.py" "broadcast.pyc" "mllib/" "serializers.pyc" "files.py" "accumulators.pyc" "storagelevel.pyc" "heapq3.py" "status.pyc" "profiler.py" "files.pyc" "shuffle.pyc" "cloudpickle.pyc" "java_gateway.pyc" "statcounter.pyc" "daemon.py" "rddsampler.pyc" "join.py" "rdd.pyc" "storagelevel.py" "rdd.py" "cloudpickle.py" "serializers.py" "__init__.py" "rddsampler.py" "sql/" "traceback_utils.pyc" "statcounter.py" "status.py" "tests.py" "profiler.pyc" "context.pyc" "conf.py" "heapq3.pyc" "shuffle.py" "conf.pyc" "accumulators.py" "resultiterable.py" "traceback_utils.py" "worker.py" "join.pyc" "java_gateway.py")
+ ("/home/vlad/Desktop/experiments/" (23272 49717 225483 314000) "main/" "all-in-one/" "humanoid.yaml" "ddpg-train.yaml" "../" "hopper.yaml~" "ddpg-grid/" "debug-ddpg/" "ray-parse/" "ant.yaml" "humanoid.yaml~" "sac-train.yaml" "sac-params/" "swim-notdk/" "ddpg-bs64-grid/" "hopper.yaml" "debug-sac/" "tuned-ddpg_hc/" "swimmer.yaml" "mve-ddpg-train.yaml" "walker2d.yaml~" "walker2d.yaml" "sac-train.yaml~" "swimmer.yaml~" "#mve-ddpg-train.yaml#" "ddpg-train.yaml~" "mve-ddpg-train.yaml~" "walker-dyn/" "hc.yaml" "./")
 
- ("/home/vlad/dev/spark/python/pyspark/ml/" (22487 23155 272383 169000) "../" "recommendation.py" "param/" "./" "pipeline.py" "regression.py" "feature.py" "clustering.py" "linalg/" "__init__.py" "common.py" "tuning.py" "tests.py" "evaluation.py" "classification.py" "util.py" "base.py" "wrapper.py")
+ ("/home/vlad/" (23278 37412 376502 545000) ".m2/" ".compiz/" ".msmtprc" "CalibreLib/" ".s3ignore" "../" ".xsession-errors.old" ".bash_defs" ".sbt/" ".tmux.conf~" ".mozilla/" "project/" ".java/" "Music/" ".condarc" ".gnupg/" ".grip/" "virtualbox/" "examples.desktop" ".bashrc" ".dropbox-dist/" ".mailrc" "utils/" ".xsession-errors" ".gimp-2.8/" ".bashrc-old" ".debug/" ".bundle/" ".config/" "aws-instances/" ".appcfg_oauth2_tokens" ".s3ignore~" ".IdeaIC2016.2/" "recover-s3.sh~" ".docker/" ".tmux.conf" ".sudo_as_admin_successful" ".commacd.bash" ".aspell.en.pws~" ".profile~" ".bash_history" "Dropbox/" ".gitconfig" ".travis/" ".jupyter/" ".gnome/" ".bash_logout" ".cabal/" ".dmrc" ".rnd" ".bash_defs.backup" ".dropbox/" ".gsutil/" ".bash_profile" ".cache/" ".appcfg_nag" ".oracle_jre_usage/" "recover-s3.sh" ".npm/" ".subversion/" ".sparkpostapi" ".s3cfg" ".octaverc~" "Templates/" "aws-git-token" ".ipython/" "idea-IC-162.1628.40/" ".local/" ".conda/" ".boto" "scikit_learn_data/" ".wget-hsts" "ray-clusters/" "Documents/" ".octaverc" ".scala_history" "Desktop/" ".aws/" ".gphoto/" ".nv/" "missfont.log" ".ssh/" "ray_results/" ".sonicwall/" "mosek/" ".emacs.d/" ".nvidia-settings-rc" ".gem/" "dev/" ".s3cfg~" ".profile" ".bashrc-miniconda3.bak" ".python_history" "Pictures/" ".octave_hist" ".cbf/" ".aspell.en.prepl" ".keras/" "Public/" ".zinc/" ".Wolfram/" ".matlab/" ".Xauthority" ".gitmodules" ".ivy2/" ".lesshst" "target/" ".Mathematica/" ".anacron/" "bin/" ".texmf-var/" ".gconf/" ".bash_profile~" ".ghc/" "Mail/" ".bash_defs~" "Videos/" ".remmina/" "Downloads/" ".idea-build/" ".ICEauthority" ".aspell.en.pws" ".pylint.d/" ".pki/" ".mujoco/" ".bashrc~" "./")
 
- ("/home/vlad/Documents/" (22482 62648 185340 559000) "../" "Mathematica/" "Wolfram Mathematica/" "./" "Reading/" "TODO.txt" "Recipes/" "Old/" "Career/" "TODO.txt~" "Finance/" "Scholarships/" "F16-17/" "PrincetonFinAid/")
+ ("/home/vlad/dev/mve/mve/ddpg/" (23276 54694 787448 372000) "../" "ddpg.py" "running_mean.py" "#models.py#" "__init__.py" "LICENSE" "models.py" "__pycache__/" "./")
 
- ("/home/vlad/dev/Cpp-Util/src/util/" (22481 38934 156022 912000) "util.hpp~" "../" "atomic_optional.hpp" "util-test.cpp" "radix.hpp" "sort-test.cpp" "./" "timer.hpp" "optional.hpp~" "nullstream.h~" "timer.h~" "CTestTestfile.cmake" "Makefile" "radix.tpp~" "radix.hpp~" "optional.tpp" "timer.hpp~" "atomic_optional.tpp~" "uassert.cpp" "radix.tpp" "sort-test.cpp~" "optional.hpp" "cmake_install.cmake" "CMakeFiles/" "nullstream.hpp~" "atomic_optional.tpp" "uassert.hpp~" "uassert.cpp~" "atomic_optional.hpp~" "optional.tpp~" "nullstream.hpp" "CMakeLists.txt" "uassert.hpp" "util.hpp")
+ ("/home/vlad/dev/mve/cmpc/" (23276 54694 787448 372000) "../" "sac/" "ddpg/" "__pycache__/" "envs/" "./")
 
- ("/home/vlad/dev/Cpp-Util/" (22481 38651 396018 12000) "../" "release/" "repeat_runs.sh~" ".gitignore" "./" "CTestTestfile.cmake" "valgrind_check.sh~" "Makefile" "README.md~" "build-and-test.sh" "debug/" "repeat_runs.sh" "README.md" "cmake_install.cmake" ".git/" "Testing/" "valgrind_check.sh" "CMakeLists.txt" "build-and-test.sh~" "src/")
+ ("/home/vlad/dev/mve/" (23276 54694 791448 401000) "mve/" "../" ".gitignore" "mjkey.txt.gpg" "README.md" ".pylintrc" ".travis.yml" "cmpc/" "requirements.txt" "LICENSE" "scripts/" ".git/" "./")
 
- ("/home/vlad/dev/Cpp-Util/src/queues/" (22481 38303 708011 987000) "hazard_queue.hpp~" "../" "shared_queue.tpp~" "./" "queue.hpp" "hazard_queue.hpp" "CTestTestfile.cmake" "Makefile" "mpmc-test.cpp" "cmake_install.cmake" "CMakeFiles/" "hazard_queue.tpp" "shared_queue.hpp~" "hazard_queue.tpp~" "queue.hpp~" "shared_queue.hpp" "shared_queue.tpp" "CMakeLists.txt")
+ ("/home/vlad/dev/dbsr/scripts/" (23278 26267 631749 669000) "../" "lint.sh" "#diffusion-times.sh#" "#tests.sh#" "run.sh~" "plot-top-options.sh" "plot-top-options.sh~" "tests.sh" "qlearn-gw.sh" "diffusion-times.sh~" "diffusion-times.sh" "./")
 
- ("/home/vlad/dev/Cpp-Util/src/synchro/" (22481 38303 704011 987000) "cdl-test.cpp" "../" "rwlock.hpp~" "hazard.hpp" "rwlock.cpp~" "./" "ptw-test.cpp~" "rwlock.hpp" "countdown_latch.hpp~" "ptw-test.cpp" "CTestTestfile.cmake" "Makefile" "atomic_shared.hpp~" "cmake_install.cmake" "atomic_shared.tpp" "CMakeFiles/" "countdown_latch.hpp" "hazard-test.cpp" "atomic_shared.hpp" "rwlock.cpp" "atomic_shared.tpp~" "hazard.cpp~" "hazard.hpp~" "countdown_latch.cpp~" "countdown_latch.cpp" "hazard-test.cpp~" "hazard.tpp~" "CMakeLists.txt" "hazard.tpp" "cdl-test.cpp~" "hazard.cpp")
+ ("/home/vlad/dev/baselines/baselines/deepq/" (23278 26790 309791 303000) "build_graph.py" "../" "README.md" "__init__.py" "models.py" "simple.py" "replay_buffer.py" "experiments/" "./")
 
- ("/tmp/" (22481 38262 724011 277000) ".X0-lock" ".X11-unix/" "emacs-open-err" "preamble-aa1090.pch" "config-err-BlvzcW" "systemd-private-7cc9bfbc779945dcad22182251ecc7b2-rtkit-daemon.service-QJaLHo/" ".XIM-unix/" ".font-unix/" "emacs1000/" "systemd-private-7cc9bfbc779945dcad22182251ecc7b2-systemd-timesyncd.service-oWKq0h/" ".ICE-unix/" "systemd-private-7cc9bfbc779945dcad22182251ecc7b2-colord.service-GqyJ0S/" "unity_support_test.0" "preamble-547ff9.pch" ".Test-unix/" "preamble-0eff0b.pch" "../" "./")
+ ("/home/vlad/dev/baselines/baselines/deepq/experiments/" (23278 26775 100433 49000) "../" "atari/" "enjoy_mountaincar.py" "train_mountaincar.py" "enjoy_pong.py" "__init__.py" "enjoy_cartpole.py" "run_atari.py" "train_cartpole.py" "custom_cartpole.py" "./")
 
- ("/home/vlad/Desktop/" (22478 24181 727121 742000) "test.scala" "../" "test.scala~" "./" "backup-logs/" "s3syncs.txt" ".#interface" "MedGP/" "programming-tasks/" "PotentialIW/" "flip_bit" "rootkey.csv" "best_day_ever.png" "flip_bit.cpp~" "massart.pdf" "subcircuit_finding.pdf")
+ ("/home/vlad/dev/baselines/baselines/" (23043 29283 767791 924000) "../" "common/" "ddpg/" "__init__.py" "ppo1/" "deepq/" "acktr/" "bench/" "a2c/" "trpo_mpi/" "logger.py" "./")
 
- ("/home/vlad/bin/" (22477 41476 181727 770000) "../" "inet" "save-to-s3.sh" "./" "old-scripts/" "local-anacron.sh" "sshclient" "disabletouch" "open_txt_info" "disabletouch~" "save-to-s3.sh~" "texclean" "emerge-for-git~" "idea" "extract" "human_du" "emerge-for-git")
+ ("/home/vlad/dev/baselines/" (23043 29283 775791 977000) "../" ".gitignore" "README.md" "baselines/" "LICENSE" "setup.py" ".git/" "data/" "./")
 
- ("/home/vlad/dev/ycmd/cpp/ycm/" (22476 41531 246866 898000) "LetterNodeListMap.cpp" "../" "Result.cpp" "IdentifierUtils.cpp" "LetterNodeListMap.h" "./" "Utils.h" "IdentifierCompleter.cpp" "standard.h" "ReleaseGil.h" "CandidateRepository.h" "IdentifierCompleter.h" ".ycm_extra_conf.py" "IdentifierDatabase.h" "Result.h" "IdentifierUtils.h" "LetterNode.cpp" "Candidate.h" "exceptions.h" ".ycm_extra_conf.pyc" "Candidate.cpp" "CandidateRepository.cpp" "ycm_core.cpp" "Utils.cpp" "tests/" "PythonSupport.h" "CustomAssert.cpp" "CustomAssert.h" "CMakeLists.txt" "LetterNode.h" "versioning.cpp" "ClangCompleter/" "versioning.h" "PythonSupport.cpp" "DLLDefines.h" "IdentifierDatabase.cpp")
+ ("/home/vlad/dev/dbsr/dbsr/" (23278 26016 293303 536000) "discrete_agents/" "main/" "discrete_random_option_agent.py~" "../" "gridworld/" "atari/" "utils.py" "__init__.py" "__pycache__/" "agent.py~" "agent.py" "envs/" "./")
 
- ("/home/vlad/dev/Cpp-Util/src/" (21517 60842 0 0) "../" "synchro/" "./" "caches/" "queues/" "fibheap/" "util/")
+ ("/home/vlad/dev/dbsr/dbsr/gridworld/maps/" (23278 26194 499027 668000) "../" "plan4.txt" "plan6.txt" "plan8.txt" "plan2.txt" "10x10.txt" "plan9.txt" "plan5.txt" "plan1.txt" "plan0.txt" "plan3.txt" "imaze.txt" "plan7.txt" "badtea.txt~" "big4room.txt" "4room.txt" "badtea.txt" "./")
 
- ("/home/vlad/dev/ycmd/cpp/" (22298 7747 0 0) "../" "./" "BoostParts/" "ycm/" "CMakeLists.txt" "llvm/")
+ ("/home/vlad/dev/dbsr/dbsr/discrete_agents/" (23278 15101 106436 645000) "test_tea.py" "tea.py" "../" "random.py~" "__init__.py~" "utils.py" "eig.py" "__init__.py" "flycheck_eig.py" "__pycache__/" "test_tea.py~" "tea.py~" "eig.py~" "cluster.py" "./")
 
- ("/home/vlad/dev/ycmd/ycmd/" (22298 7854 0 0) "../" "default_settings.json" "responses.pyc" "__init__.pyc" "./" "identifier_utils.py" "completers/" "identifier_utils.pyc" "request_validation.py" "hmac_plugin.pyc" "server_state.py" "responses.py" "watchdog_plugin.pyc" "server_utils.py" "bottle_utils.py" "user_options_store.py" "server_utils.pyc" "__main__.py" "__init__.py" "watchdog_plugin.py" "utils.py" "bottle_utils.pyc" "extra_conf_store.pyc" "tests/" "handlers.py" "hmac_utils.pyc" "extra_conf_store.py" "hmac_utils.py" "handlers.pyc" "user_options_store.pyc" "request_validation.pyc" "hmac_plugin.py" "request_wrap.pyc" "request_wrap.py" "server_state.pyc" "utils.pyc")
+ ("/home/vlad/dev/dbsr/dbsr/main/" (23278 15066 409967 926000) "generate_clusters.py" "../" "plot_option.py~" "evaluate_gridworld.py~" "diffusion_time.py~" "run_exact.sh" "plot_gridworld_sr.py" "qlearn_gridworld.py" "generate_policy.py" "plot_policy.py" "exact_gridworld.py~" "exact.py~" "exact_gridworld.py" "plot_gridworld_sr.py~" "diffusion_time.py" "plot_value.py" "generate_policy.py~" "line_plot.py" "plot_policy.py~" "exact_diffusion_time.py" "./")
 
- ("/home/vlad/dev/ycmd/" (22298 7838 0 0) "../" "COPYING.txt" "test_requirements.txt" "third_party/" "tox.ini" ".gitignore" "run_tests.py" "./" "cpp/" "appveyor.yml" "vagrant_bootstrap.sh" "ycm_core.so" "Vagrantfile" "style_format.sh" "TESTS.md" ".gitmodules" "README.md" "examples/" ".travis.yml" ".git/" "ci/" "CORE_VERSION" "check_core_version.py" "DEV_SETUP.md" ".coveragerc" "CODE_OF_CONDUCT.md" "CONTRIBUTING.md" "build.py" "libclang-3.8.so.1" "ycmd/" "clang_includes/" "update_boost.sh")
+ ("/home/vlad/Downloads/" (23278 10771 664848 656000) "lanczos-err.pdf" "../" "Eigenoptions_and_SR.pdf" "LectureTWENTYSIX-210B-2018.pdf" "neural_networks_tutorial.py" "gk.pdf" "neural_networks_tutorial.py~" "eigenoptions-plan0.zip" "demo_gridspec06.py" "cuda-repo-ubuntu1604_9.1.85-1_amd64.deb" "TuneClient.ipynb" "CV - Yunfu Deng.pdf" "demo_gridspec06.py~" "IMG_0970.jpg" "cv_ChenJunming - Junming Chen.pdf" "LectureTWENTYFIVE-210B-2018.pdf" "Tan_Andrew_Resume_research - ANDREW TAN.pdf" "general-ineff.pdf" "12975-57627-1-PB.pdf" "Screenshot from 2018-05-05 12-27-15.png" "HW3_soln.pdf" "HW2_soln.pdf" "AbbeelNg_lfommfc_NIPS2004.ps" "Screenshot from 2018-04-16 19-41-14.png" "out0.pdf" "run.sh" "HW1_soln.pdf" "ICML___learned_dynamics_for_model_free_control (1).pdf" "Resume - Zipeng Qin.pdf" "grading.JPG" "Screenshot from 2018-05-05 11-00-21.png" "resume (5) - Nikita Vemuri.pdf" "margins.ps" "ICML___learned_dynamics_for_model_free_control.pdf" "bernie_wang_resume - Bernie Wang.pdf" "HW4_soln.pdf" "./")
 
- ("/home/vlad/Documents/Old/" (22328 51544 0 0) "../" "NKS/" "./" "Princeton/" "IPyNotebooks/" "Old_Code/" "Orders/" "Summer_13/" "School_Gr12/" "OldNutritionData/" "School_Gr11/")
+ ("/home/vlad/dev/dbsr/dbsr/gridworld/" (23276 56753 351791 143000) "maps/" "../" "__init__.py~" "__init__.py" "gridworld.py~" "__pycache__/" "gridworld.py" "env_wrappers.py" "env_utils.py" "#__init__.py#" "./")
 
- ("/home/vlad/Documents/Career/" (22466 4882 277059 73000) "../" "Voleon/" "Resume16-3.aux" "OldResumes/" "CoverLetter_generic.odt" "./" "HARKER_UNWEIGHTED.nb" "Resume16-3.synctex.gz" "JS-16/" "Databricks/" "Transcripts/" "OldApps/" "SAT.pdf" "Princeton_Official_3869287.pdf" "Google-15/" "Scholarship/" "Resume16-3.out" "Resume16-3.tex" "vladimir_feinberg-lo.JPG" "Resume16-3.pdf" "Resume16-3.log" "resume.cls" "TwoSigma/" "vladimir_feinberg.JPG")
+ ("/home/vlad/dev/dbsr/" (23276 56753 355791 172000) "dbsr/" ".gitignore" "richard/" "README.md" ".pylintrc" ".travis.yml" "LICENSE" "deepsr.egg-info/" "scripts/" "setup.py" ".git/" "../" "./")
 
- ("/home/vlad/Downloads/databricks/spark-1/mllib/src/test/scala/org/apache/spark/ml/" (22465 62507 507738 724000) "../" "regression/" "param/" "./" "recommendation/" "tuning/" "feature/" "PipelineSuite.scala" "ann/" "optim/" "linalg/" "evaluation/" "classification/" "clustering/" "util/" "tree/" "source/" "python/" "attribute/" "ModelUpdaterIntegrationSuite.scala")
+ ("/home/vlad/dev/" (23277 2364 415528 380000) "dbsr/" "mve/" "../" "rllab/" "ee227c.github.io/" "np-learn/" "aws-magic/" "sac/" "baselines/" "tmp.py" "WorldModels/" "tmp.py~" "tutorials/" "ycmd/" "gym2/" "Large-BS-Experiments/" "gym/" "misc/" "runlmc/" "README.txt" "vlad17.github.io/" "mujoco-py/" "learning-to-deep-learn/" "anaconda3/" "ipython-latex/" "gym-mj15/" "experiments/" "./")
 
- ("/home/vlad/Downloads/databricks/spark-1/mllib/src/test/resources/" (22455 40561 382545 935000) "../" "./" "log4j.properties")
+ ("/home/vlad/Desktop/" (23277 2871 875386 426000) "rootkey.csv" "notes-reading.txt" "../" "backup-logs/" "tf_random_speed.py~" "curr-running~" "facebook-vladfeinberg.zip" ".ipynb_checkpoints/" "tf_random_speed.py" "workouts/" "rise-setup.txt~" ".#rise-setup.txt" "product-ideas.txt~" "runstats.py" "#rise-setup.txt#" "distribution-shift.txt~" "s3syncs.txt" "rawls-no.txt" "rise-setup.txt" "experiments/" "./")
 
- ("/home/vlad/Downloads/databricks/spark-1/mllib/src/test/scala/org/apache/spark/" (22455 40561 386546 207000) "../" "./" "ml/" "mllib/")
+ ("/home/vlad/dev/mve/scripts/" (23249 9403 113294 900000) "../" "ray-config-template.yaml" "teardown-ray-aws.sh" "lint.sh" "#tests.sh#" "ray-config-template.yaml~" "fake-display.sh" "install-mujoco.sh" "launch-ray-aws.sh" "tests.sh" "ubuntu-install.sh" "./")
 
- ("/home/vlad/Downloads/databricks/spark-1/mllib/src/test/scala/org/apache/" (22455 40561 382545 935000) "../" "./" "spark/")
+ ("/home/vlad/ray-clusters/" (23249 6231 970870 629000) "icml.yaml" "../" "icml.ssh" "icml.scp" "icml.tunnel" "./")
 
- ("/home/vlad/Downloads/databricks/spark-1/mllib/src/test/scala/org/" (22455 40561 382545 935000) "../" "./" "apache/")
+ ("/tmp/icml/" (23249 5465 826856 566000) "../" "early-mve3-walker2d.yaml" "early-mve3-swimmer.yaml" "mve3-hc.yaml" "mve3-walker2d.yaml" "early-mve3-hc.yaml" "swimmer.yaml" "mve3-swimmer.yaml" "walker2d.yaml" "hc.yaml" "./")
 
- ("/home/vlad/Downloads/databricks/spark-1/mllib/src/test/scala/" (22455 40561 382545 935000) "../" "./" "org/")
+ ("/home/vlad/Desktop/experiments/main/sac/" (23245 28296 923848 760000) "humanoid.yaml" "../" "ant.yaml" "hopper.yaml" "swimmer.yaml" "walker2d.yaml" "hc.yaml" "./")
 
- ("/home/vlad/Downloads/databricks/spark-1/mllib/src/test/" (22455 40561 382545 935000) "../" "./" "resources/" "scala/" "java/")
+ ("/home/vlad/Desktop/experiments/main/" (23248 11456 594509 148000) "mve3-ddpg/" "icml/" "../" "sac/" "early-mve3-ddpg/" "ddpg/" "mve3-sac/" "./")
 
- ("/home/vlad/Desktop/programming-tasks/" (22449 12023 212520 364000) "../" "todo.txt" "./" "VoronoiFast/" "todo.txt~" "Voronoi_Polygons/" "aflag_sort_todo.java" "hsk/")
+ ("/home/vlad/dev/mve/mve/envs/" (23247 65010 402365 879000) "../" "serial_gym_venv.py" "fully_observable_half_cheetah.py" "fully_observable_humanoid.py" "numpy_reward.py" "rescale.py~" "fully_observable_swimmer.py" "fully_observable_walker2d.py" "fully_observable_ant.py" "fully_observable_pusher.py" "__init__.py" "render_free_mjc.py" "vector_env.py" "rescale.py" "__pycache__/" "fully_observable.py" "fully_observable_hopper.py" "acrobot.py" "parallel_gym_venv.py" "./")
 
- ("/home/vlad/Downloads/databricks/spark-1/mllib/src/main/scala/org/apache/spark/ml/" (22455 40561 370545 120000) "../" "regression/" "r/" "param/" "./" "Transformer.scala" "recommendation/" "tuning/" "package.scala" "feature/" "Estimator.scala" "Predictor.scala" "ann/" "optim/" "linalg/" "evaluation/" "classification/" "Model.scala" "clustering/" "Pipeline.scala" "util/" "package-info.java" "tree/" "source/" "python/" "attribute/")
+ ("/home/vlad/Dropbox/cal/courses-year1/stat210b/hw5/" (23237 34087 648311 131000) "defs.tex" "sols5.tex~" "../" ".#sols5.bib" "sols5.bbl" "sols5.tex" "sols5.out" "sols5.pdf" "hw5.pdf" "sols5.blg" "sols5.bcf" "sols5.aux" "sols5.log" "sols5.run.xml" "sols5.bib" "defs.tex~" "./")
 
- ("/home/vlad/Downloads/databricks/spark-1/mllib/src/main/scala/org/apache/spark/" (22455 40561 370545 120000) "../" "./" "ml/" "mllib/")
+ ("/home/vlad/Dropbox/cal/courses-year1/stat210b/hw1/" (23179 43969 617761 789000) "defs.tex" "../" "sols1.log" "sols1.tex" "sols1.aux" "hw1.pdf" "sols1.out" "sols1.tex~" "sols1.pdf" "defs.tex~" "./")
 
- ("/home/vlad/Downloads/databricks/spark-1/mllib/src/main/scala/org/apache/" (22455 40561 362544 575000) "../" "./" "spark/")
+ ("/home/vlad/dev/ee227c.github.io/" (23236 7101 32450 847000) "index.md" "../" ".gitignore" "notes/" "psets/" "code/" "README.md" "assets/" "favicon.ico" "_layouts/" "_sass/" "_config.yml" "css/" "_includes/" ".git/" "./")
 
- ("/home/vlad/Downloads/databricks/spark-1/mllib/src/main/scala/org/" (22455 40561 362544 575000) "../" "./" "apache/")
+ ("/home/vlad/dev/ee227c.github.io/notes/" (23236 7101 44450 905000) "macros.sty" "ee227c-lecture9.pdf" "ee227c-lecture11.pdf" "../" ".gitignore" "max_main.pdf" "ee227c-lecture6.pdf" "lecture10.tex" "figures/" "lecture6.tex" "lecture4.tex" "lecture1.ipynb" "footer.tex" "ee227c-lecture4.pdf" "ee227c-notes.pdf" "abstract.tex" "README.md" "ee227c-lecture10.pdf" "ee227c-lecture16.pdf" "ee227c-lecture14.pdf" "lecture9.log" "lecture13.tex" "lecture8.tex" "ee227c-lecture1.pdf" "ee227c-lecture3.pdf" "title.tex" "lecture9.tex" "lecture1.tex" "lecture16.tex" "lecture5.tex" "ee227c-lecture12.pdf" "lecture11.tex" "lecture14.tex" "contributors.tex" "max_main.tex" "ee227c-lecture2.pdf" "ee227c-lecture15.pdf" "ee227c-lecture8.pdf" "nag.py~" "instructions.pdf" "lecture6.ipynb" "notes.bib" "lecture15.tex" "lecture2.tex" "lecture3.tex" "ee227c-lecture13.pdf" "lecture12.tex" "instructions.tex" "header.tex" "compile.sh" "lecture7.tex" "main.tex" "ee227c-lecture5.pdf" "ee227c-lecture7.pdf" "./")
 
- ("/home/vlad/Downloads/databricks/spark-1/mllib/src/main/scala/" (22455 40561 362544 575000) "../" "./" "org/")
+ ("/home/vlad/Dropbox/cal/courses-year1/stat210b/hw4/" (23217 25031 839070 254000) "defs.tex" "../" "sols4.tex~" "sols4.out" "sols4.aux" "hw4.pdf" "sols4.pdf" "sols4.log" "sols4.tex" "defs.tex~" "./")
 
- ("/home/vlad/Downloads/databricks/spark-1/mllib/src/main/resources/" (22455 40561 362544 575000) "../" "META-INF/" "./" "org/")
+ ("/home/vlad/dev/mve/mve/memory/" (23234 32161 243859 208000) "../" "__init__.py~" "assignable_statistic.py" "__init__.py" "normalization.py~" "normalization.py" "ringbuffer.py" "dataset.py~" "__pycache__/" "dataset.py" "assignable_statistic.py~" "./")
 
- ("/home/vlad/Downloads/databricks/spark-1/mllib/src/main/" (22455 40561 362544 575000) "../" "./" "resources/" "scala/")
+ ("/home/vlad/Dropbox/PotentialIW/" (23188 26970 2120 393000) "neal-hinton.pdf" "../" "ideas.txt" "product-ideas.txt" "#ideas.txt#" "SEMforMLE.pdf" "StochasticEM-Neilsen.pdf" "ideas.txt~" "MetricAdaboost.pdf" "./")
 
- ("/home/vlad/Downloads/databricks/spark-1/mllib/src/" (22455 40561 378545 663000) "../" "main/" "./" "test/")
+ ("/home/vlad/Dropbox/cal/courses-year1/stat210b/" (23233 16 612078 861000) "../" "hw4/" "hw3/" "notes/" "office-hours.txt" "hw5/" "syllabus.pdf" "hw1/" "hw2/" "./")
 
- ("/home/vlad/Downloads/databricks/spark-1/mllib/" (22455 40578 485122 745000) "../" "./" "pom.xml" "src/")
+ ("/home/vlad/dev/mve/mve/sac/" (23233 25835 227948 573000) "../" "value.py" "stochastic_policy.py" "__pycache__/" "sac.py" "./")
 
- ("/home/vlad/Downloads/databricks/spark-1/" (22455 40578 493117 738000) "../" "R/" "scalastyle-config.xml" "streaming/" ".gitignore" "assembly/" "./" "core/" "mllib/" "bin/" "mllib-local/" "sbin/" "data/" "docs/" "licenses/" "external/" "launcher/" "README.md" "examples/" "pom.xml" "dev/" "conf/" ".git/" "sql/" "project/" "common/" "LICENSE" ".gitattributes" "build/" "CONTRIBUTING.md" "repl/" "tools/" "python/" ".github/" "NOTICE" "yarn/" "graphx/")
+ ("/home/vlad/dev/cmpc/cmpc/" (23223 4972 269228 675000) "cloning_learner.py" "main_ray.py" "qvalues.py~" "main_sac.py" "tfnode.py~" "../" "ddpg_learner.py~" "log.py" "mulit_venv.py~" "sac_learner.py~" "sac_learner.py" "main_ddpg_REMOTE_30446.py~" "zero_learner.py" "main_sac.py~" "context.py" "persistable_dataset.py" "gym_fully_observable_ant.py~" "tfnode.py" "main_evaluate_qval.py" "random_shooter_flags.py~" "optimizer.py" "mujoco_venv.py~" "__init__.py~" "plot.py" "tf_reporter.py" "main_random_policy.py" "tf_reporter.py~" "sac/" "random_shooter_with_true_dynamics.py" "utils.py" "env_info.py" "main_evaluate_qval.py~" "learner.py" "ddpg/" "main_ddpg.py" "reporter.py" "ddpg_learner.py" "main_cmpc.py" "context.py~" "__init__.py" "flags.py" "main_testenv.py~" "gpu_dataset.py~" "reporter.py~" "sample.py~" "dataset.py~" "random_policy.py" "dynamics_metrics.py" "plot_dynamics.py" "gym_fully_observable_half_cheetah.py~" "__pycache__/" "dataset.py" "utils.py~" "true_dynamics.py~" "colocation.py" "envs/" "main_ray.py~" "main_qval_distrib.py~" "qvalues.py" "env_info.py~" "#main_testenv.py#" "controller.py" "random_shooter.py" "random_shooter_flags.py" "mpc_flags.py" "colocation_flags.py" "sample.py" "main_ddpg.py~" "dynamics.py" "tf_logger.py~" "experiment.py" "venv.py~" "./")
 
- ("/home/vlad/Downloads/databricks/" (22455 40411 814754 471000) "../" "./" "spark-1/")
+ ("/home/vlad/dev/cmpc/" (23221 52606 139831 352000) "params.yaml~" "../" "poster/" ".gitignore" "plt.py~" "testtf.py~" "mjkey.txt.gpg" "README.md" ".pylintrc" ".travis.yml" "cmpc/" "report/" "example.yaml~" "requirements.txt" "LICENSE" "testr.py~" "scripts/" "test.yaml~" "plt.txt~" ".git/" ".pylintrc~" "data/" "./")
 
- ("/home/vlad/dev/vlad17.github.io/category/" (22421 26214 89851 621000) "../" "paper-series.md~" "paper-series.md" "online-learning.md" "pram.md" "./" "graph-processing.md" "pram.md~" "distributed-systems.md~" "description.md~" "distributed-systems.md" "machine-learning.md~" "parallel.md~" "parallel.md" "categories.md~" "paper-blog.md~" "scalability.md" "new-series.md" "machine-learning.md" "blog.md~")
+ ("/home/vlad/dev/cmpc/scripts/" (23220 30413 246530 201000) "tests.sh~" "../" "ray-config-template.yaml" "teardown-ray-aws.sh" "lint.sh" "ray-config-template.yaml~" "install-mujoco.sh~" "fake-display.sh" "install-mujoco.sh" "launch-ray-aws.sh~" "launch-ray-aws.sh" "tests.sh" "teardown-ray-aws.sh~" "generate-ray-config.sh~" "ubuntu-install.sh" "mkparams.py" "./")
 
- ("/home/vlad/dev/HDocsDB/" (22449 11083 735149 989000) "../" ".gitignore" "HDocs.cabal~" "testsuite/" "./" "README.md~" "HDocsDB.cabal~" "README.md" "ParseLookup.cabal~" ".git/" "dist/" "src/" "HDocsDB.cabal")
+ ("/home/vlad/dev/cmpc/cmpc/sac/" (23220 30413 246530 201000) "value.py~" "../" "value.py" "stochastic_policy.py" "sac.py~" "sac2.py~" "__pycache__/" "stochastic_policy.py~" "sac.py" "mlp.py~" "probabilistic_policy.py~" "./")
 
- ("/home/vlad/dev/HDocsDB/src/HDocsDB/" (22004 36749 0 0) "../" "./" "HDocDB.hs" "PersistHash.hs~" "HDocDB.hs~" "PersistHash.hs")
+ ("/home/vlad/dev/deep-sr/" (23220 34253 399630 351000) "../" ".gitignore" "README.md~" "README.md" "LICENSE" ".git/" "./")
 
- ("/home/vlad/dev/HDocsDB/src/" (22449 7753 236593 204000) "../" "./" "TestUtils.hs" "TestUtils.hs~" "Main.hs~" "Utils.hs~" "HDocsDB/" "HelloWorld.hs~" "Utils.hs" "LargeCircle.hs~")
+ ("/home/vlad/dev/cmpc/cmpc/ddpg/" (23219 13712 248502 160000) "../" "models.py~" "running_mean.py~" "ddpg.py" "running_mean.py" "__init__.py" "LICENSE" "models.py" "ddpg.py~" "__pycache__/" "memory.py" "./")
 
- ("/home/vlad/dev/HDocsDB/dist/build/" (22449 10964 75786 27000) "../" "Utils.o" "./" "Utils.dyn_hi" "HSHDocsDB-0.1.0.0.o" "PersistHashTest/" "FoodEx/" "libHSHDocsDB-0.1.0.0.a" "libHSHDocsDB-0.1.0.0-LWT8XvOBlGi1zAvaUKQYce.a" "libHSHDocsDB-0.1.0.0-LWT8XvOBlGi1zAvaUKQYce-ghc7.10.3.so" "Utils.dyn_o" "ParserTest/" "HDocsDBTest/" "TestUtils.dyn_o" "HDocsDB/" "FlagsTest/" "TestUtils.o" "autogen/" "TestUtils.dyn_hi" "Utils.hi" "TestUtils.hi")
+ ("/home/vlad/Dropbox/cal/courses-year1/ee227c/midterm/" (23218 50024 526048 37000) "defs.tex" "midterm-sols.log" "../" "q3.py~" "midterm-sols.out" "sols2.out" "midterm-sols.pdf" "sols7.tex~" "sols2.tex~" "midterm.pdf" "midterm-sols.aux" "midterm-sols.tex" "sols2.log" "sols2.aux" "Untitled-1.nb" "midterm-sols.tex~" "defs.tex~" "./")
 
- ("/home/vlad/dev/HDocsDB/dist/" (22449 10962 963793 494000) "../" "setup/" "./" "package.conf.inplace/" "hpc/" "test/" "setup-config" "build/")
+ ("/home/vlad/Dropbox/cal/courses-year1/ee227c/" (23217 35963 473884 566000) "../" "hw1/" "hw2/" "midterm/" "./")
 
- ("/home/vlad/fresh-start/bin/" (22449 10560 117197 2000) "../" "inet" "./" "local-anacron.sh" "sshclient" "open_txt_info" "inet~" "extract" "human_du")
+ ("/home/vlad/Dropbox/cal/courses-year1/ee227c/hw2/" (23211 25797 942468 572000) "defs.tex" "../" "q3.py~" "q3.py" "sols2.out" "sols7.tex~" "sols2.tex~" "1.pdf" "0.1.pdf" "sols2.tex" "0.5.pdf" "sols2.log" "0.05.pdf" "sols2.pdf" "sols2.aux" "0.2.pdf" "_minted-sols2/" "HomeworkFOUR-210b-2018.pdf" "problems2.pdf" "defs.tex~" "./")
 
- ("/home/vlad/fresh-start/" (22430 25333 650384 681000) "../" ".bash_logout" "tarself.sh" "./" "bin/" ".bashrc" "install.sh" "install-typical-programs.sh" ".emacs.d/" ".bashrc~" ".bash_defs~" ".bash_defs" "uninstall-stupid-ubuntu-stuff.sh" ".bash_profile" "fresh-start.tgz" ".tmux.conf")
+ ("/home/vlad/Dropbox/old/" (23032 53617 10838 867000) "../" "old-scripts/" "Orders/" "Summer_13/" "School_Gr12/" "Old_Code/" "NKS/" "Princeton/" "OldNutritionData/" "School_Gr11/" "IPyNotebooks/" "./")
 
- ("/home/vlad/Desktop/cos_todo/" (22355 20584 667816 636000) "../" "./" "VoronoiFast/" "Voronoi_Polygons/" "aflag_sort_todo.java" "Synchro/" "hsk/")
+ ("/home/vlad/Documents/" (23056 42305 52900 501000) "../" "TODO.txt" "TODO.txt~" "Wolfram Mathematica/" "./")
 
- ("/home/vlad/dev/vlad17.github.io/_posts/" (22421 26345 511606 868000) "../" "./" "2016-07-09-ligra.md" "2016-07-17-ad-click-prediction.md~" "2016-07-09-introduction-to-the-paper-blog.md~" "2016-07-17-ad-click-prediction.md" "2016-07-09-ligra.md~" "2016-07-09-introduction-to-the-paper-blog.md")
+ ("/home/" (23026 32101 973644 915000) "../" "vlad/" "./")
 
- ("/home/vlad/dev/vlad17.github.io/" (22421 27324 315402 73000) "category/" "../" ".gitignore" "education.md" "_posts/" "./" "static/" "Gemfile~" "google95209c36d835c455.html" "_includes/" "categories.md" "_sass/" "404.html" "README.md" "index.html" "categories.md~" "_layouts/" "feed.xml" "Gemfile" "_site/" ".git/" "work.md~" "_config.yml" "assets/" "projects.md" "_data/" "LICENSE" "Gemfile.lock" "work.md" "about.md" "education.md~")
+ ("/home/vlad/dev/gym2/gym2/" (23198 57032 888679 593000) "vector_mjc_env.py~" "version.py" "../" "serial_gym_venv.py" "cy_fully_observable_half_cheetah.pyx" "version.py~" "parallel_gym_venv.py~" "fully_observable_half_cheetah.py~" "cythonized.c" "builder.py" "fully_observable_half_cheetah.py" "__init__.py~" "analogues/" "cythonized.pyx" "fully_observable_ant.py" "vector_env.py~" "assets/" "__init__.py" "fully_observable_ant.py~" "mujoco/" "vector_env.py" "cy_fully_observable_ant.pyx" "generated/" "__pycache__/" "builder.py~" "mujoco_env.py~" "vector_mjc_env.py" "mujoco_env.py" "serial_gym_venv.py~" "cy_fully_observable_ant.pyx~" "fully_observable.py" "cythonized.pyx~" "fully_observable.py~" "cy_fully_observable_half_cheetah.pyx~" "own_viewer.py~" "parallel_gym_venv.py" "cy_fully_observervable_half_cheetah.pyx~" "./")
 
- ("/home/vlad/dev/vlad17.github.io/_layouts/" (22413 49314 589310 852000) "../" "./" "categories-home.html" "posts_by_category.html" "categories-home.html~" "page.html" "default.html" "post.html" "project.html")
+ ("/home/vlad/Dropbox/cal/courses-year1/stat210b/hw3/" (23201 34292 271287 351000) "defs.tex" "../" "sols3.tex~" "sols3.log" "sols3.tex" "sols3.pdf" "hw3.pdf" "sols3.out" "sols3.aux" "defs.tex~" "./")
 
- ("/home/vlad/dev/vlad17.github.io/static/css/" (22413 49260 929800 554000) "../" "thickbox.css" "./" "projects.scss" "syntax.css" "main.css" "bootstrap-material-design.min.css" "bootstrap.min.css")
+ ("/home/vlad/dev/rllab/rllab/envs/mujoco/" (23205 29805 209093 344000) "../" "simple_humanoid_env.py" "hill/" "walker2d_env.py" "inverted_double_pendulum_env.py" "gather/" "ant_env.py" "__init__.py" "maze/" "humanoid_env.py" "swimmer_env.py" "mujoco_env.py" "hopper_env.py" "point_env.py" "half_cheetah_env.py" "swimmer3d_env.py" "./")
 
- ("/home/vlad/dev/vlad17.github.io/assets/" (22413 49368 193273 803000) "../" "test-page-image-1.jpg" "./" "2016-07-17-ad-click-prediction/" "ftrlprox-update.png" "default-open-graph.png" "ligra/")
+ ("/home/vlad/dev/cmpc/cmpc/envs/" (23207 24131 716508 73000) "../" "serial_gym_venv.py" "parallel_gym_venv.py~" "fully_observable_half_cheetah.py~" "gym_fully_observable_ant.py~" "fully_observable_half_cheetah.py" "fully_observable_humanoid.py" "numpy_reward.py" "__init__.py~" "acrobot.py~" "fully_observable_swimmer.py" "fully_observable_humanoid.py~" "fully_observable_walker2d.py" "fully_observable_ant.py" "fully_observable_pusher.py" "fully_observable_walker2d.py~" "__init__.py" "fully_observable_ant.py~" "render_free_mjc.py" "vector_env.py" "gym_fully_observable_half_cheetah.py~" "__pycache__/" "numpy_reward.py~" "fully_observable.py" "fully_observable.py~" "fully_observable_hopper.py" "acrobot.py" "parallel_gym_venv.py" "#__init__.py#" "./")
 
- ("/home/vlad/dev/vlad17.github.io/_data/" (22390 37789 0 0) "../" "./" "projects.json")
+ ("/home/vlad/dev/sac/sac/value_functions/" (23197 55798 775910 261000) "../" "value_function.py" "__init__.py" "./")
 
- ("/home/vlad/dev/vlad17.github.io/_sass/" (22413 49159 795661 313000) "../" "./" "_base.scss" "_syntax-highlighting.scss" "_layout.scss")
+ ("/home/vlad/dev/rllab/rllab/envs/" (23195 22694 837143 563000) "../" "proxy_env.py" "gym_env.py" "occlusion_env.py" "grid_world_env.py" "box2d/" "sliding_mem_env.py" "base.py" "__init__.py" "mujoco/" "env_spec.py" "normalized_env.py" "noisy_env.py" "identification_env.py" "./")
 
- ("/home/vlad/dev/vlad17.github.io/static/" (22390 37789 0 0) "../" "./" "js/" "projects/" "img/" "css/")
+ ("/home/vlad/Desktop/exp/" (23194 64007 462424 810000) "../" "hc-v.pdf" "hc4-tau0.01.pdf" "hc4-tau1.0.pdf" "plot.py" "data/" "plot.py~" "./")
 
- ("/home/vlad/dev/vlad17.github.io/_includes/" (22390 37789 0 0) "../" "./" "social_links.html" "navigation.html" "project_tags.html" "sidemenu.html" "share-page.html" "analytics.html")
+ ("/home/vlad/dev/sac/sac/misc/" (23194 10660 17073 583000) "../" "mlp.py" "replay_pool.py" "utils.py" "plotter.py" "__init__.py" "instrument.py" "tf_utils.py" "sampler.py" "./")
 
- ("/home/vlad/dev/spark/python/pyspark/sql/" (22378 672 261866 539000) "context.py" "../" "functions.pyc" "group.pyc" "group.py" "__init__.pyc" "column.pyc" "./" "tests.pyc" "streaming.py" "functions.py" "readwriter.py" "column.py" "dataframe.py" "types.py" "window.py" "window.pyc" "__init__.py" "session.py" "utils.py" "readwriter.pyc" "tests.py" "context.pyc" "conf.py" "session.pyc" "conf.pyc" "catalog.pyc" "dataframe.pyc" "types.pyc" "catalog.py" "utils.pyc")
+ ("/home/vlad/dev/sac/examples/" (23194 61131 981895 130000) "../" "mujoco_all_sac.py" "multigoal_sac.py" "./")
 
- ("/home/vlad/dev/tensorflow/tensorflow/contrib/learn/python/learn/estimators/" (22378 8108 57498 886000) "../" "autoencoder.py" "rnn_test.py" "sdca_optimizer.py" "classifier_test.py" "dnn_linear_combined_test.py" "./" "classifier.py" "dnn.py" "dnn_test.py" "linear_test.py" "gmm.py" "dnn_linear_combined.py" "_sklearn.py" "run_config.py" "__init__.py" "linear.py" "rnn.py" "estimator.py" "logistic_regressor_test.py" "logistic_regressor.py" "estimator_test.py" "base.py" "tensor_signature_test.py" "#gmm.py#" "tensor_signature.py")
+ ("/home/vlad/dev/sac/sac/replay_buffers/" (23194 61065 665633 753000) "../" "simple_replay_buffer.py" "__init__.py" "replay_buffer.py" "./")
 
- ("/home/vlad/dev/vphacks/" (22403 906 403357 867000) "../" "webserver/" ".gitignore" "./" "README.md~" "adminpass" "README.md" "env/" ".git/" "requirements.txt" "LICENSE")
+ ("/home/vlad/dev/rllab/sandbox/rocky/tf/policies/" (23194 61179 822060 714000) "../" "gaussian_gru_policy.py" "base.py" "__init__.py" "uniform_control_policy.py" "categorical_mlp_policy.py" "categorical_conv_policy.py" "deterministic_mlp_policy.py" "categorical_lstm_policy.py" "categorical_gru_policy.py" "gaussian_lstm_policy.py" "gaussian_mlp_policy.py" "./")
 
- ("/home/vlad/dev/spark-sklearn/python/spark_sklearn/" (22376 4359 22445 797000) "../" "udt.py" "grid_search.py" "./" "converter_test.py" "converter.py" "__init__.py" "tests/" "util.py" "test_utils.py")
+ ("/home/vlad/dev/sac/sac/policies/" (23194 64208 396212 544000) "nn_policy.py" "../" "__init__.py" "gmm.py" "./")
 
- ("/home/vlad/dev/spark-sklearn/python/" (22376 2637 580856 497000) "../" "run-doc.sh" "./" "spark_sklearn/" "run-tests.sh" "doc/" "README.md" "setup.cfg" "spark-package-deps.txt" "doc_gen/" "requirements.txt" "MANIFEST.in" "setup.py")
+ ("/home/vlad/dev/sac/sac/distributions/" (23194 61164 386009 130000) "../" "__init__.py" "gmm.py" "./")
 
- ("/home/vlad/dev/spark-sklearn/" (22376 2637 580856 497000) "../" ".gitignore" "./" "bin/" "README.md" ".travis.yml" ".git/" "project/" "LICENSE" "build.sbt" "build/" "python/")
+ ("/home/vlad/dev/sac/sac/algos/" (23194 64458 7458 926000) "../" "base.py" "__init__.py" "sac.py" "./")
 
- ("/home/vlad/Downloads/spark-1.6.2-rc2/python/pyspark/sql/" (22375 2381 0 0) "context.py" "../" "group.py" "./" "functions.py" "readwriter.py" "column.py" "dataframe.py" "types.py" "window.py" "__init__.py" "utils.py" "tests.py")
+ ("/home/vlad/dev/rllab/sandbox/rocky/tf/" (23194 58543 620165 898000) "../" "launchers/" "policies/" "optimizers/" "samplers/" "core/" "distributions/" "__init__.py" "spaces/" "regressors/" "misc/" "q_functions/" "envs/" "algos/" "./")
 
- ("/home/vlad/Downloads/spark-1.6.2-rc2/python/pyspark/" (22375 2381 0 0) "context.py" "../" "shell.py" "streaming/" "./" "ml/" "broadcast.py" "mllib/" "files.py" "heapq3.py" "profiler.py" "daemon.py" "join.py" "storagelevel.py" "rdd.py" "cloudpickle.py" "serializers.py" "__init__.py" "rddsampler.py" "sql/" "statcounter.py" "status.py" "tests.py" "conf.py" "shuffle.py" "accumulators.py" "resultiterable.py" "traceback_utils.py" "worker.py" "java_gateway.py")
+ ("/home/vlad/dev/rllab/sandbox/rocky/" (23194 58543 620165 898000) "../" "__init__.py" "tf/" "./")
 
- ("/home/vlad/Downloads/spark-1.6.2-rc2/python/" (22375 2381 0 0) "../" ".gitignore" "./" "run-tests" "pyspark/" "docs/" "run-tests.py" "test_support/" "lib/")
+ ("/home/vlad/dev/rllab/sandbox/" (23194 58543 620165 898000) "rocky/" "../" "__init__.py" "./")
 
- ("/home/vlad/Downloads/spark-1.6.2-rc2/" (22375 2381 0 0) "../" "R/" "scalastyle-config.xml" "tox.ini" "streaming/" ".gitignore" "extras/" "assembly/" "./" "core/" "make-distribution.sh" "mllib/" "bin/" "sbt/" ".rat-excludes" "sbin/" "data/" "docs/" "licenses/" "external/" "launcher/" "README.md" "examples/" "pom.xml" "ec2/" "dev/" "docker/" "conf/" "sql/" "unsafe/" "CHANGES.txt" "project/" "network/" "bagel/" "LICENSE" "docker-integration-tests/" ".gitattributes" "build/" "CONTRIBUTING.md" "repl/" "tools/" "python/" "NOTICE" "pylintrc" "tags/" "yarn/" "graphx/")
+ ("/home/vlad/dev/rllab/rllab/regressors/" (23194 58543 604156 931000) "../" "categorical_mlp_regressor.py" "gaussian_mlp_regressor.py" "__init__.py" "product_regressor.py" "gaussian_conv_regressor.py" "./")
 
- ("/home/vlad/dev/tensorflow/tensorflow/contrib/learn/python/learn/" (22375 6275 742065 564000) "../" "./" "preprocessing/" "monitors.py" "models.py" "ops/" "dataframe/" "estimators/" "runner_flags.py" "io/" "README.md" "utils/" "__init__.py" "graph_actions.py" "datasets/" "tests/" "experiment.py" "learn_runner.py")
+ ("/home/vlad/dev/rllab/rllab/" (23194 58543 608159 173000) "../" "policies/" "optimizers/" "config_personal_template.py" "exploration_strategies/" "viskit/" "core/" "distributions/" "mujoco_py/" "baselines/" "config.py" "__init__.py" "spaces/" "regressors/" "misc/" "q_functions/" "envs/" "algos/" "plotter/" "sampler/" "./")
 
- ("/home/vlad/dev/tensorflow/tensorflow/contrib/learn/python/" (22375 6275 730064 850000) "../" "./" "learn/" "__init__.py")
+ ("/home/vlad/dev/rllab/" (23194 58543 624168 139000) "../" "rllab/" ".gitignore" "environment.yml" "CHANGELOG.md" "docker/" "tests/" "vendor/" "README.md" "docs/" "sandbox/" "examples/" "LICENSE" "scripts/" "contrib/" "circle.yml" "setup.py" ".git/" "./")
 
- ("/home/vlad/dev/tensorflow/tensorflow/contrib/learn/" (22375 6275 730064 850000) "../" "./" "__init__.py" "BUILD" "python/")
+ ("/home/vlad/dev/sac/sac/envs/" (23193 47785 366136 399000) "multigoal.py" "../" "serial_gym_venv.py" "parallel_gym_venv.py~" "fully_observable_half_cheetah.py~" "gym_fully_observable_ant.py~" "fully_observable_half_cheetah.py" "fully_observable_humanoid.py" "gym_env.py" "numpy_reward.py" "acrobot.py~" "fully_observable_swimmer.py" "fully_observable_humanoid.py~" "fully_observable_walker2d.py" "fully_observable_ant.py" "fully_observable_pusher.py" "fully_observable_walker2d.py~" "__init__.py" "fully_observable_ant.py~" "render_free_mjc.py" "vector_env.py" "gym_fully_observable_half_cheetah.py~" "numpy_reward.py~" "fully_observable.py" "fully_observable.py~" "fully_observable_hopper.py" "acrobot.py" "parallel_gym_venv.py" "./")
 
- ("/home/vlad/dev/tensorflow/tensorflow/contrib/" (22375 6275 758066 517000) "../" "ffmpeg/" "makefile/" "framework/" "session_bundle/" "./" "metrics/" "opt/" "linear_optimizer/" "pi_examples/" "copy_graph/" "quantization/" "learn/" "testing/" "README.md" "distributions/" "ios_examples/" "__init__.py" "layers/" "bayesflow/" "util/" "losses/" "BUILD" "rnn/" "cmake/" "tensor_forest/" "slim/" "avro/" "grid_rnn/" "lookup/")
+ ("/home/vlad/Dropbox/cal/courses-year1/stat210b/hw2/" (23183 5629 258934 264000) "defs.tex" "norm-tails.nb" "../" "sols2.out" "sols2.tex~" "hw2.pdf" "sols2.tex" "sols2.log" "sols2.pdf" "sols2.aux" "defs.tex~" "./")
 
- ("/home/vlad/dev/tensorflow/tensorflow/" (22375 6275 926076 521000) "../" "./" "core/" "workspace.bzl" "contrib/" "cc/" "stream_executor/" "examples/" "models/" "__init__.py" "tf_exported_symbols.lds" "tf_version_script.lds" "user_ops/" "BUILD" "tensorflow.bzl" "tensorboard/" "tools/" "python/" "g3doc/")
+ ("/home/vlad/Desktop/exp/data/" (23192 33588 929563 174000) "../" "hc-tau0.01-lr3/" "humanoid-clipped/" "humanoid-experiment/" "hc/" "hc-tau1-lr3/" "hc-tau0.01-lr4/" "hc-tau1-lr4/" "hc4/" "./")
 
- ("/home/vlad/dev/tensorflow/" (22375 6275 930076 759000) "../" "configure" "eigen.BUILD" "third_party/" ".gitignore" "./" "boost.BUILD" "grpc.BUILD" "WORKSPACE" "farmhash.BUILD" "jsoncpp.BUILD" "navbar.md" "tensorflow/" "RELEASE.md" "gmock.BUILD" ".gitmodules" "zlib.BUILD" "README.md" "bzip2.BUILD" ".git/" "boringssl.BUILD" "ACKNOWLEDGMENTS" "util/" "AUTHORS" "png.BUILD" "LICENSE" "avro.BUILD" "nanopb.BUILD" "CONTRIBUTING.md" "ISSUE_TEMPLATE.md" "tools/" "jpeg.BUILD" "six.BUILD" "bower.BUILD")
+ ("/home/vlad/dev/cmpc/poster/" (23132 16908 801643 332000) "defs.tex" "../" "ddpg-mh5.pdf" "poster.pdf" "poster.tex" "cmp-mse.pdf" "./")
 
- ("/home/vlad/.anacron/" (22362 10398 131366 319000) "../" "./" "etc/" "spool/")
+ ("/home/vlad/dev/mujoco-py/mujoco_py/" (23155 44216 960930 919000) "version.py" "../" "builder.py" "tests/" "cymj.c" "mjrenderpool.py" "pxd/" "utils.py" "mjsimstate.pyx" "modder.py" "gl/" "__init__.py" "mjsimpool.pyx" "cymj.pyx" "mjrendercontext.pyx" "generated/" "__pycache__/" "mjviewer.py" "mjbatchrenderer.pyx" "mjsim.pyx" "opengl_context.pyx" "test_imgs/" "./")
 
- ("/home/vlad/.anacron/etc/" (22362 10497 383255 874000) "../" "./" "anacrontab~" "anacrontab")
+ ("~/dev/gym2/gym2/analogues/" (23131 53892 635515 534000) "gym_fully_observable_half_cheetah.py" "../" "gym_fully_observable_ant.py" "gym_fully_observable_ant.py~" "__init__.py~" "__init__.py" "gym_fully_observable_half_cheetah.py~" "__pycache__/" "./")
 
- ("/var/" (22296 108 0 0) "../" "./" "metrics/" "opt/" "lock/" "backups/" "mail/" "crash/" "run/" "snap/" "log/" "tmp/" "cache/" "local/" "lib/" "spool/")
+ ("/home/vlad/dev/aws-magic/" (23142 39139 664392 342000) "../" ".gitignore" "server/" "README.md" "LICENSE" "aws-oregon.sh" "setup-instance.sh" ".git/" "interactive-server-install-deeplearn.sh" "./")
 
- ("/var/tmp/" (22362 10220 383781 307000) "../" "./" "systemd-private-17c20a28b26a4357a517275d51d01900-rtkit-daemon.service-kR4FPk/" "systemd-private-17c20a28b26a4357a517275d51d01900-systemd-timesyncd.service-R940yw/" "skype.XXS8KVTL~" "systemd-private-17c20a28b26a4357a517275d51d01900-colord.service-NfmUxY/" "anacrontab.XXuhbHgl")
+ ("/home/vlad/dev/aws-magic/server/" (23159 35879 241030 665000) "../" "docker-cpu/" "server-install-deeplearn.sh" "docker-gpu/" "server-install-faiss.sh" "./")
 
- ("/home/vlad/dev/IPython-2to3/" (22355 29814 265236 6000) "../" ".gitignore" "./" "README.md" "ipy2to3.py" ".git/")
+ ("/home/vlad/dev/gym2/" (23140 61235 150792 248000) "../" "LICENSE~" ".gitignore" "README.md" ".travis.yml" ".appveyor.yml" "gym2/" "requirements.dev.txt" "requirements.txt" "LICENSE" "setup.py~" "stuff-copied-from-mjc-py-i-should-actually-reuse-at-some-point/" "tryit.py" "setup.py" ".eggs/" ".git/" "tryit.py~" "./")
 
- ("/home/" (22349 65230 657653 771000) "../" "vlad/" "./")
+ ("/home/vlad/dev/gym2/gym2/mujoco/" (23140 61235 150792 248000) "../" "mjrenderpool.py" "pxd/" "mjimports.pyx" "utils.py" "mjsimstate.pyx" "modder.py" "gl_interface.pyx" "gl/" "__init__.py" "mjsimpool.pyx" "mjrendercontext.pyx" "mjmisc.pyx" "generated/" "__pycache__/" "mjviewer.py" "mjbatchrenderer.pyx" "mjsim.pyx" "opengl_context.pyx" "mjsim.pyx~" "./")
 
- ("/tmp/crontab.8IgSyY/" (22362 10134 575914 856000) "../" "crontab" "./")
+ ("/home/vlad/Dropbox/cal/courses-year1/cs294-112/" (23028 52200 494099 876000) "../" "cal-deeprl-hw3/" "cal-deeprl-hw4/" "proj.txt" "cal-deeprl-hw2/" "proj.txt~" "old/" "hw4.zip" "cal-deeprl-hw1/" "homework/" "hw1.zip" "hw3.zip" "hw2.zip" "./")
 
- ("/home/vlad/dev/TensorFlow-Learn/" (22355 29480 815969 989000) "notebooks/" "../" ".gitignore" "./" "data/" "README.md" ".git/" "code/" "data.tgz")
+ ("/home/vlad/Dropbox/cal/courses-year1/cs294-112/cal-deeprl-hw2/" (23190 63431 169243 328000) "defs.tex" "../" ".gitignore" "report.out" "hc-allcpu-time.tex" "plot.py" "report.pdf" "README.md" ".pylintrc" "report.aux" ".ipynb_checkpoints/" "hc-1cpu-time.tex" "fake-display.sh" "LICENSE" "__pycache__/" "logz.py" ".git/" "assignment.pdf" "train_pg.py" "images/" "report.tex" "report.log" "data/" "./")
 
- ("/home/vlad/dev/TensorFlow-Learn/code/" (22355 29338 745630 948000) "../" "./" "regression.py" "data_set.py" "regression.py~" "mnist_downloader.py" "tfopt.py~" "__pycache__/" "em_gmm.py" "data_set.py~")
+ ("/home/vlad/dev/sac/sac/core/" (23187 24094 759726 686000) "../" "__init__.py" "serializable.py" "./")
 
- ("/home/vlad/dev/final-proj-cos-424/utils/" (22321 28431 0 0) "../" "./" "tf_gmm_em.py~" "data_loader.py" "__pycache__/" "tf_gmm_em.py")
+ ("/home/vlad/Dropbox/cal/courses-year1/" (23143 42281 619978 775000) "../" "cs294-112/" "ee227c/" "stat210a/" "reviews/" "stat210b/" "./")
 
- ("/home/vlad/dev/final-proj-cos-424/" (22319 29634 123962 84000) "pandaprocess.py" "./" "../" "cv_r2.npy" "exploratory_analysis.ipynb" "diag_tf_cv.ipynb" "cv_r2_10.npy" "data/" ".gitmodules" "README.md" ".ipynb_checkpoints/" "diag_tf.ipynb" "methylation_imputation/" ".gitignore" "extracted/" "cv_rmse.npy" "utils/" ".git/")
+ ("/home/vlad/Dropbox/cal/" (23185 53043 243056 961000) "../" "transfer/" "cmpc/" "ray/" "courses-year1/" "llgp/" "starting/" "./")
+
+ ("/home/vlad/dev/sac/sac/" (23185 40876 285949 172000) "../" "policies/" "value_functions/" "core/" "distributions/" "__init__.py" "misc/" "replay_buffers/" "envs/" "algos/" "./")
+
+ ("/home/vlad/dev/sac/" (23186 23369 425575 845000) "../" ".gitignore" "environment.yml" "sac/" "README.md" "Dockerfile" "examples/" "scripts/" "docker-compose.yaml" ".git/" "./")
+
+ ("/home/vlad/dev/gym2/gym2/mujoco/gl/" (23125 41309 633525 249000) "../" "khrplatform.h" "eglplatform.h" "osmesashim.c" "dummyshim.c" "__init__.py" "egl.h" "glshim.h" "eglshim.c" "eglext.h" "./")
+
+ ("/home/vlad/dev/gym2/gym2/analogues/" (23131 53892 635515 534000) "gym_fully_observable_half_cheetah.py" "../" "gym_fully_observable_ant.py" "gym_fully_observable_ant.py~" "__init__.py~" "__init__.py" "gym_fully_observable_half_cheetah.py~" "__pycache__/" "./")
+
+ ("/home/vlad/dev/gym2/gym2/assets/" (23131 40891 141291 908000) "hopper.xml" "../" "half_cheetah.xml" "humanoid.xml" "thrower.xml" "inverted_pendulum.xml" "pusher.xml" "humanoidstandup.xml" "ant.xml" "walker2d.xml" "swimmer.xml" "inverted_double_pendulum.xml" "striker.xml" "point.xml" "reacher.xml" "./")
+
+ ("/home/vlad/dev/gym2/gym2/mujoco/generated/" (23131 41089 115605 650000) "../" "README.md" "__init__.py" "_pyxbld_LinuxExtensionBuilder/" "wrappers.pxi" "__pycache__/" "const.py" "./")
+
+ ("/home/vlad/dev/gym/gym/" (23124 4774 582554 999000) "version.py" "monitoring/" "../" "scoreboard/" "configuration.py" "utils/" "tests/" "wrappers/" "__init__.py" "spaces/" "benchmarks/" "envs/" "error.py" "core.py" "./")
+
+ ("/home/vlad/dev/mujoco-py/examples/" (23124 4933 683655 982000) "../" "multigpu_rendering.py" "body_interaction.py" "serialize_model.py" "markers_demo.py" "disco_fetch.py" "substep_callback.py" "tosser.py" "simpool.py" "render_callback.py" "internal_functions.py" "setting_state.py" "mjvive.py" "./")
+
+ ("/home/vlad/dev/gym2/gym2/mujoco/pxd/" (23125 41309 633525 249000) "mjrender.pxd" "mjdata.pxd" "../" "mjvisualize.pxd" "__init__.py" "mjmodel.pxd" "mujoco.pxd" "./")
+
+ ("/home/vlad/dev/gym2/gym2/mjcp/mujoco-py/" (23125 42187 188076 293000) "../" ".gitignore" "mujoco_py/" ".travis.yml" ".appveyor.yml" ".cache/" ".python-version" "setup.py" ".eggs/" ".git/" ".dockerignore" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

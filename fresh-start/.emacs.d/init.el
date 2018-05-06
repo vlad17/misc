@@ -3,7 +3,7 @@
 
 ;; Notes/useful keyboard definitions
 ;; C-x C-o (delete-blank-lines)
-;; C-<tab> (company-ycmd)
+;; C-<tab> (company-complete)
 ;; <backtab> or <shift>-<tab> (yas-expand)
 ;; C-c c (goto-last-change)
 ;; C-c v (goto-last-change-reverse)
@@ -35,17 +35,14 @@
 
 (defvar cfg-var:packages '(
   yasnippet
-  ycmd
   ido
   elpy
   auctex
   exec-path-from-shell
-  flycheck-ycmd
+  flycheck
   goto-chg
-  company-ycmd
+  company
   asm-mode
-  python-mode
-  py-autopep8
   matlab-mode
   markdown-mode
   haskell-mode
@@ -91,23 +88,10 @@
 ;; Set Yasnippet's key binding to shift+tab
 (define-key yas-minor-mode-map (kbd "<backtab>") 'yas-expand)
 
-;; YCMD client
-(require 'ycmd)
-(set-variable 'ycmd-global-config "~/dev/ycmd/cpp/ycm/.ycm_extra_conf.py")
-(add-hook 'after-init-hook #'global-ycmd-mode)
-(setq ycmd-idle-change-delay 0.03)
-(set-variable 'ycmd-server-command
-              (list "python" (concat (getenv "HOME") "/dev/ycmd/ycmd")
-                    "--stderr" "/tmp/ycm-stderr"
-                    "--stdout" "/tmp/ycm-stdout" "--keep_logfiles"))
-
-(require 'company-ycmd)
-(company-ycmd-setup)
+;; Company
 (add-hook 'after-init-hook 'global-company-mode)
 
-(global-set-key (kbd "C-<tab>") 'company-ycmd)
-
-(global-set-key (kbd "C-M-SPC") 'company-complete)
+(global-set-key (kbd "C-<tab>") 'company-complete)
 
 (defun complete-or-indent ()
   (interactive)
@@ -197,6 +181,7 @@
   "Remove trailing whitespace in saved buffer and untabifies."
   (when (member major-mode vlad/code-modes)
     (delete-trailing-whitespace)
+    (message "hello")
     (unless (eq major-mode 'go-mode) (untabify (point-min) (point-max)))))
 (add-hook 'before-save-hook 'vlad/rm-whitespace)
 
@@ -211,9 +196,6 @@
       'no-indent
     nil))
 (add-hook 'electric-indent-functions 'electric-indent-ignore-python)
-
-(require 'py-autopep8)
-(add-hook 'python-mode-hook 'py-autopep8-enable-on-save)
 
 (defun set-newline-and-indent ()
   "Map the return key with `newline-and-indent'."
@@ -301,8 +283,7 @@
 
 ;; ----- Flycheck -----
 
-(require 'flycheck-ycmd)
-(flycheck-ycmd-setup)
+(require 'flycheck)
 
 (when (not (display-graphic-p))
   (setq flycheck-indication-mode nil))
