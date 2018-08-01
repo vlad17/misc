@@ -53,7 +53,7 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
-PS1='${debian_chroot:+($debian_chroot)}\t \u@\h:\w\$ '
+PS1='${debian_chroot:+($debian_chroot)}\t \[\033[01;32m\]\u@\h\[\e[m\]:\[\033[01;34m\]\w\[\e[m\]\$ '
 
 # If this is an xterm set the title to user@host:dir (but without the time)
 case "$TERM" in
@@ -90,4 +90,6 @@ stty erase ^?
 # My personal definitions
 source ~/.bash_defs
 
-export PATH=$PATH:$HOME/bin
+export PATH="$PATH:$HOME/bin"
+export PATH="$HOME/dev/anaconda3/bin:$PATH"
+# added by installation of ~/.commacd.bash
