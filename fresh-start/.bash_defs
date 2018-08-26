@@ -7,6 +7,7 @@ alias gitam="git add . && git commit --amend --no-edit"
 alias gits="git status"
 alias gitp="git push"
 alias gitpf="git push -f"
+alias gitpu="gitp 2>&1 | tail -2 | sh" # sets upstream if necessary, else no-op
 alias gitd="git diff"
 alias gita="git add ."
 alias gitcm="git commit -m"
