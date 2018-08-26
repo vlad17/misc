@@ -50,6 +50,7 @@
   merlin
   company-go
   golint
+  jedi
   ))
 
 (defun cfg:install-packages ()
@@ -89,15 +90,13 @@
 (define-key yas-minor-mode-map (kbd "<backtab>") 'yas-expand)
 
 ;; Company
+;; https://emacs.stackexchange.com/questions/31234/
+(defun disable-company-for-python-hook ()
+  (company-mode -1))
+(add-hook 'python-mode-hook 'disable-company-for-python-hook)
 (add-hook 'after-init-hook 'global-company-mode)
 
 (global-set-key (kbd "C-<tab>") 'company-complete)
-
-(defun complete-or-indent ()
-  (interactive)
-  (if (company-manual-begin)
-      (company-complete-common)
-    (indent-according-to-mode)))
 
 ;; ----- Navigation -----
 
@@ -187,8 +186,6 @@
 
 ;; ----- Python -----
 
-(elpy-enable)
-
 ; Remove electric indent for python
 (defun electric-indent-ignore-python (char)
   "Ignore electric indentation for python.  CHAR is ignored."
@@ -201,6 +198,12 @@
   "Map the return key with `newline-and-indent'."
   (local-set-key (kbd "RET") 'newline-and-indent))
 (add-hook 'python-mode-hook 'set-newline-and-indent)
+
+(add-hook 'python-mode-hook 'jedi:setup)
+(defvar jedi:setup-keys)
+(defvar jedi:complete-on-dot)
+(setq jedi:setup-keys t)
+(setq jedi:complete-on-dot t)
 
 ;; ----- Go -----
 
@@ -295,8 +298,9 @@
 (add-hook 'python-mode-hook
           (lambda ()
             (progn
+              (company-mode nil)
               (setq flycheck-checker 'python-pylint
-                    flycheck-checker-error-threshold 900)
+                    flycheck-checker-error-threshold 999)
               (let ((lintrc
                      (locate-dominating-file (buffer-file-name) ".pylintrc")))
                 (when lintrc
@@ -357,7 +361,12 @@
 (setq-default TeX-command-BibTeX "Biber")
 (setq-default TeX-parse-self t)
 
+(add-hook 'java-mode-hook (lambda ()
+                                (setq c-basic-offset 2)))
+
+(put 'set-goal-column 'disabled nil)
+(setq ring-bell-function 'ignore)
+
 ;; Local Variables:
 ;; flycheck-disabled-checkers: (emacs-lisp-checkdoc)
 ;; End:
-(put 'set-goal-column 'disabled nil)
