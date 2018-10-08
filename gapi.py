@@ -127,6 +127,9 @@ def main(argv):
         print(dfby['duration'].sum() / 30 * 7, 'hrs/week')
         return
 
+    # TODO: list more available (3-9,0) by popularity?, no need for  initial '?' display
+    # allow undos (measure ctrl-z ord)
+
     print('loading last month of events')
     event, classification, starttime, duration = [], [], [], []
 
