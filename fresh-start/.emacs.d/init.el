@@ -36,12 +36,16 @@
 (defvar cfg-var:packages '(
   yasnippet
   ido
+  rust-mode
+  racer
   elpy
   auctex
   exec-path-from-shell
   flycheck
   goto-chg
   company
+  tide
+  web-mode
   asm-mode
   matlab-mode
   markdown-mode
@@ -169,6 +173,7 @@
 (defvar vlad/code-modes)
 (setq vlad/code-modes '(
   emacs-lisp-mode
+  rust-mode
   lisp-mode
   c++-mode
   go-mode
@@ -180,7 +185,6 @@
   "Remove trailing whitespace in saved buffer and untabifies."
   (when (member major-mode vlad/code-modes)
     (delete-trailing-whitespace)
-    (message "hello")
     (unless (eq major-mode 'go-mode) (untabify (point-min) (point-max)))))
 (add-hook 'before-save-hook 'vlad/rm-whitespace)
 
@@ -260,6 +264,8 @@
     ("\\.hs\\'" . haskell-mode)
     ;; LaTeX
     ("\\.tex\\'" . latex-mode)
+    ;; typescript
+    ("\\.tsx\\'" . web-mode)
     ;; Markdown Extensions
     ("\\.markdown\\'" . markdown-mode)
     ("\\.md\\'" . markdown-mode)
@@ -367,6 +373,63 @@
 (put 'set-goal-column 'disabled nil)
 (setq ring-bell-function 'ignore)
 
-;; Local Variables:
-;; flycheck-disabled-checkers: (emacs-lisp-checkdoc)
-;; End:
+;; ----- utils -----
+
+(defun reverse-words (beg end)
+ "Reverse the order of words in region."
+ (interactive "*r")
+ (apply
+  'insert
+   (reverse
+    (split-string
+     (delete-and-extract-region beg end) "\\b"))))
+
+;; ----- Rust -----
+
+(defun vlad/rustfmt ()
+  "Remove trailing whitespace in saved buffer and untabifies."
+  (when (eq major-mode 'rust-mode)
+    (rust-format-buffer)))
+(add-hook 'before-save-hook 'vlad/rustfmt)
+(add-hook 'racer-mode-hook #'eldoc-mode)
+(add-hook 'rust-mode-hook #'racer-mode)
+(add-hook 'racer-mode-hook #'company-mode)
+
+
+;; ----- TSX -----
+
+(defun setup-tide-mode ()
+  (interactive)
+  (tide-setup)
+  (flycheck-mode +1)
+  (setq flycheck-check-syntax-automatically '(save mode-enabled))
+  (eldoc-mode +1)
+  (setq tide-format-options '(:indentSize 2 :tabSize 2))
+  (tide-hl-identifier-mode +1)
+  (setq company-tooltip-align-annotations t)
+  (company-mode +1))
+
+(add-hook 'before-save-hook 'tide-format-before-save)
+
+(add-hook 'typescript-mode-hook #'setup-tide-mode)
+
+(add-hook 'web-mode-hook
+          (lambda ()
+            (when (string-equal "tsx" (file-name-extension buffer-file-name))
+              (setup-tide-mode))))
+
+(flycheck-add-mode 'typescript-tslint 'web-mode)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (racer rust-mode asm-mode web-mode company flycheck ido yasnippet tuareg tide python-mode py-autopep8 merlin matlab-mode markdown-mode jedi haskell-mode goto-chg golint flycheck-ycmd exec-path-from-shell elpy cython-mode company-ycmd company-go auctex))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
