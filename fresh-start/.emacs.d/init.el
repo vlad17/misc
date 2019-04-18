@@ -38,12 +38,14 @@
   ido
   rust-mode
   racer
-  elpy
   auctex
+  anaconda-mode
+  company-anaconda
   exec-path-from-shell
   flycheck
   goto-chg
   company
+  company-tabnine
   tide
   web-mode
   asm-mode
@@ -202,6 +204,10 @@
   "Map the return key with `newline-and-indent'."
   (local-set-key (kbd "RET") 'newline-and-indent))
 (add-hook 'python-mode-hook 'set-newline-and-indent)
+
+(add-hook 'python-mode-hook 'anaconda-mode)
+(eval-after-load "company"
+  '(add-to-list 'company-backends 'company-anaconda))
 
 (add-hook 'python-mode-hook 'jedi:setup)
 (defvar jedi:setup-keys)
@@ -419,6 +425,23 @@
               (setup-tide-mode))))
 
 (flycheck-add-mode 'typescript-tslint 'web-mode)
+
+;; ----- TabNine -----
+
+(require 'company-tabnine)
+;; Trigger completion immediately.
+(setq company-idle-delay 0)
+
+;; Number the candidates (use M-1, M-2 etc to select completions).
+(setq company-show-numbers t)
+
+;; Use the tab-and-go frontend.
+;; Allows TAB to select and complete at the same time.
+(company-tng-configure-default)
+(setq company-frontends
+      '(company-tng-frontend
+        company-pseudo-tooltip-frontend
+        company-echo-metadata-frontend))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -426,7 +449,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (racer rust-mode asm-mode web-mode company flycheck ido yasnippet tuareg tide python-mode py-autopep8 merlin matlab-mode markdown-mode jedi haskell-mode goto-chg golint flycheck-ycmd exec-path-from-shell elpy cython-mode company-ycmd company-go auctex))))
+    (asm-mode company flycheck company-anaconda anaconda-mode rust-mode ido yasnippet web-mode tuareg tide racer python-mode py-autopep8 merlin matlab-mode markdown-mode jedi haskell-mode goto-chg golint flycheck-ycmd exec-path-from-shell elpy cython-mode company-ycmd company-tabnine company-go auctex))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
