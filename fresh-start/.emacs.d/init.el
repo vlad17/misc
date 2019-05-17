@@ -36,12 +36,18 @@
 (defvar cfg-var:packages '(
   yasnippet
   ido
-  elpy
+  rust-mode
+  racer
   auctex
+  anaconda-mode
+  company-anaconda
   exec-path-from-shell
   flycheck
   goto-chg
   company
+  company-tabnine
+  tide
+  web-mode
   asm-mode
   matlab-mode
   markdown-mode
@@ -169,6 +175,7 @@
 (defvar vlad/code-modes)
 (setq vlad/code-modes '(
   emacs-lisp-mode
+  rust-mode
   lisp-mode
   c++-mode
   go-mode
@@ -180,7 +187,6 @@
   "Remove trailing whitespace in saved buffer and untabifies."
   (when (member major-mode vlad/code-modes)
     (delete-trailing-whitespace)
-    (message "hello")
     (unless (eq major-mode 'go-mode) (untabify (point-min) (point-max)))))
 (add-hook 'before-save-hook 'vlad/rm-whitespace)
 
@@ -198,6 +204,10 @@
   "Map the return key with `newline-and-indent'."
   (local-set-key (kbd "RET") 'newline-and-indent))
 (add-hook 'python-mode-hook 'set-newline-and-indent)
+
+(add-hook 'python-mode-hook 'anaconda-mode)
+(eval-after-load "company"
+  '(add-to-list 'company-backends 'company-anaconda))
 
 (add-hook 'python-mode-hook 'jedi:setup)
 (defvar jedi:setup-keys)
@@ -260,6 +270,8 @@
     ("\\.hs\\'" . haskell-mode)
     ;; LaTeX
     ("\\.tex\\'" . latex-mode)
+    ;; typescript
+    ("\\.tsx\\'" . web-mode)
     ;; Markdown Extensions
     ("\\.markdown\\'" . markdown-mode)
     ("\\.md\\'" . markdown-mode)
@@ -367,6 +379,80 @@
 (put 'set-goal-column 'disabled nil)
 (setq ring-bell-function 'ignore)
 
-;; Local Variables:
-;; flycheck-disabled-checkers: (emacs-lisp-checkdoc)
-;; End:
+;; ----- utils -----
+
+(defun reverse-words (beg end)
+ "Reverse the order of words in region."
+ (interactive "*r")
+ (apply
+  'insert
+   (reverse
+    (split-string
+     (delete-and-extract-region beg end) "\\b"))))
+
+;; ----- Rust -----
+
+(defun vlad/rustfmt ()
+  "Remove trailing whitespace in saved buffer and untabifies."
+  (when (eq major-mode 'rust-mode)
+    (rust-format-buffer)))
+(add-hook 'before-save-hook 'vlad/rustfmt)
+(add-hook 'racer-mode-hook #'eldoc-mode)
+(add-hook 'rust-mode-hook #'racer-mode)
+(add-hook 'racer-mode-hook #'company-mode)
+
+
+;; ----- TSX -----
+
+(defun setup-tide-mode ()
+  (interactive)
+  (tide-setup)
+  (flycheck-mode +1)
+  (setq flycheck-check-syntax-automatically '(save mode-enabled))
+  (eldoc-mode +1)
+  (setq tide-format-options '(:indentSize 2 :tabSize 2))
+  (tide-hl-identifier-mode +1)
+  (setq company-tooltip-align-annotations t)
+  (company-mode +1))
+
+(add-hook 'before-save-hook 'tide-format-before-save)
+
+(add-hook 'typescript-mode-hook #'setup-tide-mode)
+
+(add-hook 'web-mode-hook
+          (lambda ()
+            (when (string-equal "tsx" (file-name-extension buffer-file-name))
+              (setup-tide-mode))))
+
+(flycheck-add-mode 'typescript-tslint 'web-mode)
+
+;; ----- TabNine -----
+
+(require 'company-tabnine)
+;; Trigger completion immediately.
+(setq company-idle-delay 0)
+
+;; Number the candidates (use M-1, M-2 etc to select completions).
+(setq company-show-numbers t)
+
+;; Use the tab-and-go frontend.
+;; Allows TAB to select and complete at the same time.
+(company-tng-configure-default)
+(setq company-frontends
+      '(company-tng-frontend
+        company-pseudo-tooltip-frontend
+        company-echo-metadata-frontend))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (asm-mode company flycheck company-anaconda anaconda-mode rust-mode ido yasnippet web-mode tuareg tide racer python-mode py-autopep8 merlin matlab-mode markdown-mode jedi haskell-mode goto-chg golint flycheck-ycmd exec-path-from-shell elpy cython-mode company-ycmd company-tabnine company-go auctex))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
