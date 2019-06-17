@@ -93,3 +93,7 @@ source ~/.bash_defs
 export PATH="$PATH:$HOME/bin"
 export PATH="$HOME/dev/anaconda3/bin:$PATH"
 # added by installation of ~/.commacd.bash
+
+if [ -f "$HOME/.cargo/env" ]; then
+    source "$HOME/.cargo/env"
+fi
