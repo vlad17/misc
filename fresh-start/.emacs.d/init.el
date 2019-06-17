@@ -40,6 +40,7 @@
   racer
   auctex
   anaconda-mode
+  company
   company-anaconda
   exec-path-from-shell
   flycheck
@@ -428,6 +429,7 @@
 
 ;; ----- TabNine -----
 
+(require 'company)
 (require 'company-tabnine)
 ;; Trigger completion immediately.
 (setq company-idle-delay 0)
