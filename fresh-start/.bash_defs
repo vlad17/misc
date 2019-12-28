@@ -7,10 +7,12 @@ alias gitam="git add . && git commit --amend --no-edit"
 alias gits="git status"
 alias gitp="git push"
 alias gitpf="git push -f"
-alias gitpu="gitp 2>&1 | tail -2 | sh" # sets upstream if necessary, else no-op
+alias gitpu='git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)'
 alias gitd="git diff"
 alias gita="git add ."
 alias gitcm="git commit -m"
+alias gitmm="git merge master"
+alias gitl="git pull"
 
 alias cppcheck="$HOME/dev/cppcheck/cppcheck --enable=all"
 
@@ -65,6 +67,8 @@ alias risehavoc="ssh vladf@havoc.millennium.berkeley.edu"
 alias risemayhem="ssh vladf@mayhem.millennium.berkeley.edu"
 alias risewatson="ssh vladf@watson.millennium.berkeley.edu"
 alias riseblaze="ssh vladf@blaze.millennium.berkeley.edu"
+alias risesterops="ssh vladf@steropes.millennium.berkeley.edu"
+alias riseatlas="ssh vladf@atlas.millennium.berkeley.edu"
 
 ## OPAM configuration
 . $HOME/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
@@ -77,3 +81,24 @@ export LD_LIBRARY_PATH="/usr/local/cuda/lib64/:$LD_LIBRARY_PATH"
 if [ -f "$HOME/.twilio.env" ]; then
   source "$HOME/.twilio.env"
 fi
+
+if [ -f "$HOME/.cargo/env" ]; then
+    source "$HOME/.cargo/env"
+fi
+# set variable identifying the chroot you work in (used in the prompt below)
+if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
+    debian_chroot=$(cat /etc/debian_chroot)
+fi
+
+export RUST_SRC_PATH=$( echo $(rustc --print sysroot)/lib/rustlib/src/rust/src )
+
+PS1="${debian_chroot:+($debian_chroot)}\t\[\033[01;32m\] \u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
+
+# If this is an xterm set the title to user@host:dir (but without the time)
+case "$TERM" in
+xterm*|rxvt*)
+    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    ;;
+*)
+    ;;
+esac

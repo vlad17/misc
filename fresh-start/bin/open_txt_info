@@ -21,13 +21,11 @@ fi
 #    echo "----------- NOT downloading new food data" >> "$errfile"
 #fi
 
-file1="/home/vlad/Documents/TODO.txt"
-
 # hacky frame movement to the right side; the correct way would be to query the screen size,
 # default emacs window size, etc., but that'd be a pain and I'd have to do it in elisp.
 # Much easier to just overshoot and let the window manager correct us back to the right
 # side of the screen.
 emacsclient --create-frame --alternate-editor="" \
-  --frame-parameters="((left . 10000))" "$file1" &>> "$errfile" &
+  --frame-parameters="((left . 10000))" &>> "$errfile" &
 
 echo &>> "$errfile"

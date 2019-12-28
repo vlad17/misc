@@ -11,11 +11,32 @@ FRESH_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 cd $FRESH_DIR
 
-echo "copying dotfiles (previous .bashrc moved to .bashrc-old)"
-mv $HOME/.bashrc $HOME/.bashrc-old
-cp .bashrc $HOME/
-cp -f .bash_defs $HOME
-cp -f .tmux.conf $HOME
+if ! [ -f $HOME/.bashrc ]; then
+    echo "weird, you don't have a ~/.bashrc, making one (do check it)"
+    cp unmaintained/.bashrc $HOME
+fi
+
+if ! [ -f $HOME/.bashrc ]; then
+    echo "weird, you don't have a ~/.bash_profile, making one (do check it)"
+    cp unmaintained/.bash_profile $HOME
+else
+    echo 'checking you source .bashrc in .bash_profile'
+    grep '.bashrc' .bash_profile
+fi
+
+echo 'adding .bash_defs to .bashrc'
+printf '\n# My personal definitions\nsource $HOME/.bash_defs' >> $HOME/.bashrc
+
+echo "copying over .bash_defs, .tmux.conf"
+if [ -f $HOME/.bash_defs ] ; then
+    mv $HOME/.bash_defs $HOME/.bash_defs.old
+fi
+if [ -f $HOME/.tmux.conf ] ; then
+    mv $HOME/.tmux.conf $HOME/.tmux.conf.old
+fi
+
+cp .bash_defs $HOME
+cp .tmux.conf $HOME
 
 mkdir -p $HOME/bin
 cp bin/* $HOME/bin

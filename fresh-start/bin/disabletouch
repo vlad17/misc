@@ -1,0 +1,3 @@
+#!/bin/bash
+
+xinput disable $(xinput | grep 'Touch Controller' | head -1 | sed -e 's#.*id=\([[:digit:]]\+\).*#\1#')

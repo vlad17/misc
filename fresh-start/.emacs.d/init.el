@@ -77,6 +77,7 @@
 (require 'exec-path-from-shell)
 (setq exec-path-from-shell-check-startup-files nil)
 (exec-path-from-shell-initialize)
+(setq racer-rust-src-path (exec-path-from-shell-copy-env "RUST_SRC_PATH"))
 
 ;; ----- GUI stuff -----
 
@@ -210,6 +211,7 @@
 (eval-after-load "company"
   '(add-to-list 'company-backends 'company-anaconda))
 
+(add-hook 'python-mode-hook 'anaconda-mode)
 (add-hook 'python-mode-hook 'jedi:setup)
 (defvar jedi:setup-keys)
 (defvar jedi:complete-on-dot)
@@ -405,6 +407,9 @@
 
 ;; ----- TSX -----
 
+(require 'web-mode)
+
+
 (defun setup-tide-mode ()
   (interactive)
   (tide-setup)
@@ -425,7 +430,12 @@
             (when (string-equal "tsx" (file-name-extension buffer-file-name))
               (setup-tide-mode))))
 
-(flycheck-add-mode 'typescript-tslint 'web-mode)
+; (flycheck-add-mode 'typescript-tslint 'web-mode)
+
+;; ----- Org Mode -----
+
+(add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
+(setq org-src-fontify-natively t)
 
 ;; ----- TabNine -----
 
@@ -451,7 +461,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (asm-mode company flycheck company-anaconda anaconda-mode rust-mode ido yasnippet web-mode tuareg tide racer python-mode py-autopep8 merlin matlab-mode markdown-mode jedi haskell-mode goto-chg golint flycheck-ycmd exec-path-from-shell elpy cython-mode company-ycmd company-tabnine company-go auctex))))
+    (flycheck-rust asm-mode company flycheck company-anaconda anaconda-mode rust-mode ido yasnippet web-mode tuareg tide racer python-mode py-autopep8 merlin matlab-mode markdown-mode jedi haskell-mode goto-chg golint flycheck-ycmd exec-path-from-shell elpy cython-mode company-ycmd company-tabnine company-go auctex))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

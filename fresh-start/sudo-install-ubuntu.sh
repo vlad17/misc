@@ -19,9 +19,10 @@ if ! sudo dpkg -i google-chrome-stable_current_amd64.deb; then
     sudo apt-get install -yf
 fi
 
+ln -s ~/Dropbox/.emacs.d/ ~/.emacs.d
 sudo apt-get -y install emacs
 
-sudo apt-get install -y xclip clang cmake build-essential python-dev
+sudo apt-get install -y xclip clang cmake build-essential python-dev python3-dev
 
 sudo apt-get remove -y indicator-messages
 sudo add-apt-repository -y ppa:tsbarnes/indicator-keylock
