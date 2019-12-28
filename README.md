@@ -37,3 +37,7 @@ Install `commacd`, which I use for faster navigation.
 Set up `git` email and `emerge`.
 
 Generate an ssh key in that machine.
+
+#### Autocomplete
+
+Set up `TabNine` by following the steps [here](https://tabnine.com/subscribe) and [here](https://github.com/TommyX12/company-tabnine).
