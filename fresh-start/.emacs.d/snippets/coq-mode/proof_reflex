@@ -1,6 +1,0 @@
-# -*- mode: snippet; require-final-newline: nil -*-
-# name: proof reflexivity
-# key: prq
-# binding: direct-keybinding
-# --
-Proof. reflexivity. Qed.
