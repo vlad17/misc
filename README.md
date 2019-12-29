@@ -47,3 +47,8 @@ Set up `TabNine` by following the steps [here](https://tabnine.com/subscribe) an
 Make sure safe-eyes, flux, caps-lock-indicator work properly.
 
 SSH config, agent.
+
+Different language runtimes (may mess with `~/.bashrc`).
+ * Rust
+ * npm / nvm
+ * conda
