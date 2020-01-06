@@ -21,7 +21,7 @@ if ! [ -f $HOME/.bashrc ]; then
     cp unmaintained/.bash_profile $HOME
 else
     echo 'checking you source .bashrc in .bash_profile'
-    grep '.bashrc' .bash_profile
+    [ -f .bash_profile ] && grep '.bashrc' .bash_profile
 fi
 
 echo 'adding .bash_defs to .bashrc'
@@ -43,7 +43,7 @@ cp bin/* $HOME/bin
 
 echo "installing .commacd.bash"
 printf '\n# added by installation of ~/.commacd.bash\n' >> ~/.bashrc
-curl https://raw.githubusercontent.com/shyiko/commacd/master/commacd.bash -o ~/.commacd.bash && echo "source ~/.commacd.bash" >> ~/.bashrc
+curl -sSL https://github.com/shyiko/commacd/raw/v1.0.0/commacd.sh -o ~/.commacd.bash && echo "source ~/.commacd.bash" >> ~/.bashrc
 
 if ! which git; then
     echo "No git!"
