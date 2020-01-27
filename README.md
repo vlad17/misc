@@ -16,6 +16,8 @@ All in `fresh-start`.
 
 Install `Dropbox` manually and put it inside `~/Dropbox` with synchronization. This should pull in a lot of configuration files.
 
+Install spotify manually.
+
 #### `sudo-install-ubuntu.sh`
 
 Does a first cut at removing miscellaneous Canonical crap.
@@ -52,3 +54,4 @@ Different language runtimes (may mess with `~/.bashrc`).
  * Rust
  * npm / nvm
  * conda
+
