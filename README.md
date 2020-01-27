@@ -53,5 +53,6 @@ SSH config, agent.
 Different language runtimes (may mess with `~/.bashrc`).
  * Rust
  * npm / nvm
- * conda
+ * conda https://www.anaconda.com/distribution/#linux
 
+reMarkable https://remarkablewiki.com/tips/client
