@@ -1,9 +1,15 @@
 # collect metadata and pretty-print
 # an arxiv entry with a given name
+# also handles ACM inputs now
+# TODO: write date and author extractors from google scholar
+# given the title search. then adapters to other sites
+# just need title extraction.
 
 import warnings
 warnings.filterwarnings("ignore")
 
+import re
+from dateutil import parser
 from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
@@ -12,7 +18,6 @@ import itertools
 
 url = sys.argv[1]
 name = sys.argv[2]
-# print('grabbing url', url, 'name', name, file=sys.stderr)
 
 if url.startswith("https://arxiv.org"):
 
@@ -46,35 +51,23 @@ if url.startswith("https://arxiv.org"):
 elif url.startswith("https://dl.acm.org/doi/"):
     # https://dl.acm.org/doi/10.1145/1553374.1553470
 
-        r = requests.get(url)
+    r = requests.get(url)
     soup = BeautifulSoup(r.text, "lxml")
 
-    title = soup.find("h1", class_="title mathjax").contents[1]
+    title = soup.find("h1", class_="citation__title").text
 
-    date = soup.find("div", class_="dateline").text
-
-    if 'last revised' in date:
-        ix = date.index('last revised ') + len('last revised ')
-    else:
-        ix = date.index('Submitted on ') + len('Submitted on ')
-
-    from dateutil import parser
-
-    date = date[ix:]
-    date = date.split(' ')[:3]
-    import re
-    date[-1] = re.search(r'\d+', date[-1]).group()
-    toparse = ' '.join(date)
-    date = datetime.strptime(toparse, '%d %b %Y')
+    date = (soup.find("h3", text="Publication History")
+            .find_parent("div", class_="section__separator")
+            .find("ul", class_="rlist")
+            .find("li", text=re.compile("Published: ")))
+    date = parser.parse(date.text[len("Published: "):])
     pubyr = date.year
     date = datetime.strftime(date, '%Y-%m-%d')
 
-    authors = soup.find("div", class_="authors").contents[1:]
-
-    authors = [BeautifulSoup(str(a), 'lxml').get_text() for a in authors]
-    authors = [a for a in authors if ',' not in a and not a.strip().startswith('(')]
-    # TODO THIS PARSE
-    pass
+    authors = soup.find("ul", {'ariaa-label': "authors"},
+    class_="loa").findAll("li")[1:]
+    authors = [x.find("a", class_="author-name") for x in authors]
+    authors = [x['title'] for x in authors if x]
 else:
     raise ValueError(url)
 
