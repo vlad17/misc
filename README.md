@@ -18,13 +18,19 @@ Install `Dropbox` manually and put it inside `~/Dropbox` with synchronization. T
 
 Install spotify manually.
 
-#### `sudo-install-ubuntu.sh`
+#### For Laptops
+
+`sudo-install-ubuntu.sh`
 
 Does a first cut at removing miscellaneous Canonical crap.
 
 Installs git, chrome, emacs, spotify, tmux, various dev and usability utilities.
 
 Soft-links `~/.emacs.d` to `~/Dropbox/.emacs.d`.
+
+#### On Servers
+
+Manually add git, emacs, fzf first via package manager.
 
 #### `config.sh`
 
