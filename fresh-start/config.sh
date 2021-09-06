@@ -51,6 +51,7 @@ fi
 
 git config --global user.name "Vladimir Feinberg"
 git config --global user.email "vladimir.feinberg@gmail.com"
+git config --global alias.exec '!exec '
 git config --global push.default simple
 
 echo '#!/bin/bash
