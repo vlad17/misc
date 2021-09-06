@@ -22,7 +22,7 @@ fi
 ln -s ~/Dropbox/.emacs.d/ ~/.emacs.d
 sudo apt-get -y install emacs
 
-sudo apt-get install -y xclip clang cmake build-essential python-dev python3-dev
+sudo apt-get install -y xclip clang cmake libc-dev build-essential
 
 sudo apt-get remove -y indicator-messages
 sudo add-apt-repository -y ppa:tsbarnes/indicator-keylock
@@ -33,4 +33,4 @@ sudo add-apt-repository -y ppa:slgobinath/safeeyes
 sudo apt-get update
 sudo apt -y install safeeyes
 
-sudo apt -y install tmux
+sudo apt -y install tmux curl python3-dev
