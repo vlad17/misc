@@ -46,7 +46,7 @@ if url.startswith("https://arxiv.org"):
 elif url.startswith("https://dl.acm.org/doi/"):
     # https://dl.acm.org/doi/10.1145/1553374.1553470
 
-        r = requests.get(url)
+    r = requests.get(url)
     soup = BeautifulSoup(r.text, "lxml")
 
     title = soup.find("h1", class_="title mathjax").contents[1]
