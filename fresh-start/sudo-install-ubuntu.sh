@@ -29,8 +29,4 @@ sudo add-apt-repository -y ppa:tsbarnes/indicator-keylock
 sudo apt-get update
 sudo apt-get -y install indicator-keylock
 
-sudo add-apt-repository -y ppa:slgobinath/safeeyes
-sudo apt-get update
-sudo apt -y install safeeyes
-
 sudo apt -y install tmux curl python3-dev

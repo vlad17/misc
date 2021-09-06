@@ -34,7 +34,7 @@ Manually add git, emacs, fzf first via package manager.
 
 #### `config.sh`
 
-Configure `.bashrc` and `.bash_profile` on the host in-place.
+Configure `.bashrc` and `.bash_profile` on the host in-place if not present.
 
 Copy over `.bash_defs`, which is what I use for both login and interactive shell specializations (not really doing anything special in `~/.bashrc`, which gets auto-modified a lot.
 
@@ -52,13 +52,15 @@ Set up `TabNine` by following the steps [here](https://tabnine.com/subscribe) an
 
 #### Other Manual Checks
 
-Make sure safe-eyes, flux, caps-lock-indicator work properly.
+A restart is necessary for the indicator-keylock app to start working.
+
+Install safe-eyes through the Ubuntu app store.
 
 SSH config, agent.
 
 Different language runtimes (may mess with `~/.bashrc`).
  * Rust
  * npm / nvm
- * conda https://www.anaconda.com/distribution/#linux
+ * python [poetry](https://python-poetry.org/)
 
-reMarkable https://remarkablewiki.com/tips/client
+[reMarkable](https://github.com/juruen/rmapi)
