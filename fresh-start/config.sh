@@ -42,8 +42,7 @@ mkdir -p $HOME/bin
 cp bin/* $HOME/bin
 
 echo "installing .commacd.bash"
-printf '\n# added by installation of ~/.commacd.bash\n' >> ~/.bashrc
-curl -sSL https://github.com/shyiko/commacd/raw/v1.0.0/commacd.sh -o ~/.commacd.bash && echo "source ~/.commacd.bash" >> ~/.bashrc
+curl -sSL https://github.com/shyiko/commacd/raw/v1.0.0/commacd.sh -o ~/.commacd.bash
 
 if ! which git; then
     echo "No git!"
